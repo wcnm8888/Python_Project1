@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41883076",
+    "title": "求助macOS ping不通UTM启动的虚拟机",
+    "post_time": "2024-10-02 20:46",
+    "uid": "39001054",
+    "content": "我不确定是不是更新了macOS15后出现的问题，以前都是好的。现在在虚拟机里能ping通主机，主机死活ping不通虚拟机了，ssh sftp都没法访问。",
+    "replies": []
+}

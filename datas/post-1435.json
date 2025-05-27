@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39482718",
+    "title": "真诚请教，android原生开发转android framework开发的经验",
+    "post_time": "2024-03-05 10:21",
+    "uid": "64035940",
+    "content": "本人做android 原生开发4年了，自我感觉android原生开发的处境是每况愈下, 所以想转android framework开发，目前只是看了很少的framework代码(系统启动流程，app启动流程，四大组件启动流程，inputManager,  binder)，binder看了几遍，还是一知半解, 想请教有转framework开发或者正在从事framework开发的朋友，分享一下你们是如何阅读framework源码的经验，也可以说说你们是如何找到这份工作，也欢迎android或ios app开发的朋友交流app开发经验",
+    "replies": [
+        {
+            "mid": "34940373",
+            "mtime": "2024-03-05 10:33",
+            "mcontent": "我做8年了同问，一直没机会转framework开发，也不知道从哪里看起"
+        },
+        {
+            "mid": "64035940",
+            "mtime": "2024-03-05 16:13",
+            "mcontent": "framework代码过于庞杂"
+        },
+        {
+            "mid": "18378345",
+            "mtime": "2024-03-05 16:22",
+            "mcontent": "一步一步来，先从搭建环境，编译源码开始"
+        }
+    ]
+}

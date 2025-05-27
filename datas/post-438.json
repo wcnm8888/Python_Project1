@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42282783",
+    "title": "selenium或者playwright可以修改html代码吗",
+    "post_time": "2024-10-31 14:59",
+    "uid": "63580047",
+    "content": "比如将某个数字的值改成其他数字，或者是中文之类的",
+    "replies": [
+        {
+            "mid": "38554127",
+            "mtime": "2024-10-31 15:47",
+            "mcontent": "不清楚你的需求具体是啥如果是要改的话，这类框架应该是可以支持运行js代码的，可以直接在里面调用js再对HTML文档内容进行变更"
+        },
+        {
+            "mid": "65922860",
+            "mtime": "2024-11-08 00:31",
+            "mcontent": "selenium可以，getElementBy找到元素直接改就好了"
+        }
+    ]
+}

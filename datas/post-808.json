@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40946030",
+    "title": "这次全球windows崩溃是什么原因？",
+    "post_time": "2024-07-20 21:57",
+    "uid": "63530004",
+    "content": "我们公司的电脑出事的都是Win10，Win11没事，有一些Win10也没事",
+    "replies": [
+        {
+            "mid": "65750245",
+            "mtime": "2024-07-20 23:16",
+            "mcontent": "说是CrowdStrike更新把一个重要系统文件删了"
+        },
+        {
+            "mid": "63782286",
+            "mtime": "2024-07-21 20:47",
+            "mcontent": "出问题的那一行代码读了一个野指针。"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-07-22 10:54",
+            "mcontent": "那个代码存了个位置是无的指针。"
+        },
+        {
+            "mid": "62396512",
+            "mtime": "2024-07-22 15:33",
+            "mcontent": "实际上是配置文件出问题，具体看官网文章[https:://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/ https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/]"
+        }
+    ]
+}

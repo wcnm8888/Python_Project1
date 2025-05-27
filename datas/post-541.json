@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41954787",
+    "title": "急，redis7数据迁移至redis6要怎么做",
+    "post_time": "2024-10-06 18:57",
+    "uid": "60717522",
+    "content": "redis7的rdb不能直接给redis6用会报版本不兼容",
+    "replies": [
+        {
+            "mid": "3476635",
+            "mtime": "2024-10-07 03:26",
+            "mcontent": "怕是只能读redis源码，自己写轮子迁移了"
+        },
+        {
+            "mid": "61414352",
+            "mtime": "2024-10-07 12:51",
+            "mcontent": "写个脚本redis读出为json格式 然后写入redis6"
+        },
+        {
+            "mid": "61137948",
+            "mtime": "2024-10-08 18:25",
+            "mcontent": "你们都在用这么高版本的吗，我们才3.5。。"
+        }
+    ]
+}

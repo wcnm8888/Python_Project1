@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41482664",
+    "title": "求助 pc上全局声音转文字的软件",
+    "post_time": "2024-08-30 16:52",
+    "uid": "63631784",
+    "content": "求助 pc上全局播放的声音转文字的软件有没有？ 不是麦克风的。",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2024-09-01 13:27",
+            "mcontent": "这个我搞过多输出一份音频在耳机孔, 然后在树莓派上跑whisper 接收音频"
+        },
+        {
+            "mid": "63676208",
+            "mtime": "2024-09-04 08:42",
+            "mcontent": "不如直接电脑跑……"
+        },
+        {
+            "mid": "42368844",
+            "mtime": "2024-09-04 12:19",
+            "mcontent": "你说的对, 但是在Windows 上创造一个虚拟的声音输出设备是困难的市面上常见的软件大部分都收费"
+        },
+        {
+            "mid": "63631784",
+            "mtime": "2024-09-04 14:28",
+            "mcontent": "收费的有哪些？  我这个需求开源社区有人做过吗？"
+        },
+        {
+            "mid": "42368844",
+            "mtime": "2024-09-05 13:53",
+            "mcontent": "收费的不清楚我做过, 需要通过耳机孔连接外置设备"
+        },
+        {
+            "mid": "62847788",
+            "mtime": "2024-09-05 14:06",
+            "mcontent": "有啊，这玩意很常见啊，一般都要用大模型的，不然识别出来准确度不高[https://www.bilibili.com/read/cv21023516/ https://www.bilibili.com/read/cv21023516/][https:://www.xfyun.cn/services/rtasr#anchor4503211 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.xfyun.cn/services/rtasr#anchor4503211 https://www.xfyun.cn/services/rtasr#anchor4503211]"
+        },
+        {
+            "mid": "63631784",
+            "mtime": "2024-09-05 14:42",
+            "mcontent": "感谢 我有空试试文中提的开源离线 whisper"
+        }
+    ]
+}

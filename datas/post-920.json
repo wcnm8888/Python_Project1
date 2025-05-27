@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40616082",
+    "title": "[求助] 小白求助，自动签单selenium如何定位元素然后点击",
+    "post_time": "2024-06-21 16:13",
+    "uid": "61615125",
+    "content": "想做一个自动签单程序，定位到按钮对应的元素之后，用指令CLICK跳转工单里面，再用“签收”按钮的ID去定位和CLICK",
+    "replies": [
+        {
+            "mid": "38435070",
+            "mtime": "2024-06-21 16:31",
+            "mcontent": "有id就用id，没id就xpath，用相对xpath或绝对xpath都行。"
+        },
+        {
+            "mid": "65808843",
+            "mtime": "2024-06-21 17:27",
+            "mcontent": "试试CSS定位 .fault-card-context>a:nth-child(0)"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-06-21 20:34",
+            "mcontent": "你的问题是完全不懂html dom元素啊每个标签里都是各种属性对应值这些a标签里面，只有onclick属性，这个属性对应的值，一般是动态的js函数，不方便定位xpath 可以相对定位先定位到//label[  @CLASS=\"fault-card-context\"  ]/a这个应该是a集合括号起来可以数个数  例如  (//label[  @CLASS=\"fault-card-context\"  ]/a)[  1]"
+        },
+        {
+            "mid": "61615125",
+            "mtime": "2024-06-21 20:59",
+            "mcontent": "谢谢大佬指点，我完全没有HTML基础的，纯小白。。。"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2024-06-21 21:10",
+            "mcontent": "Selenium有插件[https:://chromewebstore.google.com/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?pli=1 此网页不属于本网站，不保证其安全性  继续访问       取消 https://chromewebstore.google.com/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?pli=1 https://chromewebstore.google.com/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?pli=1]可以录制操作如果是新项目可以用[https:://playwright.dev/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://playwright.dev/ https://playwright.dev/]"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-06-21 21:28",
+            "mcontent": "我个人是用ui.vision rpa插件，也可以导入录制selenium ide可以用绿色版火狐+rpa.xpi离线版弄个u盘，方便适配，容易配环境"
+        }
+    ]
+}

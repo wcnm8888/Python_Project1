@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40985155",
+    "title": "请问在wpf里面怎么使用direct11来渲染，高效显示？",
+    "post_time": "2024-07-24 17:32",
+    "uid": "65083544",
+    "content": "用的D3DImage，我自己找了个适配的库，用c++fffmpeg解析，direct11渲染视频，CompositTarget来刷新界面。但是视频总是很卡。",
+    "replies": [
+        {
+            "mid": "63659663",
+            "mtime": "2024-07-26 13:09",
+            "mcontent": "有个vortice.windows 的开源库"
+        },
+        {
+            "mid": "63659663",
+            "mtime": "2024-07-26 13:17",
+            "mcontent": "还有个微软官方的silk.net"
+        },
+        {
+            "mid": "60727671",
+            "mtime": "2024-07-27 08:56",
+            "mcontent": "没做过视频wpf里面有个刷新率，我记得默认是30，试试改成120？不知道有关系没"
+        },
+        {
+            "mid": "38727137",
+            "mtime": "2024-07-28 22:53",
+            "mcontent": "不要用composite render事件吧"
+        },
+        {
+            "mid": "2086374",
+            "mtime": "2024-08-31 02:51",
+            "mcontent": "靠，这么多搞wpf的？"
+        }
+    ]
+}

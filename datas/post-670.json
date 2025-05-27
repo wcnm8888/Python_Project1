@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41338470",
+    "title": "求一个展开numpy数组最快的实现方式。",
+    "post_time": "2024-08-20 10:04",
+    "uid": "37828449",
+    "content": "一个numpy数组x，shape是(a，1)，里面元素又是一个numpy数组，shape是(b，1)，里面元素又是一个numpy数组，shape是(c, 1)，里面元素是float32的数据，怎么把这个数组x里嵌套的数组提出来，使x的shape变成(a,b,c)，而且方法是最快的?",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-08-20 14:35",
+            "mcontent": "correct me if I'm wrong 看起来只能拷贝一遍，np据我所知没有这种多级指针表达方式"
+        },
+        {
+            "mid": "43367456",
+            "mtime": "2024-08-20 21:30",
+            "mcontent": "弱弱问下nparr.reshape()不行吗？"
+        },
+        {
+            "mid": "37828449",
+            "mtime": "2024-08-20 22:27",
+            "mcontent": "不行啊，因为数组本身shape是(a,1)"
+        },
+        {
+            "mid": "43367456",
+            "mtime": "2024-08-20 22:40",
+            "mcontent": "我构造类似数组得到的shape是(a 1 b 1 c 1)型，所以觉得可以用reshape，不知道你的数组什么样的，也许你可以用np.array再读取一次再reshape，或者nparr.flatten一维化再reshape"
+        },
+        {
+            "mid": "363254",
+            "mtime": "2024-08-21 20:23",
+            "mcontent": "为什么会有这种奇怪的嵌套数据？不应该让输入的size直接是(a b c)吗？"
+        },
+        {
+            "mid": "64563158",
+            "mtime": "2024-08-22 23:23",
+            "mcontent": "关键词，升维"
+        },
+        {
+            "mid": "60812778",
+            "mtime": "2024-08-27 15:37",
+            "mcontent": "x的dtype是object? 那只能新建一个a,b,c的数组，然后一个个复制过去。numpy的数组从定义上就必须是一块连续内存的连续数组，中间不能有空隙"
+        }
+    ]
+}

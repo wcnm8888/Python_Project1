@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42249586",
+    "title": "求助? 油猴更新到5.3.1后脚本失效",
+    "post_time": "2024-10-28 23:07",
+    "uid": "65017311",
+    "content": "大佬们，油猴自动更新到5.3.1之后，原先的脚本就不生效了。",
+    "replies": [
+        {
+            "mid": "65017311",
+            "mtime": "2024-10-29 00:04",
+            "mcontent": "已解决，是 kiwi/chrome 的问题，换了edge好用了"
+        },
+        {
+            "mid": "63881623",
+            "mtime": "2024-11-13 09:18",
+            "mcontent": "我的今天失效了，用的edge"
+        },
+        {
+            "mid": "62504350",
+            "mtime": "2024-11-19 21:36",
+            "mcontent": "拓展 更多找到开发者模式点开"
+        },
+        {
+            "mid": "26694751",
+            "mtime": "2024-11-20 06:43",
+            "mcontent": "推荐使用 violentmonkey"
+        },
+        {
+            "mid": "61168891",
+            "mtime": "2024-11-22 08:47",
+            "mcontent": "确实是这样的，此事在篡改猴的issues亦有记载[https:://github.com/Tampermonkey/tampermonkey/issues/2055#issuecomment-2197629497 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/Tampermonkey/tampermonkey/issues/2055#issuecomment-2197629497 https://github.com/Tampermonkey/tampermonkey/issues/2055#issuecomment-2197629497]需要装5.1.1版本的Tempermonkey Legacy [https:://chromewebstore.google.com/detail/%E7%AF%A1%E6%94%B9%E7%8C%B4/lcmhijbkigalmkeommnijlpobloojgfn 此网页不属于本网站，不保证其安全性  继续访问       取消 https://chromewebstore.google.com/detail/%E7%AF%A1%E6%94%B9%E7%8C%B4/lcmhijbkigalmkeommnijlpobloojgfn https://chromewebstore.google.com/detail/%E7%AF%A1%E6%94%B9%E7%8C%B4/lcmhijbkigalmkeommnijlpobloojgfn] 确实是kiwi的问题，不支持Manifest v3"
+        }
+    ]
+}

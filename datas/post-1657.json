@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38822505",
+    "title": "大佬们哪里能找到优质的数据集",
+    "post_time": "2023-12-27 19:45",
+    "uid": "61550333",
+    "content": "字段多，数据大那种，乱不乱脏不脏无所谓了，",
+    "replies": [
+        {
+            "mid": "61550333",
+            "mtime": "2023-12-27 19:47",
+            "mcontent": "非深度学习和机器学习方向，只是大数据处理"
+        },
+        {
+            "mid": "65224287",
+            "mtime": "2023-12-28 10:52",
+            "mcontent": "github上有不少整理分享的公开数据，我在用一个诗词库做训练。如果要字段特别多的真实数据可以考虑那些游戏拆解数据。"
+        },
+        {
+            "mid": "42986027",
+            "mtime": "2023-12-28 14:50",
+            "mcontent": "kaggle和天池我记得有些杂七杂八的数据集，可以看看"
+        },
+        {
+            "mid": "38939581",
+            "mtime": "2023-12-29 08:02",
+            "mcontent": "[http:://snap.stanford.edu/data/ 此网页不属于本网站，不保证其安全性  继续访问       取消 http://snap.stanford.edu/data/ http://snap.stanford.edu/data/]斯坦福的，熟用搜索引擎即可"
+        },
+        {
+            "mid": "34350802",
+            "mtime": "2024-01-02 23:45",
+            "mcontent": "寻找优质且大型的数据集，可以考虑以下资源或检索方法：Kaggle: Kaggle是一个数据科学竞赛平台，提供大量的数据集，涵盖各种主题和领域。数据集质量通常很高，包括各种复杂程度的数据。Google Dataset Search: 这是一个能够帮助用户找到可用数据集的搜索引擎。输入关键词，就可以找到公开的数据集资源。UCI Machine Learning Repository: 加州大学欧文分校提供的这个资源库包含多个领域的数据集，适用于机器学习和统计建模。Amazon Web Services (AWS) Public Data Sets: AWS提供了一些大型公共数据集，可以通过Amazon的云服务访问。政府数据库: 许多国家的政府网站都会提供公共数据集，例如美国的data.gov、英国的data.gov.uk等。学术资源: JSTOR、Springer、IEEE Xplore等学术数据库有时也会提供研究数据。专业社区: 如Reddit上的Data is Beautiful社区，常常有用户分享或推荐数据集。GitHub: 许多开源项目会在GitHub上公布数据集，搜索相关项目或主题可能会有收获。World Bank Open Data: 世界银行的开放数据网站，提供全球范围内的经济发展数据。使用这些资源时，输入与你研究主题相关的关键词进行搜索，通常可以找到各种规模和领域的数据集。记得在使用数据时，遵守数据的许可协议和使用条件。"
+        }
+    ]
+}

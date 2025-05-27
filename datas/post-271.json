@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42727878",
+    "title": "windows平台做操作自动化程序, 用什么lib比较好?",
+    "post_time": "2024-12-13 14:09",
+    "uid": "63478635",
+    "content": "用python的 pyautogui 做了一个, 不是很满意.",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-12-13 16:32",
+            "mcontent": "你想要自动化何种操作？微软有RPA  Power Automate不限语言windows最方便的难道不是c#吗？微软有全套windowd  API"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-12-13 16:51",
+            "mcontent": "如果只是模拟按键，不一定要用编程语言。例如可以用 AutoHotKey，这玩意还能做界面。之前玩暗黑3的时候就经常用 ahk 脚本，能做到这种效果:[https://bbs.nga.cn/read.php?tid=26377146 原贴链接]T 开源地址 [https:://github.com/WeijieH/D3keyHelper 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/WeijieH/D3keyHelper https://github.com/WeijieH/D3keyHelper]"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-12-14 00:12",
+            "mcontent": "AutoHotKeyAutoit"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-12-16 21:52",
+            "mcontent": "我以前在办公机上 直接用powershell (当c#调用opencvsharp，用ai写了一个函数，类似pyautogui的以图找图) ，然后直接调用ahk 或au3实现点击发送按钮(实际上send也可以直接调用vbscript，鼠标点击稍微麻烦点，不过统一用ahk也可以凑合)然后借鉴B站水哥的py rpa思路，用excel文件做参数表\\程序表，一个rpa流程就是一张表，主程序调用启动，设置终止按钮"
+        },
+        {
+            "mid": "65547581",
+            "mtime": "2025-01-03 17:26",
+            "mcontent": "我自己用ahk，再不行就用按键精灵吧"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43532815",
+    "title": "github 2fa验证找回问题求助",
+    "post_time": "2025-03-14 14:10",
+    "uid": "65433673",
+    "content": "之前公司电脑弄的 recovery code那个文件弄丢了 想问下还有啥法能登陆吗",
+    "replies": [
+        {
+            "mid": "60519280",
+            "mtime": "2025-03-15 06:48",
+            "mcontent": "发工单啊，都用github了ssh总有吧"
+        },
+        {
+            "mid": "66384983",
+            "mtime": "2025-03-15 13:53",
+            "mcontent": "是说2fa？我还以为打星际呢"
+        },
+        {
+            "mid": "65433673",
+            "mtime": "2025-03-15 15:29",
+            "mcontent": "2fa找回回发一次otp 下一步验证就有ssh验证，但是不知道为啥点不了，是灰色的"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39334407",
+    "title": "有c++98的基础，想学习c++11-20的新特性，有什么书推荐吗",
+    "post_time": "2024-02-18 14:26",
+    "uid": "42944365",
+    "content": "搜到的书都很厚，怀疑是从头讲起的",
+    "replies": [
+        {
+            "mid": "43318754",
+            "mtime": "2024-02-18 23:06",
+            "mcontent": "a tour of c++第三版。"
+        },
+        {
+            "mid": "42944365",
+            "mtime": "2024-02-23 15:00",
+            "mcontent": ""
+        },
+        {
+            "mid": "63258928",
+            "mtime": "2024-02-27 22:08",
+            "mcontent": "[https:://zh.cppreference.com/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://zh.cppreference.com/ https://zh.cppreference.com/]"
+        },
+        {
+            "mid": "62074391",
+            "mtime": "2024-02-28 10:56",
+            "mcontent": "[https:://changkun.de/modern-cpp/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://changkun.de/modern-cpp/ https://changkun.de/modern-cpp/]"
+        }
+    ]
+}

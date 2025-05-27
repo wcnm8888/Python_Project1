@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43173054",
+    "title": "ai入门有什么社区推荐？",
+    "post_time": "2025-02-01 15:35",
+    "uid": "60979781",
+    "content": "加了Datawhale的群发现没人说话",
+    "replies": [
+        {
+            "mid": "60382665",
+            "mtime": "2025-02-01 17:20",
+            "mcontent": "我们群里有个字节的佬的说懂ai最多的还是股票群"
+        },
+        {
+            "mid": "60451354",
+            "mtime": "2025-02-01 18:45",
+            "mcontent": "基础入门可以看看我的博客 不定期更新哈哈：[https:://0809zheng.github.io/2020/01/02/DL-outline.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://0809zheng.github.io/2020/01/02/DL-outline.html https://0809zheng.github.io/2020/01/02/DL-outline.html]"
+        },
+        {
+            "mid": "60979781",
+            "mtime": "2025-02-02 19:53",
+            "mcontent": "佬的群是怎么拉的"
+        },
+        {
+            "mid": "60382665",
+            "mtime": "2025-02-03 16:09",
+            "mcontent": "那个群我也进不去我的意思是说，你可以去大时代版去问问可能比本版获得的有效信息多"
+        },
+        {
+            "mid": "10495796",
+            "mtime": "2025-02-08 10:48",
+            "mcontent": "确实deepseek也是搞量化起家的"
+        },
+        {
+            "mid": "66434204",
+            "mtime": "2025-02-08 13:37",
+            "mcontent": "mark mark"
+        },
+        {
+            "mid": "42685479",
+            "mtime": "2025-02-08 17:18",
+            "mcontent": "没什么基础想完整学就从Machine learning开始，然后NN，然后走CV或者NLP的方向。基础好速成LLM就看下面这些人，尤其苏剑林的blog，数理统计一定要过关。[https:://www.zhihu.com/question/8465529163/answer/69370936332 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.zhihu.com/question/8465529163/answer/69370936332 https://www.zhihu.com/question/8465529163/answer/69370936332][https:://kexue.fm/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://kexue.fm/ https://kexue.fm/]"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39227922",
+    "title": "[JS] [求助] arco-design 里的数字输入控件没有正常双向绑定(是bug 已解决)",
+    "post_time": "2024-02-06 15:28",
+    "uid": "40525562",
+    "content": "我在网页上用的是",
+    "replies": [
+        {
+            "mid": "60433729",
+            "mtime": "2024-02-06 18:44",
+            "mcontent": "我记得vue3好像要把值return出去才能和页面双向绑定"
+        },
+        {
+            "mid": "37677835",
+            "mtime": "2024-02-06 19:14",
+            "mcontent": "setup函数把numberData变量return 出去"
+        },
+        {
+            "mid": "40525562",
+            "mtime": "2024-02-06 21:49",
+            "mcontent": "谢谢各位，这个数据已经 return 了的已经上报github，开发组已经标记 bug 了"
+        },
+        {
+            "mid": "65285820",
+            "mtime": "2024-02-26 11:51",
+            "mcontent": "我也遇到这个bug了，我的v-model的值是动态的，目前解决方案是通过change事件手动给绑定的变量赋值"
+        },
+        {
+            "mid": "16924624",
+            "mtime": "2024-02-26 15:10",
+            "mcontent": "vue的重大bug"
+        },
+        {
+            "mid": "40525562",
+            "mtime": "2024-02-26 21:59",
+            "mcontent": "我之前是加上 model-event=\"input\" 属性来解决的，现在已经更新2.54.5，bug已经解决"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40045155",
+    "title": "数理统计相关问题，matlab程序编写(大概)",
+    "post_time": "2024-05-02 12:46",
+    "uid": "65691254",
+    "content": "这张图片是什么？我能知道的是每行加起来符合正太分布。",
+    "replies": [
+        {
+            "mid": "63453772",
+            "mtime": "2024-05-02 20:51",
+            "mcontent": "你样品在2D样品平面上的散点图？"
+        },
+        {
+            "mid": "62544581",
+            "mtime": "2024-05-03 06:39",
+            "mcontent": "像是图像傅立叶变换后的图，中间加上掩模后，还原原图后会有一些变化"
+        },
+        {
+            "mid": "62136704",
+            "mtime": "2024-05-05 15:06",
+            "mcontent": "[https:://github.com/miloyip/light2d 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/miloyip/light2d https://github.com/miloyip/light2d]编辑：好吧 看起来是完全没关系的东西 不挖坟了。。。"
+        },
+        {
+            "mid": "60117794",
+            "mtime": "2024-05-05 18:27",
+            "mcontent": "有没有可能是二维正态分布的散点图"
+        }
+    ]
+}

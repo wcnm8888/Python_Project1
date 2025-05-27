@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39760437",
+    "title": "openwart 作为旁路由链接不上外网",
+    "post_time": "2024-04-03 23:02",
+    "uid": "40761024",
+    "content": "当前电脑主机跟装在了pve 上虚拟机的openwart 分别用一根网线连接主路由 已经配置了主路由作为旁路由openwart的网关",
+    "replies": [
+        {
+            "mid": "64261002",
+            "mtime": "2024-04-03 23:18",
+            "mcontent": "旁路由防火墙规则配置了吗？"
+        },
+        {
+            "mid": "62445471",
+            "mtime": "2024-04-04 15:40",
+            "mcontent": "v550，药到病除"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40088420",
+    "title": "各位大佬，门外汉求助安装青龙面板",
+    "post_time": "2024-05-07 11:29",
+    "uid": "62304967",
+    "content": "各位大佬，根据百度的教程，安装了Windows 版的docker，但是在powershell输入安装面板指令之后没有反应，是我的指令不准确还是怎么回事啊？",
+    "replies": [
+        {
+            "mid": "62396512",
+            "mtime": "2024-05-07 14:50",
+            "mcontent": "你都会用虚拟机了 为什么不直接看官方教程呢地址在这里 [qinglong]([https:://github.com/whyour/qinglong) 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/whyour/qinglong) https://github.com/whyour/qinglong)]Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:\n# curl -sSL get.docker.com | sh\ndocker run -dit \\\n  -v $PWD/ql/data:/ql/data \\\n  # 冒号后面的 5700 为默认端口，如果设置了 QlPort, 需要跟 QlPort 保持一致\n  -p 5700:5700 \\\n  # 部署路径非必须，比如 /test\n  -e QlBaseUrl=\"/\" \\\n  # 部署端口非必须，当使用 host 模式时，可以设置服务启动后的端口，默认 5700\n  -e QlPort=\"5700\" \\\n  --name qinglong \\\n  --hostname qinglong \\\n  --restart unless-stopped \\\n  whyour/qinglong:latest"
+        },
+        {
+            "mid": "62304967",
+            "mtime": "2024-05-07 19:04",
+            "mcontent": "大佬，上面的代码是直接输入powershell吗？我这边输入怎么说我不行呢？"
+        },
+        {
+            "mid": "62396512",
+            "mtime": "2024-05-08 08:47",
+            "mcontent": "这是 ubuntu 的，windows下你想用就上 wsl"
+        }
+    ]
+}

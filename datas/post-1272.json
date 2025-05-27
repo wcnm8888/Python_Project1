@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39736512",
+    "title": "今天弄下R语言的环境, 费了个血劲, 最后放弃了, 把操作系统改成window再试.",
+    "post_time": "2024-04-01 17:03",
+    "uid": "63478635",
+    "content": "旧环境反正是修不好了, 于是弄了台新服务器, 从头开始安装.",
+    "replies": [
+        {
+            "mid": "595942",
+            "mtime": "2024-04-01 18:16",
+            "mcontent": "为什么要在装 rstudio-server，自己开发还得用云端模式？本地搭个环境不行？实在不行用docker啦，都是弄好的环境，调试麻烦点"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-04-01 18:20",
+            "mcontent": "哎, 我也不懂R语言, 是个写R的, 不会用linux, 让我给他部署个环境. 我整不好, 给他弄了个windows服务器, 让他自己玩去了."
+        },
+        {
+            "mid": "18678153",
+            "mtime": "2024-04-01 22:51",
+            "mcontent": "linux不是一堆需要编译才能用的软件嘛……比如redis，一般按照网上教程编译就行了。我现在一般都是直接下docker镜像了，方便很多。"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-02 08:23",
+            "mcontent": "为什么不用dockerDocker images for R[https:://github.com/rstudio/r-docker 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/rstudio/r-docker https://github.com/rstudio/r-docker]"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-04-02 10:31",
+            "mcontent": "redis有可以直接用的，而且redis是一个非常独立的软件，基本上只要跑起来，你只要管用就行了，所以一般跑docker里面就行。如像R语言的运行环境，它可能要安装各种包，你要对它的环境进行高度定制化，用的过程当中，可能随时还要改一改，这就很复杂了。"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43700424",
+    "title": "利用Session传递值过期页面跳转问题",
+    "post_time": "2025-04-01 15:05",
+    "uid": "179943",
+    "content": "C#开发的，前端用的layui的框架，左侧是导航栏不变，我在登陆时候，利用Session传递用户值到打开页面，Session过期后跳转登陆界面，但是登陆界面内嵌在框架菜单右侧，有什么办法直接到登陆主页，不嵌套在菜单框架。",
+    "replies": [
+        {
+            "mid": "23173926",
+            "mtime": "2025-04-01 16:33",
+            "mcontent": "这个是要在前端做处理的吧 返回一个标识 比如HHTP状态码是401 前端根据401来做跳转"
+        },
+        {
+            "mid": "8777681",
+            "mtime": "2025-04-02 15:52",
+            "mcontent": "如果不跨域，内嵌页登录时做个js判断如果是内嵌页，把parent的url跳登录了？"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2025-04-02 17:16",
+            "mcontent": "void RedirectToLogin(){    Context.Response.Clear();    Context.Response.Write($\"<script>top.location.href='Default.aspx';</script>\");    Context.Response.End();}这样就行了"
+        },
+        {
+            "mid": "179943",
+            "mtime": "2025-04-03 09:09",
+            "mcontent": "谢谢，我用了这样的方法也可以了string script = \"<script>window.top.location.href='Default.aspx';</script>\";Response.Write(script);Response.End(); // 立即结束响应，避免后续代码执行"
+        }
+    ]
+}

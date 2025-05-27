@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40337602",
+    "title": "Verilog怎么例化内部信号",
+    "post_time": "2024-05-28 15:08",
+    "uid": "65266054",
+    "content": "前提不改设计",
+    "replies": [
+        {
+            "mid": "43239110",
+            "mtime": "2024-06-11 09:41",
+            "mcontent": "单独加打印模块不行吗"
+        },
+        {
+            "mid": "65266054",
+            "mtime": "2024-06-11 11:19",
+            "mcontent": "解决了 直接可以wire调用"
+        }
+    ]
+}

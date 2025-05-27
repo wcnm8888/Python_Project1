@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38972915",
+    "title": "小白求助各位大佬一个问题，windows版本的docker怎么安装NVIDIA Container Toolkit",
+    "post_time": "2024-01-12 12:06",
+    "uid": "41555619",
+    "content": "# Step2: 将镜像下载到本地 (前提是已经安装了docker engine并启动服务，具体可参考：",
+    "replies": [
+        {
+            "mid": "2504017",
+            "mtime": "2024-01-12 12:08",
+            "mcontent": "这个要win11+wsl2吧"
+        },
+        {
+            "mid": "41555619",
+            "mtime": "2024-01-12 12:24",
+            "mcontent": "我是用的win10+wsl2 也下载了ubuntu,但是点运行就出(HTTP code 500) server error - failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error running hook #0: error running hook: exit status 1, stdout: , stderr: Auto-detected mode as 'legacy' nvidia-container-cli: mount error: file creation failed: /var/lib/docker/overlay2/bd5b27f88749abb127d163378d2c140de76c102188fb4d1999871acd444d220b/merged/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1: file exists: unknown这个"
+        },
+        {
+            "mid": "2504017",
+            "mtime": "2024-01-12 12:32",
+            "mcontent": "这就不清楚了。。"
+        },
+        {
+            "mid": "5041763",
+            "mtime": "2024-01-12 16:54",
+            "mcontent": "先装wsl2，在wsl里面装docker啥的"
+        },
+        {
+            "mid": "363254",
+            "mtime": "2024-01-12 18:38",
+            "mcontent": "都用docker了为啥不用linux？"
+        },
+        {
+            "mid": "60425896",
+            "mtime": "2024-01-14 20:53",
+            "mcontent": "确认几个点:1. 安装的是windows的cuda驱动 2.wsl安装NVIDIA CUDA toolkit 3.wsl安装NVIDIA Container Toolkit"
+        }
+    ]
+}

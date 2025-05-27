@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43437424",
+    "title": "关于dify使用API调用模型",
+    "post_time": "2025-03-04 10:15",
+    "uid": "65431548",
+    "content": "我输入API key之后点保存之后就一直卡着，卡了得有一分钟最后也没保存成功，但是也没有提示报错啊，豆包的我也是这个情况，有老哥帮一下吗",
+    "replies": [
+        {
+            "mid": "42685479",
+            "mtime": "2025-03-04 13:44",
+            "mcontent": "https，不是http。"
+        },
+        {
+            "mid": "42602789",
+            "mtime": "2025-03-09 01:14",
+            "mcontent": "dify默认安装包修改squid配置文件来支持httpfind / -name squid.conf.templatecd xxvim squid.conf.templatedocker start xx"
+        }
+    ]
+}

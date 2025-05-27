@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39988018",
+    "title": "Rsocket协议相关",
+    "post_time": "2024-04-26 21:42",
+    "uid": "61082258",
+    "content": ".net客户端对接 java 服务端，如何在metadata 中加入路由的同时 加入 请求头， 由于.net这边 发送数据时都是二进制数组， 在组成路由再拼上请求头 服务端就会连着请求头认为是路由 导致无法进入接口，请问 metadata 的二进制数组该如何去拼，文档翻遍了都没找到",
+    "replies": []
+}

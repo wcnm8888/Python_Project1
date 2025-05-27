@@ -1,0 +1,64 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42179193",
+    "title": "请教 C++ .dll缺少头文件时候使用类的问题",
+    "post_time": "2024-10-23 16:46",
+    "uid": "536515",
+    "content": "各位大佬好，我自己封装了C++的类，输出到DLL里，想要使用的时候不显式的使用头文件。",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-10-23 16:58",
+            "mcontent": "不显式的使用头文件  把C++接口写一遍是什么歪门邪路，那你为什么不用头文件呢正常来说 不用头文件 基本上只有c abi一条路走 把c++再加一层c包装 然后dlopen dlsymbol调用(windows不熟 应该类似你要是把不同编译器mangle规则写一遍 C++也可以这么用"
+        },
+        {
+            "mid": "536515",
+            "mtime": "2024-10-23 17:04",
+            "mcontent": "我重写一遍只写了我用的上的，我以为可以这么操作的。。。"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-10-23 17:16",
+            "mcontent": "你想想这跟你include一遍头文件有什么区别 就是为了写两遍么 为什么不把你要的内容放头文件里呢另外这些应该都是链接问题 不过我也不懂VC"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-10-23 23:08",
+            "mcontent": "我们搞逆向没头文件只能这么玩，你有头文件还这么玩不是自找麻烦么"
+        },
+        {
+            "mid": "62409105",
+            "mtime": "2024-10-24 10:03",
+            "mcontent": "你在所有方案里选了个既浪费体力又不能保证正确性的。C++没有ABI，只有编译器维护者知道导出的符号名称和源码之间的关系。换句话说，你这种方法想要能用，那就必须保证你库项目里A::Go()导出的符号名称和你应用里A::Go()编译出的符号名称是完全一致的。但这保证只是你想象出来的，标准不这么认为，编译器也不这么认为，只有你这么认为。如果你想隐藏头文件里的实现细节不被应用看到，那就应该把头文件分成Public和Private两部分。"
+        },
+        {
+            "mid": "536515",
+            "mtime": "2024-10-24 14:58",
+            "mcontent": "多谢各位大佬。我现在改成从类里拿出来用一个单独的函数了。这种情况自己在.cpp里做一个相同的声明应该是没问题了吧？另外如果想了解这部分知识有推荐的网站或者浅显的书籍吗？"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-10-24 19:38",
+            "mcontent": "感觉在对牛弹琴都跟你说了用头文件怎么就听不明白 也跟你讲了关键字 abi和c++ name mangling 程序员的自我修养 名字很装逼 实际上主要讲编译链接装载"
+        },
+        {
+            "mid": "536515",
+            "mtime": "2024-10-25 08:46",
+            "mcontent": "恕我愚钝，现在改成这样，还是会有风险吗？库项目：Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29: \n\nclass _declspec(dllexport) A\n{\npublic:\n  Aimpl* pBase;\n  Go(){\n    pBase->someFunction();\n  }\n//  ···还有好多其他的东西····\n}\n\nclass _declspec(dllexport) B:virtual public A\n{\npublic:\n  Bimpl* bChild; // Bimpl又是Aimpl的一个子类\n  B()\n  {\n    bChild = new Bimpl();\n    pBase = bChild;\n  }  \n // ···· 还有许多其他东西····\n}\nvoid _declspec(dllexport) MyGo()\n{\n    B b;\n    b.Go();\n}\n c应用项目：Code c:1:2:3:4:5:6:7:8:9:10: \n// 显式地写出需要的函数\nvoid  __declspec(dllimport) MyGo();\n\n\nint main()\n{\n  MyGo();\n}\n c"
+        },
+        {
+            "mid": "3254823",
+            "mtime": "2024-11-03 01:44",
+            "mcontent": "[quote]+R by  [mataocol] (2024-10-25 08:46)恕我愚钝，现在改成这样，还是会有风险吗？库项目：Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18: \n\nclass _declspec(dllexport) A\n{\npublic:\n  Aimpl* pBase;\n  Go(){\n    pBase->someFunction();\n  }\n//  ···还有好多其他的东西····\n}\n\nclass _declspec(dllexport) B:virtual public A\n{\npublic:\n  Bimpl* bChild; // Bimpl又是Aimpl的一个[/quote]\n\n如果你的库只对外开放MyGo，那么你的public头文件里就应该只含有MyGo函数，把类定义都给我写到private头文件里去如果你的库只对外开放MyGo，那么你的public头文件里就应该只含有MyGo函数，把类定义都给我写到private头文件里去"
+        },
+        {
+            "mid": "63213928",
+            "mtime": "2024-11-03 02:45",
+            "mcontent": "cpp类导出还不让用头文件……建议你学学msvc导出的时候要对符号做多少事情纯c库还能用getprocaddress来拿符号地址，只要知道参数数量类型就能用，cpp的两眼一黑"
+        },
+        {
+            "mid": "42329716",
+            "mtime": "2024-11-10 13:34",
+            "mcontent": "你是不是要用IMPL模式？再写一个类作为接口类，调用你现在的类，DLL只导出接口类。"
+        }
+    ]
+}

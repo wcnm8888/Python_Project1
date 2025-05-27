@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43631451",
+    "title": "周五晚上连麦直播 AI编程、MCP、独立开发",
+    "post_time": "2025-03-25 12:51",
+    "uid": "61141074",
+    "content": "上上周五的直播效果很好，大家聊的很开心，这周五咱们继续。",
+    "replies": [
+        {
+            "mid": "61141074",
+            "mtime": "2025-03-25 12:59",
+            "mcontent": "自顶"
+        },
+        {
+            "mid": "61141074",
+            "mtime": "2025-03-25 13:13",
+            "mcontent": "不加群的老哥可以直接扫"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2025-03-27 04:02",
+            "mcontent": "MCP这玩意类似东西我两年前就做过了，OpenAI 自己那个人GPT tools一开始就有完整的格式现在anthropic在业内推广这个的确功德无量，但还真就不是新东西"
+        },
+        {
+            "mid": "61141074",
+            "mtime": "2025-03-27 17:30",
+            "mcontent": "OpenAI支持MCP，这回稳了"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2025-03-27 19:16",
+            "mcontent": "由于用dify的原因，之前一直按openai 丝袜哥 [https:://swagger.io/specification/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://swagger.io/specification/ https://swagger.io/specification/] 的标准来写服务端工具的，相比起来，MCP有哪些优势"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2025-03-27 20:55",
+            "mcontent": "不一样的东西，严格来说所谓Model Context Protocol并不是严格的protocol-协议，应该说是manifesto-声明，是一个有固定格式的api释义。anthropic这回搞这个是撘着agent定义的风想要推动一个更普遍的东西。这东西目前在各自模型的内部应用架构里面早就不是新鲜事，Gemini有Gemini Studio，OpenAI有GPT Marketplace，这俩在我的经验里是现在agentic的前身，甚至比现在agentic module更完整。MCP目标是第三方应用如Cursor、Winsurf什么的，在基础模型自身生态圈外的应用支持。你要说好处吧肯定是大大的，给我们这种小鱼小虾分一杯羹，你要说创新什么的是真的么有，因为LLM 并不需要一个固定格式去理解API怎么用LLM最基础的能力就是读文件啊，你得把调用API对应的硬件做好(本质上其实就是一个能跑LLM回复的核心组件以及所有你想加上的安全层什么的)，其他都是换汤不换药的玩意"
+        }
+    ]
+}

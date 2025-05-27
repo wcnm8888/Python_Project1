@@ -1,0 +1,69 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40559040",
+    "title": "sql求助，来人帮帮孩子",
+    "post_time": "2024-06-16 19:56",
+    "uid": "38994951",
+    "content": "有这么1个需求，我有个表需要对时间列进行筛选，筛选当天比上一级时间差大于等于2min的数值，并对其数值进行累加。",
+    "replies": [
+        {
+            "mid": "63782286",
+            "mtime": "2024-06-16 22:28",
+            "mcontent": "数据的量大吗？如果数据量不大，还不如一个select取回来，在你的应用层代码里再处理。"
+        },
+        {
+            "mid": "38994951",
+            "mtime": "2024-06-16 22:57",
+            "mcontent": "有点吧，20万行，一个个取的话太感觉太花时间了？"
+        },
+        {
+            "mid": "63782286",
+            "mtime": "2024-06-16 23:09",
+            "mcontent": "[https:://stackoverflow.com/questions/907366/self-join-of-a-subquery 此网页不属于本网站，不保证其安全性  继续访问       取消 https://stackoverflow.com/questions/907366/self-join-of-a-subquery https://stackoverflow.com/questions/907366/self-join-of-a-subquery]感觉可以参考这个例子，subquery是select出当天的所有行，但需要加上ROW_NUMBER，参考[https:://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver16 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver16 https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver16]然后self join subquery，利用上下两行的row_index差一作为join的条件。"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2024-06-17 01:30",
+            "mcontent": "你这需要对所有行排序后相邻行计算除了楼上说的全取出来如果不要求实时计算，就只能提前算好用中间表把相邻值算出来，到时再取"
+        },
+        {
+            "mid": "63326825",
+            "mtime": "2024-06-17 07:46",
+            "mcontent": "先说下什么数据库 数据库不同写法不太一样"
+        },
+        {
+            "mid": "38994951",
+            "mtime": "2024-06-17 07:51",
+            "mcontent": "试了下，把两个分开依次运行，效率有点感人，差不多15s一次。但是我要根据不同的条件筛选并运行4次。还有个无法解决的问题。以下这种情况会导致值出错，不知道为啥。1  2024-06-17  09：00：002  2024-06-17  09：00：003  2024-06-17  09：20：004  2024-06-17  09：20：002-1  -326403-2  12004-3   324002-1和4-3值相同，求差值得时候会异常，搞得我怀疑人生。"
+        },
+        {
+            "mid": "63326825",
+            "mtime": "2024-06-17 08:40",
+            "mcontent": "CREATE TABLE test  (  `CreateDate` datetime(0) NULL);insert into testselect '2024-06-15 17:00:00' union allselect '2024-06-16 18:00:00' union ALLselect '2024-06-16 18:01:30' union ALLselect '2024-06-16 18:03:00' union ALLselect '2024-06-16 18:10:00' union ALLselect '2024-06-16 18:20:00';;with t as (select CreateDate,ROW_NUMBER() over(order by createDate asc) as rowNum from test)select dateDay,sum(col1) as totalMinutes from (select DATE_FORMAT(a.CreateDate, '%Y-%m-%d') as dateDay,case when DATE_FORMAT(a.CreateDate, '%Y-%m-%d')=DATE_FORMAT(b.CreateDate, '%Y-%m-%d')then TIMESTAMPDIFF(SECOND, a.CreateDate, b.CreateDate)/60else 0 end as col1from t a left join t bon a.rowNum=b.rowNum-1)temp where temp.col1>=2group by dateDay"
+        },
+        {
+            "mid": "18678153",
+            "mtime": "2024-06-17 09:45",
+            "mcontent": "筛选属于今天的全查出来按时间倒序排列，存到list，再遍历所有前后两两数值的差，再过滤所有差小于2分钟的。"
+        },
+        {
+            "mid": "34907127",
+            "mtime": "2024-06-17 14:13",
+            "mcontent": "直接窗口函数秒了不行吗，lag一下就取到前一行了Select CreateDate, lag(CreateDate) over (order by CreateDate) as PrevDate from xxx然后外面套个条件写两个日期的关系筛选一下汇总完事"
+        },
+        {
+            "mid": "64835075",
+            "mtime": "2024-06-17 17:17",
+            "mcontent": "WITH TimeDiffs AS (    SELECT        CreateDate,        TIMESTAMPDIFF(MINUTE, LAG(CreateDate) OVER (ORDER BY CreateDate), CreateDate) AS DiffMinutes    FROM        TimeRecords    WHERE        DATE(CreateDate) = '2024-06-16')SELECT    SUM(DiffMinutes) AS TotalMinutesFROM    TimeDiffsWHERE    DiffMinutes >= 2;摘自GTP老弟"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-06-17 17:33",
+            "mcontent": "数据库里面不要用time格式，直接用毫秒。"
+        },
+        {
+            "mid": "38994951",
+            "mtime": "2024-06-17 23:31",
+            "mcontent": "好的，回头我试试"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39480655",
+    "title": "cuda和pytorch相关求助",
+    "post_time": "2024-03-04 23:57",
+    "uid": "62615005",
+    "content": "好哥哥们求助，在配置cuda和pytorch时候遇到了奇怪的问题",
+    "replies": [
+        {
+            "mid": "38361313",
+            "mtime": "2024-03-05 03:49",
+            "mcontent": "老生常谈了，torch装的cpu版本"
+        },
+        {
+            "mid": "60489271",
+            "mtime": "2024-03-05 07:17",
+            "mcontent": "到官网找对应版本的gpu版安装,[https:://pytorch.org/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://pytorch.org/ https://pytorch.org/]"
+        },
+        {
+            "mid": "62615005",
+            "mtime": "2024-03-05 07:43",
+            "mcontent": "好的好的，感谢"
+        },
+        {
+            "mid": "62615005",
+            "mtime": "2024-03-05 07:43",
+            "mcontent": "感谢！"
+        }
+    ]
+}

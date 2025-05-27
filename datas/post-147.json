@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43334315",
+    "title": "[求助] 有用VSCode的continue插件的么",
+    "post_time": "2025-02-20 20:46",
+    "uid": "41477066",
+    "content": "之前用的是FittenCode，今天想尝尝鲜用Continue配了一个DeepSeek的API Key，对话什么的能正常用但是自动TAB补全一直没反应，是需要怎么配置么，或者是单纯的非常慢/连不上？",
+    "replies": [
+        {
+            "mid": "61875796",
+            "mtime": "2025-02-23 13:51",
+            "mcontent": "对话和代码补全是俩配置。而且ds现在服务也不是很稳定。"
+        },
+        {
+            "mid": "61868564",
+            "mtime": "2025-02-25 17:31",
+            "mcontent": "还是用cursor吧，ds不扩容前都不太稳定"
+        }
+    ]
+}

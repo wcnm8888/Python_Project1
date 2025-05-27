@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41856525",
+    "title": "Java程序员被领导通知要去接受管理一个python 和cpp 结合的项目",
+    "post_time": "2024-09-30 11:04",
+    "uid": "64831391",
+    "content": "那个组的leader 今天离职走了，大领导给我说让我国庆后过去当leader ，我tm都没做过python和cpp 的项目，这要如何接手呢？",
+    "replies": [
+        {
+            "mid": "41318649",
+            "mtime": "2024-09-30 11:10",
+            "mcontent": "cpp毕业后基本没接触过，python倒是自己做了些小模块有java经验的话应该还好吧"
+        },
+        {
+            "mid": "40555521",
+            "mtime": "2024-09-30 11:51",
+            "mcontent": "是去做leader又不是让你干committer也还好吧"
+        },
+        {
+            "mid": "62746519",
+            "mtime": "2024-10-02 14:23",
+            "mcontent": "如果连语言都接触很少没法做执行层的leader"
+        }
+    ]
+}

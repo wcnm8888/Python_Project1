@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40153751",
+    "title": "银行码农，有什么推荐书目吗",
+    "post_time": "2024-05-13 14:20",
+    "uid": "61367055",
+    "content": "每天地铁通勤要坐接近2小时，想着可以利用这个时间看看书，大佬们有什么推荐的书吗",
+    "replies": [
+        {
+            "mid": "19874886",
+            "mtime": "2024-05-13 18:20",
+            "mcontent": "什么技术栈？java就算法，java多线程，jvm虚拟机，spring那些八股。业务找点讲交易的书看看，记一下专业术语。比如brokerage, security, long/short, loan, swap, fix income"
+        },
+        {
+            "mid": "41633215",
+            "mtime": "2024-05-13 18:36",
+            "mcontent": "数据密集型应用设计 [https:://vonng.gitbooks.io/ddia-cn/content/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://vonng.gitbooks.io/ddia-cn/content/ https://vonng.gitbooks.io/ddia-cn/content/]"
+        },
+        {
+            "mid": "3176991",
+            "mtime": "2024-05-13 20:27",
+            "mcontent": "考虑在技术领域深入的话，一般自己都清楚该学什么。没思路的话，还是从应用角度看看银行从业考试系列教材吧。"
+        }
+    ]
+}

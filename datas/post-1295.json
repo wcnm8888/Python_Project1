@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39676537",
+    "title": "arcgis分式标注整不明白了",
+    "post_time": "2024-03-26 13:48",
+    "uid": "60465784",
+    "content": "照着攻略给的表达式一字一句抄的，验证就是通不过了，求助各位",
+    "replies": [
+        {
+            "mid": "65295969",
+            "mtime": "2024-03-26 16:54",
+            "mcontent": "这是什么语言 我不会帮不了你"
+        },
+        {
+            "mid": "60465784",
+            "mtime": "2024-03-26 16:59",
+            "mcontent": "貌似是vbscript"
+        },
+        {
+            "mid": "61493082",
+            "mtime": "2024-03-29 16:05",
+            "mcontent": "\"<und >\" & \"|TBDLM\" & \"</und>\" & vbCrLf & \"[TBBH]\""
+        }
+    ]
+}

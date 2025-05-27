@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40384001",
+    "title": "这个宏怎么编译过的",
+    "post_time": "2024-06-01 11:00",
+    "uid": "63772608",
+    "content": "",
+    "replies": [
+        {
+            "mid": "63772608",
+            "mtime": "2024-06-01 11:01",
+            "mcontent": "今天看到代码里有一个这种样子的宏，没理解是怎么能编译过的，我参考格式写了个，这个例子就编不过"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-01 11:25",
+            "mcontent": "你这个例子肯定不行,应该是前后两个宏配套起来才行,把上锁后的执行的代码写在两个宏之间,比如这种[https:://en.cppreference.com/w/c/variadic 此网页不属于本网站，不保证其安全性  继续访问       取消 https://en.cppreference.com/w/c/variadic https://en.cppreference.com/w/c/variadic]gcc -E请"
+        },
+        {
+            "mid": "63772608",
+            "mtime": "2024-06-01 12:41",
+            "mcontent": "懂了，thx"
+        }
+    ]
+}

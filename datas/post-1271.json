@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39740965",
+    "title": "lstm网络训练模型但中文乱码",
+    "post_time": "2024-04-02 01:11",
+    "uid": "63185114",
+    "content": "原代码本来是tensorflow的，因为电脑不是n卡所以改在ai studio进行，遂使用paddlepaddle",
+    "replies": [
+        {
+            "mid": "63478635",
+            "mtime": "2024-04-02 10:59",
+            "mcontent": "首先检查你的字典里面有没有中文。其次，检查你的编辑环境能不能输出中文。"
+        }
+    ]
+}

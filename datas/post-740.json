@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41173214",
+    "title": "[求助]安卓原生开发如何解决组件之间的滑动冲突？",
+    "post_time": "2024-08-08 17:47",
+    "uid": "65807333",
+    "content": "如图，ScrollView下有一个include的layout, 其中的TimeRangePicker是用的开源组件，支持拖动，但是会与ScrollView的拖动上下移动产生冲突，请问有大佬知道如何解决吗？",
+    "replies": []
+}

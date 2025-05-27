@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43747908",
+    "title": "DV通配符 ssl证书哪个渠道价格实惠",
+    "post_time": "2025-04-07 01:19",
+    "uid": "13147636",
+    "content": "或者说哪家经销商",
+    "replies": [
+        {
+            "mid": "3363460",
+            "mtime": "2025-04-07 11:47",
+            "mcontent": "对有效期有要求吗？没要求的话，acme.sh 可以申请免费的通配符证书，有效期三个月，记得更新就行。acme.sh --issue --dns -d your-domain.com -d *.your-domain.com申请acme.sh --renew -d your-domain.com -d *.your-domain.com刷新acme.sh --install-cert -d your-domain.com-d *.your-domain.com --key-file your-domain.com.key --fullchain-file your-domain.com.cer输出证书文件"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-04-07 21:28",
+            "mcontent": ""
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2025-04-07 23:18",
+            "mcontent": "单域名也得验证啊，不然怎么证明域名是你的？自动更新是 acme.sh --cron，自动检查证书是否过期，如果过期就重新签发。"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-04-08 11:01",
+            "mcontent": "但是通配符的域名解析验证，得有域名商的API才行吧"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2025-04-08 11:09",
+            "mcontent": "泛域名和和单域名是一样的。[https:://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert]所谓的验证方式实际上是证书提供商要求的：文件验证 (webroot)、DNS (TXT/CNAME)验证。首选 DNS API 是因为这种方式最方便(不用手动操作)，但前提是域名提供商支持 DNS API。实际上 DNS API 也只是帮你修改DNS解析、添加验证字段而已，完全可以手动操作的。[https:://github.com/acmesh-official/acme.sh/wiki/DNS-manual-mode 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/acmesh-official/acme.sh/wiki/DNS-manual-mode https://github.com/acmesh-official/acme.sh/wiki/DNS-manual-mode]acme.sh --issue --dns 会生成一个 .acme-challenge (二级域名就是 {subdomain}.acme-challenge) 的 DNS TXT / CNAME 校验值，你自己去修改DNS解析就行。如果不方便修改域名解析，那就考虑用文件验证的方式。"
+        },
+        {
+            "mid": "65827429",
+            "mtime": "2025-04-08 15:40",
+            "mcontent": "我建议直接用certify：[https:://certifytheweb.com/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://certifytheweb.com/ https://certifytheweb.com/]我之前也是先用acme.sh，后面用certbot，脚本自动更新的话很麻烦，手动操作更新感觉也有点麻烦，现在直接用certify，可视化面板就是爽，不需要每次更新就去配置新的解析记录值，只需要配置一下云服务器的AccessKey就行了。"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-04-08 23:12",
+            "mcontent": ""
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41769668",
+    "title": "docker有没有什么还活着的镜像呀",
+    "post_time": "2024-09-23 18:41",
+    "uid": "42331943",
+    "content": "换了好几个全都挂了",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-09-23 21:41",
+            "mcontent": "cloudflare worker代理"
+        },
+        {
+            "mid": "26270019",
+            "mtime": "2024-09-24 06:24",
+            "mcontent": "代理或者翻吧，我们生产环境镜像全炸了，还好有缓存，前几周疯狂手动做镜像"
+        },
+        {
+            "mid": "12987347",
+            "mtime": "2024-09-24 09:16",
+            "mcontent": "Code c:1:2:3:4:5:6:7:\n{\n  \"registry-mirrors\": [\n    \"https://docker.m.daocloud.io\"\n  ]\n}\n只有部分镜像"
+        },
+        {
+            "mid": "61496700",
+            "mtime": "2024-10-22 11:03",
+            "mcontent": "dockerpull.com"
+        },
+        {
+            "mid": "66292507",
+            "mtime": "2024-10-30 14:07",
+            "mcontent": "{\"registry-mirrors\": [\"[https:://docker.1panel.live\",/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://docker.1panel.live\",/ https://docker.1panel.live\",/]\"[https:://hub.rat.dev\"/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://hub.rat.dev\"/ https://hub.rat.dev\"/]]}我前一阵用的这俩"
+        },
+        {
+            "mid": "60205023",
+            "mtime": "2024-10-30 21:23",
+            "mcontent": "有没有老哥知道为啥我配置了镜像源但是还是从dockerhub拉呢"
+        },
+        {
+            "mid": "66299336",
+            "mtime": "2024-10-31 09:46",
+            "mcontent": "要不是服务没重启导致配置没生效，要不是配置的加速凉了"
+        },
+        {
+            "mid": "60205023",
+            "mtime": "2024-10-31 09:59",
+            "mcontent": "reload 和restar都做了  就是凉了的原因吗  docker info能看到配置成功了的"
+        }
+    ]
+}

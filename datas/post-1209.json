@@ -1,0 +1,84 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39735000",
+    "title": "java求助，请问这个该怎么写",
+    "post_time": "2024-04-01 14:38",
+    "uid": "63486202",
+    "content": "老师的要求是能输入年份并判断是不是闰年",
+    "replies": [
+        {
+            "mid": "8777681",
+            "mtime": "2024-04-01 14:55",
+            "mcontent": "项目里的，原生api或者jodatime[https:://www.baeldung.com/java-leap-year 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.baeldung.com/java-leap-year https://www.baeldung.com/java-leap-year]老师要求算法写着玩的，读一遍定义写取模[https:://www.programiz.com/java-programming/examples/leap-year 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.programiz.com/java-programming/examples/leap-year https://www.programiz.com/java-programming/examples/leap-year]"
+        },
+        {
+            "mid": "62766194",
+            "mtime": "2024-04-01 17:08",
+            "mcontent": "逻辑是能被4且不能被100整除的年份为闰年判定逻辑为n取余4为0且取余100为0所以那俩个/应该用%下面的闰年flag  判定 相当是俩个等于号你写成了一个"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-04-01 17:26",
+            "mcontent": "year 无取值应该是输入给year 或者s1做取余判断吧"
+        },
+        {
+            "mid": "64505805",
+            "mtime": "2024-04-01 17:36",
+            "mcontent": "不是大一就学开java了"
+        },
+        {
+            "mid": "595942",
+            "mtime": "2024-04-01 18:44",
+            "mcontent": "逻辑先放一边，你得先解决java语法问题，这个year 都没赋过值，怎么除4啊～～～"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-01 23:13",
+            "mcontent": "要不问问chatgpt？"
+        },
+        {
+            "mid": "62767347",
+            "mtime": "2024-04-01 23:47",
+            "mcontent": "槽点太多了，要不你先把课堂上讲的东西再看一遍？"
+        },
+        {
+            "mid": "64458610",
+            "mtime": "2024-04-02 08:31",
+            "mcontent": "从零学吧，建议"
+        },
+        {
+            "mid": "63551890",
+            "mtime": "2024-04-02 10:57",
+            "mcontent": "找个Java文档看吧……文档懒的看随便搜个Java视频看也行"
+        },
+        {
+            "mid": "39736277",
+            "mtime": "2024-04-03 10:57",
+            "mcontent": "你首先需要先通过system in 获取输入的值， 然后再进行下面的判断， 程序执行是自上而下的(目前你这么理解没问题)，没有赋值的 int类型 默认都是 0 哦"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-04-03 18:14",
+            "mcontent": "最粗糙的写法."
+        },
+        {
+            "mid": "60405384",
+            "mtime": "2024-04-04 12:46",
+            "mcontent": "java 目前好像没有 defer，你要这么写需要抽成方法，或者像楼上一样顺序执行"
+        },
+        {
+            "mid": "60167644",
+            "mtime": "2024-04-13 12:41",
+            "mcontent": "你这很多变量都没赋值啊，而且哪里有a=b=c这种玩意。。。新手上路还是跟着老师或者免费的文档视频学吧"
+        },
+        {
+            "mid": "38921524",
+            "mtime": "2024-04-13 14:16",
+            "mcontent": "如果未来不考虑走开发这条路 推荐你往自己的IDE装个ai工具 不说收费的Copilot 就是国产的通义灵码之流就足以应付这种问题了"
+        },
+        {
+            "mid": "26292485",
+            "mtime": "2024-04-13 19:00",
+            "mcontent": "现在java可不好找工作"
+        }
+    ]
+}

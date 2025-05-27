@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43448788",
+    "title": "[有偿求助]如何编译ARM64的rocketmq dynamic library",
+    "post_time": "2025-03-05 14:49",
+    "uid": "62608910",
+    "content": "接手了接口自动化的项目，用到了rocketmq作为消息发送件，运行case报错rocketmq dynamic library not found。然后下载了源码指向了动态库后，运行报错。搜了一下说是需要手动本地编译ARM64的librocketmq.dylib。编译过程中报了各种各种各样的错误，看了很多个方法，一直没有解决，求助各位大佬有没有相关经验",
+    "replies": [
+        {
+            "mid": "62608910",
+            "mtime": "2025-03-05 14:52",
+            "mcontent": "和豆包deepseek聊出火星了都，最新的进展是编译boost提示跳过了5个target，先不管了，继续用make编，报错ndefined symbols for architecture arm64:  \"boost::filesystem::detail::create_directory(boost::filesystem::path const&, boost::system::error_code*)\", referenced from:      rocketmq::MQClientAPIImpl::fetchNameServerAddr(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&) in MQClientAPIImpl.cpp.old: symbol(s) not found for architecture arm64clang: error: linker command failed with exit code 1 (use -v to see invocation)make[2]: *** [/Users/a1021500362/Downloads/rocketmq-client-cpp-2.2.0/bin/librocketmq.dylib] Error 1make[1]: *** [project/CMakeFiles/rocketmq_shared.dir/all] Error 2make: *** [all] Error 2"
+        }
+    ]
+}

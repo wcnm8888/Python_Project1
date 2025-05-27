@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40197786",
+    "title": "问下container_of宏能不能改写成CPP模板",
+    "post_time": "2024-05-17 11:29",
+    "uid": "64375529",
+    "content": "最近在看教程自己搓Redis，发现一个特别神奇的宏，倒是看懂它是干嘛的了，但因为我学编程看的教材思想都比较现代，有些抵触C语言宏，然后想着试试看能不能用CPP的模板元编程改写一下。",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-05-17 12:19",
+            "mcontent": "Google is your friend, as well as StackOverflow.[https:://stackoverflow.com/questions/40851092/container-of-macro-in-c-with-the-same-signature-as-cs 此网页不属于本网站，不保证其安全性  继续访问       取消 https://stackoverflow.com/questions/40851092/container-of-macro-in-c-with-the-same-signature-as-cs https://stackoverflow.com/questions/40851092/container-of-macro-in-c-with-the-same-signature-as-cs]"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-05-17 12:22",
+            "mcontent": "话说也没什么神奇的吧。。求出member field offset 然后从member指针减掉offset拿到owner指针。。实现侵入式数据结构有用，但是cpp里面你真的需要侵入式链表/容器？"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2024-05-17 12:35",
+            "mcontent": "我学编程就是业余爱好，嵌入式数据结构以前还真没见过，想试着把它写成CPP模板也只是为了锻炼一下语言基础能力，自己写东西当然还是用标准库提供的容器"
+        },
+        {
+            "mid": "60436388",
+            "mtime": "2024-05-17 22:07",
+            "mcontent": "Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:\ntemplate<typename T, typename U>\nconstexpr T* my_container_of(U *member, U T::*field) {\n    auto dangling = (T*)alignof(T);\n    auto offset = (char*)&(dangling->*field) - (char*)dangling;\n    return (T*)((char*)member - offset);\n}\n\n// 使用例\nstruct Container {\n    int wtf, member;\n};\nContainer container;\nauto memberPtr = &container.member;\nauto containerPtr = my_container_of(memberPtr, &Container::member);"
+        },
+        {
+            "mid": "96873",
+            "mtime": "2024-05-24 20:55",
+            "mcontent": "这是Linux里面的经典宏，可能你用不到的吧。"
+        }
+    ]
+}

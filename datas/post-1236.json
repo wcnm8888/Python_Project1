@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39804018",
+    "title": "Jenkins怎么这么难用啊",
+    "post_time": "2024-04-08 20:01",
+    "uid": "60717522",
+    "content": "新版本Jenkins每次改了配置就必须要再点击审核通过才能运行，还不能关掉这个功能，不知道哪个大聪明设计的。",
+    "replies": [
+        {
+            "mid": "64114905",
+            "mtime": "2024-04-09 05:24",
+            "mcontent": "建议用GitHub action"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-09 12:10",
+            "mcontent": "为啥你们的Jenkins pipeline要经常改的，一般写好后就不咋动了，然后代码一提交到github, gitlab就自动触发Jenkins部署就行了。当然Jenkins的jenkinsfile确实写的很恶心。。，除了Jenkins还有其他cicd工具的，也是一种选择"
+        }
+    ]
+}

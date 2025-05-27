@@ -1,0 +1,138 @@
+[
+  {
+    "domain": ".bbs.nga.cn",
+    "httpOnly": false,
+    "name": "HMACCOUNT",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "AB08D0EA71DDFAD9"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "httpOnly": false,
+    "name": "Hm_lpvt_01c4614f24e14020e036f4c3597aa059",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1744380992"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "expiry": 1775916992,
+    "httpOnly": false,
+    "name": "Hm_lvt_01c4614f24e14020e036f4c3597aa059",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1744380992"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "httpOnly": false,
+    "name": "lastpath",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "/"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": true,
+    "name": "ngaPassportCid",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "X9relbdih95e90c2paarqdf6sq9sf7c94r3plaio"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": false,
+    "name": "ngacn0comUserInfoCheck",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "b30bd9e869455394862b38189aed8830"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "httpOnly": false,
+    "name": "lastvisit",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "1744380991"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": false,
+    "name": "ngaPassportUrlencodedUname",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "Pixel-w"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "expiry": 1744384576,
+    "httpOnly": false,
+    "name": "HM_tbj",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "gkss2t%7C16o.o0"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": false,
+    "name": "ngaPassportUid",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "66673785"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "expiry": 1775916991,
+    "httpOnly": false,
+    "name": "bbsmisccookies",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "%7B%22uisetting%22%3A%7B0%3A%22a%22%2C1%3A1744381291%7D%2C%22pv_count_for_insad%22%3A%7B0%3A1%2C1%3A1744390862%7D%2C%22insad_views%22%3A%7B0%3A0%2C1%3A1744390862%7D%7D"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": false,
+    "name": "ngacn0comUserInfo",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "Pixel-w%09Pixel-w%0939%0939%09%0910%090%094%090%090%09"
+  },
+  {
+    "domain": ".bbs.nga.cn",
+    "expiry": 1744381179,
+    "httpOnly": false,
+    "name": "ngaPassportOid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "e582cf6f3faf57468590f8f182fb387c"
+  },
+  {
+    "domain": ".nga.cn",
+    "expiry": 1746972988,
+    "httpOnly": false,
+    "name": "ngacn0comInfoCheckTime",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "1744380988"
+  }
+]

@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41855608",
+    "title": "bat脚本读取文件-属性-详细信息",
+    "post_time": "2024-09-30 10:00",
+    "uid": "40613463",
+    "content": "百度翻烂了，没找到方法",
+    "replies": [
+        {
+            "mid": "3363460",
+            "mtime": "2024-09-30 10:30",
+            "mcontent": "这不是普通的文件详细信息，例如查看一个 txt 的属性为什么没有这些信息，有没有想过这个问题？如果是 mp3，这些信息一般是用 id3v2 格式保存在文件内部，其他音乐文件 (ogg, m4a, flac 等)、视频、图片也有类似的信息格式。bat 本身没有读取这些信息的功能，你得找一个支持解析这些信息的控制台程序，然后用 findstr 将输出绑定到批处理参数。还有一种办法就是自己写程序。另外，这种问题问AI可能更合适。除了 mp3 有 id3v2，其他音乐文件也有类似的东西，要用不同的工具解析如果确实要用批处理(这里以 mp3 id3v2 为例)：+ 代码 ..."
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-10-01 19:17",
+            "mcontent": "windows这功能用powershell# 引入 TagLibSharp 库Add-Type -AssemblyName \"TagLib\"# 设置音乐文件的路径$musicFilesPath = \"C:\\Path\\To\\Your\\Music\\Folder\"$musicFiles = Get-ChildItem -Path $musicFilesPath -Filter *.mp3foreach ($file in $musicFiles) {    try {        # 读取音乐文件的标题        $tagFile = [TagLib.File]::Create($file.FullName)        $title = $tagFile.Tag.Title        if ($title) {            # 构建新的文件名            $newFileName = Join-Path -Path $musicFilesPath -ChildPath (\"$title.mp3\")                        # 重命名文件            Rename-Item -Path $file.FullName -NewName $newFileName            Write-Host \"Renamed '$($file.Name)' to '$title.mp3'\"        }    } catch {        Write-Host \"Error processing file '$($file.Name)': $_\"    }}"
+        },
+        {
+            "mid": "40613463",
+            "mtime": "2024-10-08 15:10",
+            "mcontent": "受教了，谢谢大佬"
+        },
+        {
+            "mid": "8492846",
+            "mtime": "2024-10-08 19:33",
+            "mcontent": "看到这突然解除了一个疑惑，为什么打开音乐文件夹会很慢，原来是因为系统为了显示艺术家/专辑这些信息约等于扫了每个文件一遍读取这些信息。"
+        },
+        {
+            "mid": "61165607",
+            "mtime": "2024-10-25 09:03",
+            "mcontent": "所以音乐/图片/视频文件夹自定义为常规项目可以加快打开速度用其他软件来索引和预览"
+        },
+        {
+            "mid": "8492846",
+            "mtime": "2024-10-25 09:59",
+            "mcontent": "受教了，文件夹属性里改成常规项目，打开音乐和视频文件夹的体验舒服了，不再一个个扫文件来显示各种信息=.="
+        },
+        {
+            "mid": "61165607",
+            "mtime": "2024-10-25 16:50",
+            "mcontent": "win11这个功能对子文件夹不生效，所以我也一直没更新11"
+        }
+    ]
+}

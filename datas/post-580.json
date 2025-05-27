@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41731983",
+    "title": "单位电脑wifi连接问题",
+    "post_time": "2024-09-20 11:09",
+    "uid": "60251564",
+    "content": "今天来了上级检查的领导，拿笔记本连我们的wifi的时候发现无internet。但奇怪的是：",
+    "replies": [
+        {
+            "mid": "1884407",
+            "mtime": "2024-09-21 12:04",
+            "mcontent": "域控？让网管放行mac或增加域成员"
+        }
+    ]
+}

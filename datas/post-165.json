@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43280033",
+    "title": "deepseek本地部署求助，cuda软件装不上",
+    "post_time": "2025-02-14 16:10",
+    "uid": "5672644",
+    "content": "纯纯新手非程序员，我已经把ollma和deepseek安转好了，但是运行的时候会占用cpu，所以我想装一下cuda，跟教程走的先装了vs，再装cuda装不上了，一直卡这，请大佬看看什么原因？",
+    "replies": [
+        {
+            "mid": "63087432",
+            "mtime": "2025-02-15 19:30",
+            "mcontent": "少c++运行库吗"
+        },
+        {
+            "mid": "64898879",
+            "mtime": "2025-02-20 00:08",
+            "mcontent": "[https:://zhuanlan.zhihu.com/p/24357470406?utm_psn=1875697972932665345 此网页不属于本网站，不保证其安全性  继续访问       取消 https://zhuanlan.zhihu.com/p/24357470406?utm_psn=1875697972932665345 https://zhuanlan.zhihu.com/p/24357470406?utm_psn=1875697972932665345]亲测有效"
+        }
+    ]
+}

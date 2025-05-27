@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41344920",
+    "title": "[JAVA] HID4JAVA相关问题",
+    "post_time": "2024-08-20 16:29",
+    "uid": "60476300",
+    "content": "最近接手了一个java相关的代码，本人对java不太了解，写C#比较多，我测试了这个java的代码，主要是实现与hid设备的通信交互，但是测试的时候我发现通过bushound抓包收发的间隔是几ms，但是在java上通过SimpleDateFormat formatter = new SimpleDateFormat(\"HH:mm:ss.SSS\"); Date startTime = new Date();System.out.println(\"Start Time: \" + formatter.format(startTime));来打印当前的时间，精确到毫秒，需要在收发的几ms的基础上再加上100ms，也就是说比实际收到的时间慢了100ms，所用的hid通信库是hid4java，让我百思不得其解，然后自己在C#中实现了一个HID设备通信，发一样的通信指令，发现从发送到读取只有几ms的延时(用的是c的createfile来进行hid通信)，和bushound基本一致，所以想问一下是否是与java平台有关系？求大佬解答！！",
+    "replies": []
+}

@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43409494",
+    "title": "整理一些cuda学习资料",
+    "post_time": "2025-03-01 00:55",
+    "uid": "63118290",
+    "content": "先插个眼，明天缓考完开始整理",
+    "replies": [
+        {
+            "mid": "12031971",
+            "mtime": "2025-03-01 10:28",
+            "mcontent": "哥们交流一下？最近也在搞这方面的一些东西"
+        },
+        {
+            "mid": "63118290",
+            "mtime": "2025-03-02 12:01",
+            "mcontent": "感觉补考又要挂了首先整理一下计算机体系结构，个人感觉从这里开始入门比较好，不然后面学gpu架构可能有一点点难度。CSDIY的cs61c和15213不错，61c偏体系结构，15213个人没有全看过，是属于大杂烩的类型，[https:://csdiy.wiki/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://csdiy.wiki/ https://csdiy.wiki/]体系结构进阶，这个个人没有看过，听说还不错。[https://www.bilibili.com/video/BV1k7421R7Po https://www.bilibili.com/video/BV1k7421R7Po]▸"
+        },
+        {
+            "mid": "63118290",
+            "mtime": "2025-03-02 12:24",
+            "mcontent": "cuda入门资料：[https:://docs.nvidia.com/cuda/cuda-c-programming-guide/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://docs.nvidia.com/cuda/cuda-c-programming-guide/ https://docs.nvidia.com/cuda/cuda-c-programming-guide/] 官方文档，这个还没看过Programming Massively Parallel Processors Fourth Edition 原书是英文，目前国内还没有最新版的中文翻译，可以看看这位大佬的博客[https:://fancyerii.github.io/2024/02/20/pmpp/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://fancyerii.github.io/2024/02/20/pmpp/ https://fancyerii.github.io/2024/02/20/pmpp/]，但是只有16章，原书23章。这个算本人踩过的一个小坑，被朋友忽悠学hpc要把这本书看完，实际看看前7、8章差不多了，后面都是具体算子的实现，完全可以有需要再看。"
+        },
+        {
+            "mid": "63118290",
+            "mtime": "2025-03-07 22:08",
+            "mcontent": "补考都过了，开心两个编程范式的在线入门练习[https:://www.youtube.com/watch?v=K4T-YwsOxrM 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.youtube.com/watch?v=K4T-YwsOxrM https://www.youtube.com/watch?v=K4T-YwsOxrM]  gpu puzzle 并行编程(或者说cuda)的入门练习[https:://github.com/srush/Triton-Puzzles 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/srush/Triton-Puzzles https://github.com/srush/Triton-Puzzles] triton的入门练习个人感觉triton好像就是默认以块为单元的cuda，不知道对不对"
+        },
+        {
+            "mid": "63118290",
+            "mtime": "2025-03-07 22:19",
+            "mcontent": "目前大三，在找这方面的实习/工作，欢迎私聊"
+        },
+        {
+            "mid": "63118290",
+            "mtime": "2025-03-07 22:23",
+            "mcontent": "[https:://zhuanlan.zhihu.com/p/12661298743 此网页不属于本网站，不保证其安全性  继续访问       取消 https://zhuanlan.zhihu.com/p/12661298743 https://zhuanlan.zhihu.com/p/12661298743] CUDA算子手撕与面试[https:://www.zhihu.com/question/564620976/answer/2848127300 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.zhihu.com/question/564620976/answer/2848127300 https://www.zhihu.com/question/564620976/answer/2848127300] AI编译器相关[https:://zhuanlan.zhihu.com/p/23563891927 此网页不属于本网站，不保证其安全性  继续访问       取消 https://zhuanlan.zhihu.com/p/23563891927 https://zhuanlan.zhihu.com/p/23563891927] gather算子的cuda实现，这玩意我参加训练营的时候怎么也看不懂，现在也没看懂，深受打击"
+        }
+    ]
+}

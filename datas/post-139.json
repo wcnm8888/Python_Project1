@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43390561",
+    "title": "deepseek怎么和若依框架一块用呢",
+    "post_time": "2025-02-27 11:58",
+    "uid": "38758574",
+    "content": "公司一直用若依去做一些业务，若依能根据数据库去生成一些基础的代码",
+    "replies": [
+        {
+            "mid": "38910309",
+            "mtime": "2025-02-27 12:30",
+            "mcontent": "输入 vo 然后说要一个表单/弹窗，使用 element，基本就 ok 了"
+        }
+    ]
+}

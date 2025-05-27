@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39109423",
+    "title": "请教如何使用Golang实现web小游戏联机功能",
+    "post_time": "2024-01-26 16:10",
+    "uid": "63655636",
+    "content": "我用react创建了一个五子棋项目，现在要增加联机对战功能，具体该怎么做呢，要求用Golang实现",
+    "replies": [
+        {
+            "mid": "60519280",
+            "mtime": "2024-01-26 18:31",
+            "mcontent": "初级方案：写个http后端，自己约定下棋的api中级方案：抛弃后端，使用webrtc之类的协议直连高级方案：go直接生成webassembly/webgpu一把梭"
+        },
+        {
+            "mid": "159874",
+            "mtime": "2024-01-27 12:35",
+            "mcontent": "建议想办法搞到chatgpt 然后把你帖子里的话一分不差的问它"
+        }
+    ]
+}

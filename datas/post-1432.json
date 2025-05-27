@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39410580",
+    "title": "[讨论] 有没有用过gitlab，自带的ci/cd的老哥，你们是怎么解决gitlab-runner用户没有权限的问题呢",
+    "post_time": "2024-02-26 17:54",
+    "uid": "62073702",
+    "content": "我用的自己的服务器，安装的gitlab-runner",
+    "replies": [
+        {
+            "mid": "65491171",
+            "mtime": "2024-03-05 08:11",
+            "mcontent": "本人才疏学浅 要不试试chmod 775 var/www/html ?"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-05 09:15",
+            "mcontent": "老哥，那linux中所有的文件权限控制都是使用的chmod来控制的吗，我想不明白，我一个普通用户，在别的目录下能用ls 等命令，在/root/目录下用不了，这个控制ls这个命令的权限还是，对文件进行权限管理。我回头试下你说的，可能当时操作的时候有点脑糊涂了"
+        },
+        {
+            "mid": "65491171",
+            "mtime": "2024-03-05 10:18",
+            "mcontent": "普通用户当然没有/root目录的读取权限了 是的 文件的权限操作都要chmod命令 不过你也可以改写这个文件夹的所有者 把它改成你的当前用户所有"
+        },
+        {
+            "mid": "65491171",
+            "mtime": "2024-03-05 10:23",
+            "mcontent": "不过还是没涉及到问题本身 两个方案 第一个是把npm位置改一下 进root把npm移出来或者按照以下方法操作编辑?/etc/profile?在该文件的末尾添加如下内容：?export NVM_DIR=\"/root/.nvm\"[ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\" # This loads nvm[ -s \"$NVM_DIR/bash_completion\" ] && \\. \"$NVM_DIR/bash_completion\" # This loads nvm bash_completion?然后运行 ?source /etc/profile复制到/var/www/html/目录没有权限的 可以将该目录设置为gitlab-runner用户所属的组，并赋予该组写入权限sudo usermod -aG nginx gitlab-runner因为我网页服务器用的nginx 这里把nginx改成你所需要的权限组就行 可以查一下你当前用户用的哪个权限组"
+        },
+        {
+            "mid": "65491171",
+            "mtime": "2024-03-05 10:28",
+            "mcontent": "或者你要是不嫌危险直接改成777也行虽然容易被打中间那段不建议  我也没试过最好还是给用户一个权限即可"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-05 10:37",
+            "mcontent": "我当时就是怕被打，不敢改/var/nginx/www/目录的权限，因为你改了他后面所有的子文件全都是更改过得权限。最后想来想去觉得反正要改权限，不如直接安装到root算了。"
+        },
+        {
+            "mid": "65491171",
+            "mtime": "2024-03-05 18:14",
+            "mcontent": "23333 管他什么危不危险直接用root 是我了"
+        }
+    ]
+}

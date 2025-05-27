@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40779044",
+    "title": "[求助][C#].netcore8中间件的一些问题",
+    "post_time": "2024-07-05 22:35",
+    "uid": "61814354",
+    "content": "中间件内的逻辑是查看api上有无AllowAnonymous标识，没有则查看请求头有无Authorization，没有就修改状态码为401然后context.Response.WriteAsync(\"未授权\")结束，有的话就next()进下一个中间件。",
+    "replies": [
+        {
+            "mid": "62221327",
+            "mtime": "2024-07-05 23:18",
+            "mcontent": ".net 有authorization接口啊，直接用  IAsyncAuthorizationFilter 或者 IAuthorizationFilter 就行，这个特性可以放在controller上，或者请求方法上，会在进入请求方法前调用 OnAuthorizationAsync 或者 OnAuthorization 方法，如果要返回401，直接在authorization类里将context.Result赋值就行"
+        },
+        {
+            "mid": "62221327",
+            "mtime": "2024-07-05 23:18",
+            "mcontent": "[https:://github.com/chr233/XinjingdailyBot/blob/main/XinjingdailyBot.WebAPI/Authorization/VerifyAttribute.cs 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/chr233/XinjingdailyBot/blob/main/XinjingdailyBot.WebAPI/Authorization/VerifyAttribute.cs https://github.com/chr233/XinjingdailyBot/blob/main/XinjingdailyBot.WebAPI/Authorization/VerifyAttribute.cs]实现可以看这个，虽然写的一般般"
+        },
+        {
+            "mid": "61814354",
+            "mtime": "2024-07-06 09:11",
+            "mcontent": "就是说这些都写在过滤器里面，不写中间件吗，不是很知道外面一般怎么写的，原本自带的认证中间件和授权中间件满足不了需求，所以就自定义中间件了，如果是IAsyncAuthorizationFilter过滤器，认证和授权都写在这里面吗"
+        },
+        {
+            "mid": "62221327",
+            "mtime": "2024-07-06 10:13",
+            "mcontent": "这个也是中间件，我的意思是框架已经有的接口没必要自己实现，运行时用获取特性效率也不高"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2024-07-06 11:56",
+            "mcontent": "你也知道405先于401接口不存在你这逻辑就不应该运行你AllowAnonymous怎么来的？找不到不直接next了吗？接口不存在和AllowAnonymous特性没有是两种情况，需要你区分"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2024-07-06 12:10",
+            "mcontent": "还有自定义认证授权当然可以用中间件但用ids4才是官方推荐的做法有条件可以去看看ids4怎么实现你的要求"
+        }
+    ]
+}

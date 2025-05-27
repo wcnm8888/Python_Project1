@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41383789",
+    "title": "vue3 +ts项目，vue router升级到4.4.1版本之后，$router报错",
+    "post_time": "2024-08-23 08:43",
+    "uid": "60798403",
+    "content": "官方文档提供的，目前没找到解决方法，有大佬知道吗",
+    "replies": [
+        {
+            "mid": "41645261",
+            "mtime": "2024-09-19 09:40",
+            "mcontent": "4之后的路由应该直接用hooks吧，useRouter和useRoute，没有直接挂载在vue原型链上的$router了"
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40989797",
+    "title": "lua怎么让循环停止",
+    "post_time": "2024-07-25 06:40",
+    "uid": "64023933",
+    "content": "也不知发这合不合适 多少沾点编程吧就是",
+    "replies": [
+        {
+            "mid": "65916493",
+            "mtime": "2024-07-25 16:58",
+            "mcontent": "while “鼠标侧键被按过”do    if 侧键按过 or timeout then       break    endend"
+        },
+        {
+            "mid": "64023933",
+            "mtime": "2024-07-25 17:09",
+            "mcontent": "function OnEvent(event, arg)if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 4) then  while (event == \"MOUSE_BUTTON_PRESSED\" and arg == 4) do   if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 5) or timeout then   break PressAndReleaseKey(\"1\")endend是这样吗 我导入进去 循环扣1好像都不行了另外我用repeat循环 好像还可以 就是停不下来function OnEvent(event, arg)if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 4) then repeat PressAndReleaseKey(\"1\")until (event == \"MOUSE_BUTTON_PRESSED\" and arg == 5)endend按5没反应 纠结一天了 不知道问题在哪 大神救我"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-07-25 17:31",
+            "mcontent": "鼠标虽然是usb，但是对应驱动的优先级就不好说了。容易导致busyloop，让其它命令都没办法收到。建议在loop里面加一个sleep，100ms的间隙。然后在loop里面加个判断，满足条件break。"
+        },
+        {
+            "mid": "64023933",
+            "mtime": "2024-07-25 19:28",
+            "mcontent": "sleep加过break前判断应该怎么整啊 老哥你能直接帮我加一句吗 我完全萌新"
+        },
+        {
+            "mid": "38435070",
+            "mtime": "2024-07-26 08:39",
+            "mcontent": "整个逻辑都是错的。等你按了鼠标侧键4之后，就会一直卡在那个while循环里。根本不会对鼠标侧键5进行响应。可以使用flag方案，改成这样：while true:    if 退出键：         exit    if 侧键4：         flag=1    if 侧键5：         flag=0    if flag:         你的业务逻辑while循环一定要有退出条件，不然就是死循环。"
+        },
+        {
+            "mid": "64023933",
+            "mtime": "2024-07-26 14:28",
+            "mcontent": "好的 我去试试"
+        },
+        {
+            "mid": "64023933",
+            "mtime": "2024-07-26 17:10",
+            "mcontent": "function OnEvent(event, arg)EnablePrimaryMouseButtonEvents(1)  if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 4) then  Sleep(10)while ture do:if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 5) thenbreakif (event == \"MOUSE_BUTTON_PRESSED\" and arg == 4) thenflag=1if (event == \"MOUSE_BUTTON_PRESSED\" and arg == 5) thenflag=0if flag:PressAndReleaseKey(\"1\")endend是这样吗老哥 报错了 咋整啊"
+        },
+        {
+            "mid": "62994476",
+            "mtime": "2024-07-26 18:48",
+            "mcontent": "看起来OnEvent是一个响应事件？event和arg只是传进来的参数？如果按照现在的实现方案，OnEvent里面会死循环，而且在这个函数体内部没有办法获取到新的点击事件的参数(毕竟旧的事件没结束)想半天似乎没什么好办法，协程这个场合应该也没救，要不然还是简单点加个时间限制吧"
+        },
+        {
+            "mid": "62994476",
+            "mtime": "2024-07-26 18:58",
+            "mcontent": "想实现类似的功能应该找找有没有办法在程序主循环里面插入一段代码，比如iup可以用iup.idle(function() expr end)这样的写法插入一段代码，iup.MainLoop()每一次循环都会执行这个函数，然后用OnEvnet控制这个函数的行为，或者在特定的情况下删除这个函数，函数体内也不应该sleep，应该用os.clock()或者socket.time()计时，没到时间就什么都不做，让程序能进入下一次主循环，这样程序才不会堵塞。"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-07-26 21:13",
+            "mcontent": "那事情就没那么简单。因为按照你的描述，这个onevent并没有新创建一个lua的线/协程去执行，导致压根不可能执行完当前的onevent，别谈执行下一个event。我的建议是，在onevent里面声明一个全局bool变量和一个全局的线程变量。然后把循环仍线程里面去执行。用这个全局bool变量来作为这个循环的条件。"
+        },
+        {
+            "mid": "41674030",
+            "mtime": "2024-07-27 07:30",
+            "mcontent": "艹，cf炼狱宏？  看着好像，估计是一样的吧业务是不是，侧键模拟左键连点   看错了，。。。"
+        },
+        {
+            "mid": "38435070",
+            "mtime": "2024-07-27 09:24",
+            "mcontent": "你怎么还是把if放在最外层呀？我给你回复的，明明是while TRUE在最外层。这样才是对用户输入持续响应的最基本的框架"
+        },
+        {
+            "mid": "2309804",
+            "mtime": "2024-07-27 09:51",
+            "mcontent": "chatGPT给的答案，local socket = require(\"socket\")function setInterval(func, interval)    local co    local running = true    co = coroutine.create(function()        while running do            func()            socket.sleep(interval)        end    end)    coroutine.resume(co)    -- 返回一个取消函数    return function()        running = false    endend-- 示例函数function printMessage()    print(\"Hello, world!\")end-- 每2秒打印一次消息local cancel = setInterval(printMessage, 2)-- 让定时器运行6秒，然后取消socket.sleep(6)cancel()print(\"Timer cancelled\")"
+        },
+        {
+            "mid": "2309804",
+            "mtime": "2024-07-27 09:54",
+            "mcontent": "想法就是不要用while 因为while 停不了。用这个setInterval去做要循环执行的任务。详情可以参考js的setInterval"
+        },
+        {
+            "mid": "61028601",
+            "mtime": "2024-12-26 09:20",
+            "mcontent": "请问您解决了么？while do 是单线循环，需要加ab锁#3楼你说的repeat问题 是因为上下   (event =  这段  逻辑是识别按键，但是repeat是死循环运行，所以停不下来。你遇到的问题我都遇到了。。。。各别都了解逻辑了，但就是没有解决方案，很奇怪，lgs和ghub的lua api的好奇怪。。。。"
+        },
+        {
+            "mid": "61028601",
+            "mtime": "2024-12-26 10:09",
+            "mcontent": "历时40小时0睡眠解决了，终于把这个2024年度谜题解决了，算是编码问题+罗技驱动api的综合问题。答案原文：[https:://stackoverflow.com/questions/72127881/lua-autoclicker-not-repeating 此网页不属于本网站，不保证其安全性  继续访问       取消 https://stackoverflow.com/questions/72127881/lua-autoclicker-not-repeating https://stackoverflow.com/questions/72127881/lua-autoclicker-not-repeating]你绑定哪个键，就把那个键恢复成默认设置，G502 G603 等等  的  G4是返回，G5是前进，必须是原来设置，不然它驱动lua数据库就冲突了。"
+        }
+    ]
+}

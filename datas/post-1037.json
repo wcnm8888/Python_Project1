@@ -1,0 +1,59 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40229124",
+    "title": "大佬们，想求助Python该是怎样的学习流程",
+    "post_time": "2024-05-19 23:05",
+    "uid": "65125006",
+    "content": "我是非计算机专业的，可以说专业和计算机毫无关系，Python是我想自学的，我想向大佬们求助，对于我这种情况该怎么学习Python，对于我这种情况学习流程该是什么流程。",
+    "replies": [
+        {
+            "mid": "41133031",
+            "mtime": "2024-05-19 23:21",
+            "mcontent": "基本语法循环(while，for)和分支结构(if-else语句，三元表达式，异常处理)函数面向对象(class)模块，模块封装和引用常用系统模块文件操作(file)然后看你要拿来干什么了如果数据量大再学个异步运算数据操作学pyexcel和pymysql数据分析学numpy，pandas，SciPy三件套数据可视化学matplotlib和pyecharts爬虫学request，beautifulsoup和xpath深入的话可以学cpython，jit，numba"
+        },
+        {
+            "mid": "65125006",
+            "mtime": "2024-05-19 23:38",
+            "mcontent": "谢谢大佬，感谢???"
+        },
+        {
+            "mid": "65215295",
+            "mtime": "2024-05-20 09:15",
+            "mcontent": "1.使用英文作为你的工作语言；2.从学会阅读别人的代码开始，搞清楚各种语法的用途(在这个过程中需要查阅大量的资料，你需要有强大的检索能力)；3.在github上是有python的相关学习教程的，我可以在这里给你贴出来一个[https:://github.com/jackfrued/Python-100-Days, 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/jackfrued/Python-100-Days, https://github.com/jackfrued/Python-100-Days,]但是就我个人感觉，作为一个纯萌新，单独看这个还是有一定困难，所以我推荐搭配B站赛博红兔的python教程视频，从头开始，搭配使用。"
+        },
+        {
+            "mid": "65125006",
+            "mtime": "2024-05-20 09:16",
+            "mcontent": "谢谢大佬"
+        },
+        {
+            "mid": "65215295",
+            "mtime": "2024-05-20 09:19",
+            "mcontent": "还有一点我觉得比较重要的事情我忘记说了，尽量去遵循PEP8的代码格式写代码，可以便于后续的代码维护和团队协作，链接如下：[https:://peps.python.org/pep-0008/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://peps.python.org/pep-0008/ https://peps.python.org/pep-0008/]"
+        },
+        {
+            "mid": "65756098",
+            "mtime": "2024-05-20 10:53",
+            "mcontent": "看一遍 python101, 就入门了"
+        },
+        {
+            "mid": "64420098",
+            "mtime": "2024-05-21 18:26",
+            "mcontent": "那种面对大一新生的课其实蛮适合，比如mit的 Introduction To Computer Science And Programming In Python"
+        },
+        {
+            "mid": "96873",
+            "mtime": "2024-05-24 20:51",
+            "mcontent": "去尝试部署大语言模型，并且学会RAG，一套下来估计你PY就熟了。"
+        },
+        {
+            "mid": "42090631",
+            "mtime": "2024-05-25 14:28",
+            "mcontent": "非专业推荐这个，后面几个项目可以帮你认识一个完整的程序结构，装个代码插件比如codefuse，报错不懂直接在编译器里问，GPT工具用起来比查百度方便"
+        },
+        {
+            "mid": "65730238",
+            "mtime": "2024-05-25 14:55",
+            "mcontent": "合租一个 chatgpt team一个月也就30元软妹币。装个anaconda，装好常用库，激活环境，剩下就看gpt了"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39376162",
+    "title": "[已解决][Python] 已安装包的情况下，编译器说无模块怎么办",
+    "post_time": "2024-02-22 19:56",
+    "uid": "35082549",
+    "content": "已安装包的情况下，编译器说无模块怎么办",
+    "replies": [
+        {
+            "mid": "35082549",
+            "mtime": "2024-02-22 20:42",
+            "mcontent": "已解决了原来是本地有两个解释器的问题。用了另一个。解决办法是[https:://jingyan.baidu.com/article/39810a235d9c3bf737fda66b.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://jingyan.baidu.com/article/39810a235d9c3bf737fda66b.html https://jingyan.baidu.com/article/39810a235d9c3bf737fda66b.html]花了30在淘宝上找人帮忙的"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-02-27 02:37",
+            "mcontent": "安装多了是这样的，可以试下大蟒蛇"
+        }
+    ]
+}

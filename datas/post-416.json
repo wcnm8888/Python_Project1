@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42444055",
+    "title": "[求助] 求教一下银河麒麟系统设置服务器的问题",
+    "post_time": "2024-11-14 14:11",
+    "uid": "61011354",
+    "content": "求教大佬们，在银河麒麟系统上设置服务器，但使用ChrootDirectory语句后就会报如下错误，注释掉该语句就能正常连接上sftp服务器",
+    "replies": []
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41891478",
+    "title": "[请教] Rust为什么使用traits而不是interface，它想表达/传达的设计思想是什么？",
+    "post_time": "2024-10-03 16:45",
+    "uid": "61389447",
+    "content": "看到traits总是很不习惯……",
+    "replies": [
+        {
+            "mid": "43089971",
+            "mtime": "2024-10-03 18:01",
+            "mcontent": "interface跟trait有什么很大的区别吗'a,b,c继承同一个interface'和'a,b,c具有同一个trait'想表达的意义没啥不同,而且trait有很强的编译期多态rust和传统oop最大的区别就是不能多层继承而已,在我看来这是个好事"
+        },
+        {
+            "mid": "62409105",
+            "mtime": "2024-10-03 18:26",
+            "mcontent": "其实都是作者的偏好而已，只不过rust相比之下跟函数式语言的关系更近，ts跟OOP语言更近而已。说到底ts的interface、rust和scala的trait、haskell的typeclass、c++的concept都是差不多的东西，真要深究的话这些在抽象能力、能达到子类型多态还是ad hoc多态等等方面会有差别。"
+        },
+        {
+            "mid": "65037130",
+            "mtime": "2024-10-04 11:57",
+            "mcontent": "为您推荐：为什么Rust使用generics而不是template？为什么Python使用lambda而不是closure？为什么Java使用var而不是auto？为什么C++使用this而不是self？"
+        },
+        {
+            "mid": "39827841",
+            "mtime": "2024-10-04 12:19",
+            "mcontent": "因为trait更接近typeclass"
+        }
+    ]
+}

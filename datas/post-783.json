@@ -1,0 +1,59 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40981288",
+    "title": "免费版的ssl证书到期后，要修改dns解析配置。买正式版的是不是就不用修改dns了？",
+    "post_time": "2024-07-24 11:23",
+    "uid": "8465046",
+    "content": "我网站目前使用的阿里云申请的免费证书，有效期只有3个月。由于这个域名的dns解析配置不在我这里，所以每隔3个月更换新证书时，需要找人进行dns解析配置，比较麻烦。",
+    "replies": [
+        {
+            "mid": "65171953",
+            "mtime": "2024-07-24 11:24",
+            "mcontent": "ssl可以文件校验的，可以不用改dns"
+        },
+        {
+            "mid": "8465046",
+            "mtime": "2024-07-24 11:39",
+            "mcontent": "文件的我试了，验证没通过。那个验证文件用https的链接可以访问到，但是http访问不到，因为我们80端口是关闭的。我猜测是不是https和http都要能访问到才算验证通过？"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-07-24 21:56",
+            "mcontent": "付费证书也要验证的。一年一验证。文件验证用的是http，毕竟验证完成之前没有发证书不会有https你这种情况就别用https了。或者让管域名的人，给你阿里帐号个域名修改权限"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-07-25 07:53",
+            "mcontent": "阿里云DNS的TXT验证字段不删就行了啊，我们用阿里云DNS和免费证书5年了，就第一年填了个TXT，后续换证书都是自动验证。"
+        },
+        {
+            "mid": "8465046",
+            "mtime": "2024-07-25 11:06",
+            "mcontent": "请问后续自动验证具体是怎么操作。我用的阿里云免费证书3个月到期后，原证书作废，要新建一个免费证书，此时会新生成一个记录值，与原证书的记录值不一样啊？怎么能继续用之前配的TXT的记录值？"
+        },
+        {
+            "mid": "8465046",
+            "mtime": "2024-07-25 11:07",
+            "mcontent": "所以付费证书也需要每年修改下dns解析？无法复用之前配置已好的TXT类型的解析？"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-07-25 13:55",
+            "mcontent": "是我弄错了，我的证书和DNS解析是属于同一个阿里云账号。[https:://help.aliyun.com/zh/ssl-certificate/user-guide/required-information-for-certificate-application 此网页不属于本网站，不保证其安全性  继续访问       取消 https://help.aliyun.com/zh/ssl-certificate/user-guide/required-information-for-certificate-application https://help.aliyun.com/zh/ssl-certificate/user-guide/required-information-for-certificate-application]如果当前阿里云账号与域名的云解析DNS服务所在账号一致，则此处自动匹配自动DNS验证方式，无需您手动配置。该方式由阿里云自动为您完成域名验证。如果当前阿里云账号与域名的云解析DNS服务所在账号不一致，则此处可以选择以下方式：手动DNS验证：该方式需要您前往域名对应的云解析DNS服务商，将域名验证信息配置到域名解析列表中(添加一条TXT类型的DNS解析记录)。域名授权自动化验证：略(只适用于收费证书)。"
+        },
+        {
+            "mid": "65756098",
+            "mtime": "2024-07-25 17:09",
+            "mcontent": "推荐你使用 acme.sh"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-07-25 18:24",
+            "mcontent": "DNS验证的好处是可以做泛域名证书。比如验证qq.com之后，qq.com，www.qq.com，c.qq.com都可以用。URL验证只能单域名，验证www.qq.com，那qq.com、a.qq.com都不能用楼上说的acme.sh也没用。这只是个自动化脚本，验证过程还是需要DNS/URL"
+        },
+        {
+            "mid": "65756098",
+            "mtime": "2024-07-29 16:37",
+            "mcontent": "我怀疑你没用过 acme.sh"
+        }
+    ]
+}

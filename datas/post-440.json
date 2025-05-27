@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42358849",
+    "title": "matlab新手想请教问题",
+    "post_time": "2024-11-06 19:27",
+    "uid": "63952188",
+    "content": "如图该怎么解决呢？",
+    "replies": [
+        {
+            "mid": "63453772",
+            "mtime": "2024-11-07 06:31",
+            "mcontent": "你到底要做哪个图，做cost的那你pie里放cost，data我们也不晓得你那个table数据到底是什么样，print出来看看啊"
+        }
+    ]
+}

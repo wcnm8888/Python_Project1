@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40925224",
+    "title": "好家伙，用了好几年的Linux server 结果第一次用桌面环境",
+    "post_time": "2024-07-18 22:45",
+    "uid": "43377109",
+    "content": "选了半天选了一个manjaro发行版，kde桌面",
+    "replies": [
+        {
+            "mid": "731907",
+            "mtime": "2024-07-18 23:11",
+            "mcontent": "论linux桌面那还是深度的桌面最符合国人习惯"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-07-18 23:33",
+            "mcontent": "卧室这个n5095装Windows实在是太占资源了"
+        },
+        {
+            "mid": "61165607",
+            "mtime": "2024-07-19 18:20",
+            "mcontent": "[https:://wiki.archlinuxcn.org/wiki/Fcitx5 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.archlinuxcn.org/wiki/Fcitx5 https://wiki.archlinuxcn.org/wiki/Fcitx5]真的只需要查一下文档就行了  而且在安装的时候选中文且联网的话，配置一下镜像源就可以自动安装输入法"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-07-19 19:53",
+            "mcontent": "我就是按这个文档没有配置成功所以才开始自己想办法的刚才刚装好rime 正在想办法把我Windows下调好的皮肤弄过来"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-07-19 23:45",
+            "mcontent": "笑死， linux的edge没有鼠标手势，还得装插件，微软你怎么回事 一开始图省事装的 flatpak  我还以为是他打包的问题，结果aur装了还是不对。是aur编译脚本也有问题？又发现一个小坑，官方库的 ffmpeg 的构建没有开smbclient支持，不过找到别的办法绕过去了。"
+        },
+        {
+            "mid": "9634165",
+            "mtime": "2024-07-20 11:11",
+            "mcontent": "[https:://arch.icekylin.online/guide/rookie/desktop-env-and-app.html#_10-%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95 此网页不属于本网站，不保证其安全性  继续访问       取消 https://arch.icekylin.online/guide/rookie/desktop-env-and-app.html#_10-%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95 https://arch.icekylin.online/guide/rookie/desktop-env-and-app.html#_10-%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95]输入法的配置可以参考这个文档"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-07-20 11:13",
+            "mcontent": "已经配置好了我第一次用 systemd 看看文档习惯了就好了，现在已经差不多能懂这个玩意的配置套路了"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-07-20 12:51",
+            "mcontent": "深度可以很方便的安装QQ，系统操作习惯和布局和windows很像，上手就快。"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-07-20 13:09",
+            "mcontent": "输入法我rime已经攒了很多年的词库了，包括输入方案之类的我都是要自己配置的"
+        }
+    ]
+}

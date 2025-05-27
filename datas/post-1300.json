@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39676976",
+    "title": "小白求助Docker相关",
+    "post_time": "2024-03-26 14:39",
+    "uid": "61629593",
+    "content": "想学习docker,用的笔记本机械革命CODE01，Windows环境下下载Docker desk，wifi直接没了，找了各种办法只能关闭虚拟平台，然后才恢复互联网",
+    "replies": [
+        {
+            "mid": "7369167",
+            "mtime": "2024-03-26 15:42",
+            "mcontent": "机械革命是这样的，不支持wsl，上周给室友整的时候踩坑"
+        },
+        {
+            "mid": "251661",
+            "mtime": "2024-03-26 15:45",
+            "mcontent": "装个VMware 装个linux  随便折腾。"
+        },
+        {
+            "mid": "61137948",
+            "mtime": "2024-03-27 13:25",
+            "mcontent": "Virtualbox 虚拟机"
+        },
+        {
+            "mid": "63952612",
+            "mtime": "2024-03-27 17:45",
+            "mcontent": "100块搞个小主机或n1盒子装个带docker的系统随便折腾"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-03-27 18:48",
+            "mcontent": "vmware个人免费，然后在centos虚拟机里跑docker就行"
+        },
+        {
+            "mid": "63551890",
+            "mtime": "2024-03-27 21:59",
+            "mcontent": "别win纯走docker了，下个虚拟机装linux/wsl 用linux环境下的docker"
+        },
+        {
+            "mid": "61629593",
+            "mtime": "2024-03-28 11:09",
+            "mcontent": "谢谢老哥们建议，主要是找的教程用的是win的，现在解决了，原因是bios版本太低，更新了之后就正常了"
+        }
+    ]
+}

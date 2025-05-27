@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39574992",
+    "title": "关于npoi操作word有没有大佬有经验？",
+    "post_time": "2024-03-15 15:00",
+    "uid": "65193720",
+    "content": "找了github官方都没有详细地文档介绍 提供的代码示例都太浅了 满足不了需求",
+    "replies": [
+        {
+            "mid": "63659663",
+            "mtime": "2024-03-16 20:56",
+            "mcontent": "试试OpenXml 吧，文档比较全"
+        }
+    ]
+}

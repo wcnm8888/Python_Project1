@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43304107",
+    "title": "windows或linux上有类似视图这种东西吗？",
+    "post_time": "2025-02-17 14:43",
+    "uid": "40089552",
+    "content": "比如我的文件组织形式为",
+    "replies": [
+        {
+            "mid": "24929917",
+            "mtime": "2025-02-17 15:15",
+            "mcontent": "恐怕只能自己写脚本实现，这个倒是不难，可以让AI搞个勉强能用的"
+        },
+        {
+            "mid": "60209678",
+            "mtime": "2025-02-19 10:04",
+            "mcontent": "微软的project？"
+        },
+        {
+            "mid": "13018657",
+            "mtime": "2025-02-19 13:24",
+            "mcontent": "部署个owncloud做存储，文档打标签就行"
+        },
+        {
+            "mid": "62480715",
+            "mtime": "2025-02-20 14:36",
+            "mcontent": "在不改动现有工作流/项目结构(比如把文件夹层级换成标签)的前提下，everything 应该是最简单的。比如这个文件结构：G:\\Dev\\tmp> tree /fG:.项目1  2023        文件a.txt    2024          文件b.txt项目2    2023          文件c.txt        2024            文件d.txt在 G:\\Dev\\tmp 右键“搜索 Everything ”，追加输入 child:2023 ，得到结果：项目2项目1"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2025-02-21 17:33",
+            "mcontent": "确实，win下用everything会比较简单，另外也可以用excel powerquery 直接导入大目录，然后拆分文件夹名，及路径，导出成表格样式A|B|C|D完整目录|父目录|最后一个子文件夹名|文件名根据要求自己筛，父目录名|子文件夹名  思考了几分钟，本质上是对路径的重排序及筛选所以理清楚需求，丢给ai要求对应的vba powerquery powershell python3 bash都可以完成脚本"
+        },
+        {
+            "mid": "41799311",
+            "mtime": "2025-02-24 15:18",
+            "mcontent": "cmd 切换到更目录，运行 dir /s >export.txt"
+        }
+    ]
+}

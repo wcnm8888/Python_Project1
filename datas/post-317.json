@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42786634",
+    "title": "ubuntu系统突然无法通过ssh连接了,现在还有什么方法能连上吗?",
+    "post_time": "2024-12-19 23:33",
+    "uid": "60489271",
+    "content": "提示Connection refused,能ping通,没有桌面",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-12-20 08:52",
+            "mcontent": "显示器键鼠装上看看什么问题  物理机直连解决任何问题大不了重装系统"
+        },
+        {
+            "mid": "62396512",
+            "mtime": "2024-12-20 10:02",
+            "mcontent": "装了 telnet 的话还可以试试"
+        }
+    ]
+}

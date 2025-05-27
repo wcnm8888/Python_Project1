@@ -1,0 +1,49 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40508148",
+    "title": "有学Java的书推荐吗",
+    "post_time": "2024-06-12 03:04",
+    "uid": "64131905",
+    "content": "大学学过python和C,9月开学上的课需要用到Java,但得自学",
+    "replies": [
+        {
+            "mid": "6707662",
+            "mtime": "2024-06-12 08:44",
+            "mcontent": "1. 《Introduction to Java Programming and Data Structures Comprehensive Version》Y. Daniel Liang TWELFTH EDITION2. Java核心技术·卷I(原书第12版)先去网上找个电子书看看适不适合，选一本就够了"
+        },
+        {
+            "mid": "43187732",
+            "mtime": "2024-06-12 15:38",
+            "mcontent": "不局限于书的话，b站找找培训班网课也可以"
+        },
+        {
+            "mid": "41826404",
+            "mtime": "2024-06-12 17:01",
+            "mcontent": "先b站看看视频吧，不过我最近在看on java"
+        },
+        {
+            "mid": "60600903",
+            "mtime": "2024-06-12 17:25",
+            "mcontent": "去oreilly的书堆里找吧，国内教材先别碰，我推荐headfirstjava"
+        },
+        {
+            "mid": "63159041",
+            "mtime": "2024-06-12 19:48",
+            "mcontent": "发错编辑了，这链接里面没有Java"
+        },
+        {
+            "mid": "64292769",
+            "mtime": "2024-06-13 11:31",
+            "mcontent": "毕业了不想带走，便宜出了"
+        },
+        {
+            "mid": "20838952",
+            "mtime": "2024-06-14 09:27",
+            "mcontent": "只是上课要用的话看点视频学下语法和JDK提供的常用API就好了吧"
+        },
+        {
+            "mid": "60319266",
+            "mtime": "2024-06-19 19:32",
+            "mcontent": "我看过不少相关的书，入门选择 head first java"
+        }
+    ]
+}

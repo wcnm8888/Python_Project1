@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42445124",
+    "title": "用FFmpeg压缩视频，怎么知道需要压缩多久",
+    "post_time": "2024-11-14 15:39",
+    "uid": "43276539",
+    "content": "rtzsbd",
+    "replies": [
+        {
+            "mid": "8777681",
+            "mtime": "2024-11-14 16:26",
+            "mcontent": "有正压缩到的播放时间，有压缩时间/播放时间比，算一下就可以了吧"
+        }
+    ]
+}

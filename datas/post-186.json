@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43251859",
+    "title": "[求助] C++怎么连MySQL数据库",
+    "post_time": "2025-02-11 16:48",
+    "uid": "62412796",
+    "content": "整了2天了，ai也问了官方文档也查了",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2025-02-11 19:42",
+            "mcontent": "google你的编译错误是最基本的解决方案 第一个结果是[https:://stackoverflow.com/questions/68738670/undefined-reference-to-checkstdstring-const-while-linking 此网页不属于本网站，不保证其安全性  继续访问       取消 https://stackoverflow.com/questions/68738670/undefined-reference-to-checkstdstring-const-while-linking https://stackoverflow.com/questions/68738670/undefined-reference-to-checkstdstring-const-while-linking]"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38934454",
+    "title": "web前端小白想请教下目前主流工具",
+    "post_time": "2024-01-08 16:18",
+    "uid": "65449965",
+    "content": "想用typescript和pixijs做个web绘图工具，该用啥框架和打包工具啊。非web从业人员，以前也有做点web小东西，上次用的是ts+webpack，后来学vue，说要用vite，刚去搜，又有个parcel，选择困难。东西发展太快，现在想搞个新工程，已经不知道怎么新建了",
+    "replies": [
+        {
+            "mid": "39468066",
+            "mtime": "2024-01-08 20:11",
+            "mcontent": "来用quasar吧，非常体贴的从开发到打包都配置好的框架。中文文档：[https:://www.quasar-cn.cn/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.quasar-cn.cn/ https://www.quasar-cn.cn/]"
+        },
+        {
+            "mid": "61403527",
+            "mtime": "2024-01-08 20:56",
+            "mcontent": "会啥用啥 新东西又不一定好或适合自己"
+        },
+        {
+            "mid": "64388721",
+            "mtime": "2024-01-08 22:22",
+            "mcontent": "用官方推荐的脚手架就行了，vue用vite，react用next.js，脚手架都会问你用什么包管理器(npm,yarn,pnpm)、用什么语言(JS,TS)、是否用状态管理、是否用前端路由、是否eslint、是否prettier，看不懂的选项就默认。- vue还是react，看你喜好那个，它们和UI库是强相关的(比如我自己的一个项目用到微软官方的react fluent ui，那个项目就用了react)，react的优点是库多，vue的优点是学习更简单，中文文档好- 包管理器，yarn现在基本没人用了，学下npm的基本命令和package.json的结构，然后看下pnpm(npm的底层优化版，用户接口差不多)，然后用pnpm- 语言，你有TS背景就选TS，没有就用JS，TS要熟悉tsconfig.json文件- 状态管理，vue和react都有标准状态管理插件- 前端路由，vue和react都有标准前端路由插件- eslint，用处不太大，我个人项目基本没怎么用- prettier，格式化代码的，推荐使用所以你大致需要把MVVM框架，包管理器，脚手架(next.js需要看，vite不需要看)，状态管理库，路由库(next.js自带)的totorial看一遍，就可以直接写自己的程序了，有啥不懂的就翻文档，看示例以及Bing GPT或Google。如果需要自定义格式化代码或者代码检查，就要把eslint的tutorial或prettier的tutorial看一遍(很简单)。以上就是用现代前端框架开发web应用的框架以及基础工具链，通过实践来学习它们。------我看到pixijs有官方适配pixjs-react，用react写起来可能方便一点，用vue还得自己手搓细节。一个考虑点是用什么UI框架，这个与MVVM框架是强相关的，比如vue的element ui，react的ant design和mui，以及各种各样的UI框架，你可以去v2啥的搜索相关帖子(Google关键字)或者发帖。一个考虑点是你的应用是什么形式，是丢服务器上(或者github page,gitee page,cloudflare page)，还是本地web服务一键启动，还是GUI封装(electron,wails,tauri)，都需要做相应的选型和适配。------webpack和parcel这种旧时代的重型构建工具没必要学，现在已经是原生ESM时代，vite用的是更轻量级的rollup，next.js用的是SWC，一般情况下你不用去了解这两个底层构建工具，需要了解的时候再去官网和脚手架官网了解。"
+        },
+        {
+            "mid": "61937315",
+            "mtime": "2024-01-09 00:11",
+            "mcontent": "Mark一下"
+        },
+        {
+            "mid": "65449965",
+            "mtime": "2024-01-09 10:18",
+            "mcontent": "只用canvas是不是就不用这些框架了，想尽量避免dom操作，避免生成html代码，方便代码迁移到微信小程序或者游戏引擎"
+        },
+        {
+            "mid": "64388721",
+            "mtime": "2024-01-09 14:05",
+            "mcontent": "也就是你大概用pixijs写一个JS库，提供你的功能，核心就是纯TS代码。所以你创建一个npm包组织你的代码，还需要提供依赖管理(pnpm)、ts环境、eslint(可选)、prettier(可选)、vitest(单元测试)这些必备的基础设施。但你这写的是一个GUI库，所以得通过网页来调试效果，而不是写几个单元测试就行了。所以你还是得整个vite啥的，给你提供一个实时预览，支持热重载的debug环境。 如果你熟悉vue或者react，用它们的脚手架(跳过前端路由、状态管理、样式、UI等不需要的组件)来搭这样一个debug环境其实是最方便的(你只是借用这个壳，这个壳提供了当前前端开发的最佳实践，帮你配置好了基础设施、debug环境)，还可以顺便用vue或者react写examples代码。 用Vite就行了，选择框架的时候选Vanilla(也就是纯JS，不用任何MVVM框架)，提供了依赖管理、TS和debug环境，其它的eslint,prettier,vitest等等你自己后期根据需要自己添加和配置。由于你的构建目标不是web应用，所以构建的时候你不需要用脚手架封装的构建功能，需要自己配置rollup或SWC或esbuild(一般就是按照它们的要求提供编译入口，提供一个配置文件，修改package.json里面的命令)。你喜欢也可以用python,bash,bat,make啥的手撸构建脚本。由于你这库是模块化的，你的演示站点可以丢在这个项目里面，也可以独立的搭建一个纯web项目然后导入你的库作为依赖。项目重构是简单而又迅速的，如果你的开发环境不满足你的需求，你随时可以调整。"
+        },
+        {
+            "mid": "65449965",
+            "mtime": "2024-01-09 14:45",
+            "mcontent": "感谢，我去学习下vite和vanilla"
+        },
+        {
+            "mid": "64388721",
+            "mtime": "2024-01-09 14:54",
+            "mcontent": "vanilla不是框架，就是个占位符，表示不使用任何MVVM框架。"
+        },
+        {
+            "mid": "94167",
+            "mtime": "2024-01-09 15:07",
+            "mcontent": "全栈我选择T3：[https:://github.com/t3-oss/create-t3-app 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/t3-oss/create-t3-app https://github.com/t3-oss/create-t3-app]"
+        },
+        {
+            "mid": "42849787",
+            "mtime": "2024-01-16 16:07",
+            "mcontent": "工具是其次。都是为了服务内容。还是先学好基础"
+        }
+    ]
+}

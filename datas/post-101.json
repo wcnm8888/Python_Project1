@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43493694",
+    "title": "uni-app相关(有偿)，懂得大佬帮忙看下",
+    "post_time": "2025-03-10 15:11",
+    "uid": "63228980",
+    "content": "<script>",
+    "replies": [
+        {
+            "mid": "26606137",
+            "mtime": "2025-03-10 22:21",
+            "mcontent": "if (!scanRes?.result) {return uni.showToast({ title: '未识别到有效条码', icon: 'none' })}  你这个  scanRes?.result  不是多了一个？随便找了一个例子uni.scanCode({  scanType: ['qrCode', 'barCode'],  success: (res) => {    if (res.result) {      const codeType = res.scanType; // 返回码类型(如 'qrCode' 或 'barCode')      const codeContent = res.result; // 返回码内容      // 处理业务逻辑(如跳转页面、校验数据等)    } else {      uni.showToast({ title: '未识别到有效内容', icon: 'none' });    }  },  fail: (err) => {    uni.showToast({ title: '扫码失败，请重试', icon: 'none' });  }});"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43028096",
+    "title": "[求助] 鸿蒙next开发，axios中如何实现双向认证",
+    "post_time": "2025-01-15 16:31",
+    "uid": "65093610",
+    "content": "clientCert: { // 可选，默认不使用客户端证书，自API 11开始支持该属性",
+    "replies": [
+        {
+            "mid": "66172368",
+            "mtime": "2025-01-23 13:47",
+            "mcontent": "为什么不用rcp呢"
+        }
+    ]
+}

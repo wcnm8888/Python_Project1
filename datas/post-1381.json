@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39485108",
+    "title": "烦死了，被VSCode花括号整崩溃了",
+    "post_time": "2024-03-05 15:22",
+    "uid": "62364960",
+    "content": "因为想用vscode写c#",
+    "replies": [
+        {
+            "mid": "65171953",
+            "mtime": "2024-03-05 15:54",
+            "mcontent": "用.editconfig文件定义吧"
+        },
+        {
+            "mid": "5254815",
+            "mtime": "2024-03-13 02:18",
+            "mcontent": "所以装个 rider 不就好了，vsc 编译 c#还有更多的坑"
+        },
+        {
+            "mid": "62364960",
+            "mtime": "2024-03-13 08:11",
+            "mcontent": "好的，听劝，不折腾了  没想到都是微软自家产品还支持的这么差"
+        }
+    ]
+}

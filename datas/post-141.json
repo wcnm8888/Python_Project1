@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43364948",
+    "title": "对于pdf提取不规则表格有啥办法？",
+    "post_time": "2025-02-24 14:24",
+    "uid": "38728709",
+    "content": "直接pdf转excel直接就错行了，而且表格还是跨页的。试过豆包ai也有点问题，会把第四列的识别到第三列上去准确度也不行。难道只能用pymupdf吗？",
+    "replies": [
+        {
+            "mid": "42685479",
+            "mtime": "2025-02-26 11:16",
+            "mcontent": "要么umi-ocr用多栏的来做[https:://github.com/hiroi-sora/Umi-OCR 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/hiroi-sora/Umi-OCR https://github.com/hiroi-sora/Umi-OCR]要么minerU转markdown提取[https:://github.com/opendatalab/MinerU 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/opendatalab/MinerU https://github.com/opendatalab/MinerU]分页截断一般是用列数来判断是否是同一张表，是的话直接concat。对于pdf里合并单元格的目前没有什么特别好的办法。第一列横向合并第二列纵向合并这种就是无解的。"
+        },
+        {
+            "mid": "64287432",
+            "mtime": "2025-02-26 15:19",
+            "mcontent": "让ai直接给你写个程序，然后看效果修改呗"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2025-02-26 22:43",
+            "mcontent": "pymupdf我觉得很好用……不行就用gemini，贼好用"
+        }
+    ]
+}

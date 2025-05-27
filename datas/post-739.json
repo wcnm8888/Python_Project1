@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41172486",
+    "title": "求大佬帮忙看一下这个代码到底为什么报错",
+    "post_time": "2024-08-08 16:56",
+    "uid": "42907950",
+    "content": "list144和list145在concat的时候报错，我复刻了两个df，彼此之间可以concat，和原来的concat也报错，有没有大佬可以帮忙看一下为什么？",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-08-09 09:00",
+            "mcontent": "pandas奇奇怪怪的index问题 两个index一样了吧 所以他认为row是1不是2  ignore_index似乎不work (一眼quant问题"
+        },
+        {
+            "mid": "61729610",
+            "mtime": "2024-08-09 10:46",
+            "mcontent": "问下ai"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43087736",
+    "title": "[Python] 请教一个Python改写的问题",
+    "post_time": "2025-01-22 10:04",
+    "uid": "66518171",
+    "content": "在一个炒股软件上觉得两个指标挺好，想复制到同公司的另外一个软件里，居然发现同一家公司的两个软件不能直接复制用，问了客服回答说需要经python改写，本人编程完全不懂，希望大神帮助",
+    "replies": [
+        {
+            "mid": "62279799",
+            "mtime": "2025-01-22 10:38",
+            "mcontent": "要经过改写肯定要遵循Python的语法呀，你直接复制进去肯定会报错，网上搜搜Python的语法入个门，或者你直接丢给ai让它帮忙改写"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2025-01-22 10:44",
+            "mcontent": "也不知道你的python API是什么样的，让gpt写是这样，但是你看起来对程序一窍不通，说实话要么花时间自己学，要么花钱找人写。The snippet you've provided seems to be a script written in a language typically used for financial trading platforms, possibly for defining technical indicators and their conditions. This could be from platforms like MetaTrader, AmiBroker, or a custom scripting language for trading analysis. The script appears to be defining some moving averages and conditions to highlight specific trading signals based on price and volume.The script contains indicators and conditional highlights based on the price (价) and volume (量). I'll translate this logic into Python, assuming you are using a data analysis library like pandas to handle financial time series data. The Python script will use pandas for data manipulation and matplotlib for plotting the results.Python Translation using Pandas and MatplotlibHere’s how you could implement this in Python:python运行复制import pandas as pdimport matplotlib.pyplot as plt# Sample data: Assuming df is your DataFrame and it contains 'CLOSE' and 'VOL'# You should replace the following line with how you actually load your datadf = pd.DataFrame({    'CLOSE': [100, 102, 101, 105, 107],    'VOL': [200, 220, 210, 250, 260]})N = 5  # Moving average window# Calculate Moving Averagesdf['价'] = df['CLOSE'].rolling(window=N).mean()df['量'] = df['VOL'].rolling(window=N).mean()# Define conditionsdf['DT'] = (df['价'] > df['价'].shift(1)) & (df['量'] > df['量'].shift(1))df['KT'] = (df['价'] < df['价'].shift(1)) & (df['量'] < df['量'].shift(1))# Plottingplt.figure(figsize=(10, 6))# Plot CLOSE pricesplt.plot(df['CLOSE'], label='Close Price', color='gray')plt.plot(df['价'], label='MA of Close (价)', color='yellow')# Highlight specific conditionsplt.scatter(df.index[df['DT']], df['价'][df['DT']], color='magenta', label='DT Condition', s=100, edgecolors='black')plt.scatter(df.index[df['KT']], df['价'][df['KT']], color='cyan', label='KT Condition', s=100, edgecolors='black')plt.title('Price and Condition Analysis')plt.legend()plt.show()ExplanationImports: We use pandas for data handling and matplotlib.pyplot for plotting.Data Setup: This example uses a dummy DataFrame with columns 'CLOSE' and 'VOL'. Replace this with your actual data loading routine.Moving Average Calculation: The script calculates the moving average of the 'CLOSE' and 'VOL' columns over a window N.Conditions:DT: True if both the current price moving average and volume moving average are greater than their previous values.KT: True if both are less than their previous values.Plotting:The close prices are plotted in gray.The moving average of the close price (价) is plotted in yellow.Points where DT and KT conditions are true are highlighted with magenta and cyan dots, respectively.CustomizationThe values for N and the DataFrame df should be adjusted based on your actual data. This script is designed for visual analysis. If you need to execute trades or other actions based on these signals, further integration with a trading platform or API would be required.This script provides a visual representation which can help in manually reviewing or presenting the trading signals defined by your original scripting conditions."
+        },
+        {
+            "mid": "66518171",
+            "mtime": "2025-01-22 11:18",
+            "mcontent": "请问改写这俩段一般需要多少费用"
+        }
+    ]
+}

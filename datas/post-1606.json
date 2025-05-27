@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39009852",
+    "title": "被neo4j整崩溃了",
+    "post_time": "2024-01-16 15:18",
+    "uid": "64344359",
+    "content": "为什么明明都是按照网上教程一步一步安装的为啥就不能运行年",
+    "replies": [
+        {
+            "mid": "1781995",
+            "mtime": "2024-01-16 17:11",
+            "mcontent": "不要用安装版，cypher写一些复杂查询太反人类了，自己引个maven依赖集成进来，同时用嵌入api和cypher舒服多了。[https:://neo4j.com/docs/java-reference/current/java-embedded/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://neo4j.com/docs/java-reference/current/java-embedded/ https://neo4j.com/docs/java-reference/current/java-embedded/]"
+        },
+        {
+            "mid": "64344359",
+            "mtime": "2024-01-17 10:07",
+            "mcontent": "谢谢大佬，我再试试"
+        }
+    ]
+}

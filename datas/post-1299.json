@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39697167",
+    "title": "[求助] VBA小白求助大佬",
+    "post_time": "2024-03-28 12:54",
+    "uid": "18589606",
+    "content": "照着网上抄了一个自动分离答案选项的VBA，但是不懂怎么让他循环起来，初入门的小白，求助娘家人",
+    "replies": [
+        {
+            "mid": "62221327",
+            "mtime": "2024-03-28 17:33",
+            "mcontent": "Do While 条件    循环体LoopFor i = 1 To 100    循环体Next两种循环的写法"
+        }
+    ]
+}

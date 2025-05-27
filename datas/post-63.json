@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43588705",
+    "title": "求助前端大佬html中table背景色不起效果",
+    "post_time": "2025-03-20 16:28",
+    "uid": "37367956",
+    "content": "纯萌新 提前谢谢大佬们",
+    "replies": [
+        {
+            "mid": "42768696",
+            "mtime": "2025-03-21 02:57",
+            "mcontent": "不知道你具体代码 你这问题 我建议css要分几种颜色分几类 然后jq去判断加类别 不要让css做分辨的活 你这写的既要css分类又要jq分类 逻辑太混乱了"
+        },
+        {
+            "mid": "2005805",
+            "mtime": "2025-03-21 07:49",
+            "mcontent": "1. 尽量避免 !important2. 尽量避免操作dom3. 避免这种nested selector4. 问chatgpt比在这里问要快。"
+        }
+    ]
+}

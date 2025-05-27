@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39855779",
+    "title": "求助：共享打印机 win10系统无法完成，跳错误码 0x00000bbb",
+    "post_time": "2024-04-13 14:24",
+    "uid": "40740635",
+    "content": "共享打印机  操作无法完成(错误 0x00000bbb) 无法创建打印作业。",
+    "replies": [
+        {
+            "mid": "64261002",
+            "mtime": "2024-04-13 21:50",
+            "mcontent": "建议查看或重启print spooler服务试试"
+        }
+    ]
+}

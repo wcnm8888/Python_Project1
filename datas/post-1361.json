@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39478252",
+    "title": "新手求教springboot读取映射到容器内文件的问题",
+    "post_time": "2024-03-04 19:03",
+    "uid": "38714687",
+    "content": "我现在服务器有一个json文件 然后通过docker-compose映射到容器内的/template路径下了 然后我通过ClassPathResource读这个路径下的json文件报错文件不存在",
+    "replies": [
+        {
+            "mid": "60620132",
+            "mtime": "2024-03-04 22:21",
+            "mcontent": "直接用FileInputStream 读文件路径用 /template 开头的绝对路径"
+        },
+        {
+            "mid": "38714687",
+            "mtime": "2024-03-05 03:18",
+            "mcontent": "好的 感谢了 我明天试试"
+        },
+        {
+            "mid": "62479408",
+            "mtime": "2024-03-10 09:27",
+            "mcontent": "你这里没有加斜杠，默认的用的相对路径吧，应该不匹配"
+        },
+        {
+            "mid": "26320815",
+            "mtime": "2024-03-11 09:51",
+            "mcontent": "增加配置staticResource即可"
+        },
+        {
+            "mid": "26270019",
+            "mtime": "2024-03-15 09:16",
+            "mcontent": "要么用绝对路径，要么试试classpath：前缀"
+        }
+    ]
+}

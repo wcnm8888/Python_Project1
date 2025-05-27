@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41552267",
+    "title": "有C和python还有一点js基础，学习C++有推荐的教程吗？",
+    "post_time": "2024-09-05 09:48",
+    "uid": "35083076",
+    "content": "rt，zsbd",
+    "replies": [
+        {
+            "mid": "64375529",
+            "mtime": "2024-09-05 11:29",
+            "mcontent": "我是有C井基础后学的CPP，看的这本书，就是给有其他语言基础的人学CPP的，以及学完CPP后才学的C。感觉不错，唯独需要注意的一点是这书激进的用模块代替头文件，但这个功能编译器支持不完善，自己学的时候依然用头文件就行。"
+        },
+        {
+            "mid": "63162438",
+            "mtime": "2024-09-07 15:28",
+            "mcontent": "CS106L 这个课程可以搜索一下"
+        },
+        {
+            "mid": "60930215",
+            "mtime": "2024-09-09 09:01",
+            "mcontent": "c++ primer抱着啃"
+        },
+        {
+            "mid": "65302865",
+            "mtime": "2024-09-09 16:38",
+            "mcontent": "c++ primer 和 unix环境编程吧。两个过一遍，基本上就能应付一点日常工作了。"
+        },
+        {
+            "mid": "39133312",
+            "mtime": "2024-09-11 01:31",
+            "mcontent": "复制点帝球的评论：回过头来说真想掌握cpp这个思路没问题，只是能否复制？不好说。[https:://www.stroustrup.com/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.stroustrup.com/ https://www.stroustrup.com/] 作者主页有两本书倒是可以依次递进Programming: Principles and Practice using C++ (3rd edition): a programming text book aimed at beginners who want eventually to become professionals.The C++ Programming Language (4th edition): an exhaustive description of the C++ Programming language, its standard library, and fundamental techniques for experienced programmers.primer之流不过欺世盗名，看那些玩意不如帝球说的看标准(就是不见得看得懂)"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40416823",
+    "title": "ArgoDB的user_tab_partitions在哪里啊",
+    "post_time": "2024-06-04 10:41",
+    "uid": "62451133",
+    "content": "如题，这其实是一个防止重复跑批的通用存储过程。之前我在Oracle里写的，作用是跑批之前调用，这样能清楚掉跑批那一天对应的数据。",
+    "replies": []
+}

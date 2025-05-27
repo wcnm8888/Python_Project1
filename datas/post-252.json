@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42258822",
+    "title": "悬赏一个clash代理规则 可以区分steam下载和其他steam流量",
+    "post_time": "2024-10-29 18:46",
+    "uid": "39289162",
+    "content": "RT。  现在本人用的代理规则只能区分steam。 不能细分steam下载和steam的其他流量(商店创意工坊之类的)   每次都得手动切规则 好麻烦",
+    "replies": [
+        {
+            "mid": "65171953",
+            "mtime": "2024-10-29 18:48",
+            "mcontent": "v2fly有个规则集的"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-10-29 20:47",
+            "mcontent": "支付宝账号 wkings@qq.com，大佬看着给点就行"
+        },
+        {
+            "mid": "39289162",
+            "mtime": "2024-10-29 21:43",
+            "mcontent": "私聊 zsbdzsbd"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-10-29 23:32",
+            "mcontent": ""
+        },
+        {
+            "mid": "41726867",
+            "mtime": "2024-10-30 12:02",
+            "mcontent": "可以试一下steam302，一个免费软件，可以通过host形式加速steam社区之类的，在代理那边设置steam走直连就行，而且不用消耗代理的流量。"
+        },
+        {
+            "mid": "64796163",
+            "mtime": "2024-12-02 21:00",
+            "mcontent": "parsers: # array# - reg: ^.*$ 匹配所有订阅，或  - url: [https:://example.com/profile.yaml 此网页不属于本网站，不保证其安全性  继续访问       取消 https://example.com/profile.yaml https://example.com/profile.yaml] 指定订阅  - reg: ^.*$  # 建立自己的配置    yaml:  # 添加规则      prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理        #steam直连下载        - DOMAIN-SUFFIX,steamcontent.com,DIRECT        - DOMAIN,*.steamcontent.com,DIRECT        - DOMAIN,fastly.cdn.steampipe.steamcontent.com,DIRECT        - DOMAIN,steamcdn-a.akamaihd.net,DIRECT        - DOMAIN-SUFFIX,cm.steampowered.com,DIRECT        - DOMAIN-SUFFIX,steamserver.net,DIRECT        - IP-CIDR,45.121.184.0/24,DIRECT        - IP-CIDR,103.10.124.0/23,DIRECT        - IP-CIDR,103.28.54.0/24,DIRECT        - IP-CIDR,146.66.152.0/24,DIRECT        - IP-CIDR,146.66.155.0/24,DIRECT        - IP-CIDR,153.254.86.0/24,DIRECT        - IP-CIDR,155.133.224.0/22,DIRECT        - IP-CIDR,155.133.230.0/24,DIRECT        - IP-CIDR,155.133.232.0/23,DIRECT        - IP-CIDR,155.133.234.0/24,DIRECT        - IP-CIDR,155.133.236.0/22,DIRECT        - IP-CIDR,155.133.240.0/23,DIRECT        - IP-CIDR,155.133.244.0/23,DIRECT        - IP-CIDR,155.133.246.0/24,DIRECT        - IP-CIDR,155.133.248.0/21,DIRECT        - IP-CIDR,162.254.192.0/21,DIRECT        - IP-CIDR,185.25.182.0/23,DIRECT        - IP-CIDR,190.217.32.0/22,DIRECT        - IP-CIDR,192.69.96.0/22,DIRECT        - IP-CIDR,205.196.6.0/24,DIRECT        - IP-CIDR,208.64.200.0/22,DIRECT        - IP-CIDR,208.78.164.0/22,DIRECT        - IP-CIDR,205.185.194.0/24,DIRECT"
+        },
+        {
+            "mid": "64175241",
+            "mtime": "2025-01-16 08:59",
+            "mcontent": "把rust猫的规则发给ai，然后让ai把这段加上去就行"
+        }
+    ]
+}

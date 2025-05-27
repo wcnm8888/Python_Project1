@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40853937",
+    "title": "求助 关于简易剪辑软件",
+    "post_time": "2024-07-12 16:15",
+    "uid": "39716827",
+    "content": "小白不懂，不知道发哪里，先发这里试试",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2024-07-12 16:43",
+            "mcontent": "那为什么不用QQ 影音了"
+        },
+        {
+            "mid": "63807600",
+            "mtime": "2024-07-12 17:46",
+            "mcontent": "[https:://github.com/mifi/lossless-cut/releases 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/mifi/lossless-cut/releases https://github.com/mifi/lossless-cut/releases]"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-07-12 17:58",
+            "mcontent": "ffmpeg -ss 00:10:00 -to 00:15:00 -i input_file -c copy output_file"
+        },
+        {
+            "mid": "64950639",
+            "mtime": "2024-07-13 03:00",
+            "mcontent": "会操作就ffmpeg，不会就格式工厂，或者简单点10分钟学下剪映/必剪怎么操作"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-07-13 03:57",
+            "mcontent": "mkvmerge input_file --output output_file --split parts:00:10:00-00:15:00"
+        },
+        {
+            "mid": "65657246",
+            "mtime": "2024-11-02 15:07",
+            "mcontent": "LosslessCut，不用转码重渲染，直接在原素材上剪的。"
+        }
+    ]
+}

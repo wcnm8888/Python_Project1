@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41102650",
+    "title": "IDEA配置JDK求助",
+    "post_time": "2024-08-03 11:28",
+    "uid": "63428272",
+    "content": "为什么JDK home path这里一直标红啊？我用java -version、java、javac在cmd里面检查过都没问题啊，但是一直就选不了这里，jdk也卸载重装了好多次",
+    "replies": [
+        {
+            "mid": "63581600",
+            "mtime": "2024-08-04 14:37",
+            "mcontent": "配置全局变量啊"
+        }
+    ]
+}

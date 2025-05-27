@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39643821",
+    "title": "[求助] java: 无法从静态上下文中引用非静态 变量 this",
+    "post_time": "2024-03-22 21:08",
+    "uid": "11781712",
+    "content": "刚看b站的java视频学了继承，老师就演示了一下代码，结果我打完运行就报错了，提示 java: 无法从静态上下文中引用非静态 变量 this  创建Zi对象被idea划了红线，也就是(Zi z = new Zi();)",
+    "replies": [
+        {
+            "mid": "11781712",
+            "mtime": "2024-03-22 21:13",
+            "mcontent": "懂了，是我sb了"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40026262",
+    "title": "想学python，主要用途是办公自动化，求引路",
+    "post_time": "2024-04-30 16:23",
+    "uid": "42794695",
+    "content": "工作上，有很多机械重复建立excel表格，几个表格中录入数据，想用python弄个小软件，节约时间好摸鱼，淘宝上问了下，报价大几千，也不知道对方的底细，再加上来日方长，想自学下。求NGA老哥引个路，B站上的视频感觉都和我的需求不相关。",
+    "replies": [
+        {
+            "mid": "42191846",
+            "mtime": "2024-04-30 17:11",
+            "mcontent": "我给你个方案，面向gpt编程"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-04-30 20:02",
+            "mcontent": "pandas，很好学"
+        },
+        {
+            "mid": "64053536",
+            "mtime": "2024-04-30 20:59",
+            "mcontent": "[https:://www.runoob.com/python/python-tutorial.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.runoob.com/python/python-tutorial.html https://www.runoob.com/python/python-tutorial.html]菜鸟教程+chatgpt，就ok了，excel的话我感觉pandas 库挺好用的编辑器的话直接就用vscode+python扩展就行"
+        },
+        {
+            "mid": "2858747",
+            "mtime": "2024-04-30 22:38",
+            "mcontent": "文字教程：官网，[https:://docs.python.org/zh-cn/3/tutorial/index.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://docs.python.org/zh-cn/3/tutorial/index.html https://docs.python.org/zh-cn/3/tutorial/index.html]菜鸟教程，[https:://www.runoob.com/python/python-tutorial.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.runoob.com/python/python-tutorial.html https://www.runoob.com/python/python-tutorial.html]廖雪峰，[https:://www.liaoxuefeng.com/wiki/1016959663602400 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.liaoxuefeng.com/wiki/1016959663602400 https://www.liaoxuefeng.com/wiki/1016959663602400]第一个环境：PyCharm2024社区版，Python 3.11.9支持富文本的库：xlsxwriter，[https:://xlsxwriter.readthedocs.io/index.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://xlsxwriter.readthedocs.io/index.html https://xlsxwriter.readthedocs.io/index.html]openpyxl，[https:://openpyxl.readthedocs.io/en/stable/index.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://openpyxl.readthedocs.io/en/stable/index.html https://openpyxl.readthedocs.io/en/stable/index.html]"
+        },
+        {
+            "mid": "41696410",
+            "mtime": "2024-05-01 03:03",
+            "mcontent": "pamdas/openpyxl 找个文档看看或者直接问GPT就行了"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-05-01 06:30",
+            "mcontent": "你要建的只是excel的话建议VBA"
+        },
+        {
+            "mid": "42794695",
+            "mtime": "2024-05-01 09:46",
+            "mcontent": "谢谢大家的指导"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-05-01 13:18",
+            "mcontent": "excel的话，建议365公式，辅修powerquery，然后遇到有些不方便的地方，例如读取文件路径，自动刷新，加密等，面向gpt现学vba"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-05-01 14:48",
+            "mcontent": "VBA只能在打开的excel内部运行吧？如果想把excel A文件的部分内容复制到excel B文件，VBA实现不了所以还是python吧，了解基本语法，pandas库使用方法基本就够了。"
+        },
+        {
+            "mid": "38435070",
+            "mtime": "2024-06-01 19:51",
+            "mcontent": "python太重量级了，推荐autoit，非常适合干办公自动化一套"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-05-01 17:02",
+            "mcontent": "并不是不能改其他文件，你可以理解为某个xlsm文件是启动器。。。vba可以调用其他exe,xls...上限是一门独立的编程语言，下限是录制宏"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-05-01 18:19",
+            "mcontent": ""
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-05-01 20:49",
+            "mcontent": "并不是。VBA是有file handle的，你可以用vba做跨文件调阅和修改。"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-05-02 04:34",
+            "mcontent": "你用python不也一样要开个什么程序。xslm文佳可以做成操作面板来做程序化处理。"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-05-02 04:40",
+            "mcontent": "那换句话说，python可以不import或启动解释器么？？？我知道linux系统自带环境，但不一样要打开终端输入python xx.py"
+        },
+        {
+            "mid": "42685136",
+            "mtime": "2024-05-02 07:54",
+            "mcontent": "建议自学，我用python写了n多excel处理的软件了，带界面的不带界面的，都不难。"
+        },
+        {
+            "mid": "61466622",
+            "mtime": "2024-05-02 22:50",
+            "mcontent": "不是非常刁钻的话，一般pandas都能搞定。假设你是懂sql的话，你找大模型，把excel字段输入进去，说说需求把sql语句输入进去就行，不懂sql就说清楚需求就好。以前我都自己写，大模型出来以后明显效率高很多"
+        },
+        {
+            "mid": "42794695",
+            "mtime": "2024-05-03 15:25",
+            "mcontent": "你说的大模型是指chatgpt之类的吗"
+        },
+        {
+            "mid": "62589879",
+            "mtime": "2024-05-04 02:37",
+            "mcontent": "推荐你去看一下rpa机器人相关，我自己是现在在一家公司干IT，也在用这个，需要的话可以告诉你用那家的比较好用。"
+        }
+    ]
+}

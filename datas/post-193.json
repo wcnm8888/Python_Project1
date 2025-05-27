@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43221367",
+    "title": "[求助]有懂群晖上docker部署套件的老哥么？",
+    "post_time": "2025-02-07 19:30",
+    "uid": "42939356",
+    "content": "想部署一个wiki.js，但是卡在了下载这一步",
+    "replies": [
+        {
+            "mid": "63521444",
+            "mtime": "2025-02-09 12:01",
+            "mcontent": "因为不知名原因，docker服务在国内有些问题你去搜docker 下载加速就知道了"
+        }
+    ]
+}

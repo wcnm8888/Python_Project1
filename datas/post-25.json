@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43653748",
+    "title": "配docker镜像一直报错INTERNAL_ERROR求助",
+    "post_time": "2025-03-27 14:46",
+    "uid": "66556129",
+    "content": "rt，为了跑一个需要很多大数据技术插件的项目准备配一个docker容器。现在配置文件dockerfile已经写好了，在运行配置文件的时候长期报错如图：",
+    "replies": [
+        {
+            "mid": "63453772",
+            "mtime": "2025-03-28 11:52",
+            "mcontent": "你把file发上来看看"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2025-03-28 13:38",
+            "mcontent": "其实建议装个wsl2再在wsl里用docker，Windows上太多莫名其妙的问题了"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-03-29 13:15",
+            "mcontent": "docker已经被墙了，我还是觉得是网络问题引起的。你搞个国外VPS复现试试"
+        },
+        {
+            "mid": "60644120",
+            "mtime": "2025-04-08 10:49",
+            "mcontent": "国外老哥有提到相关问题，最后的解决方法是要么换文件夹，要么查一下你的dockerfile的文件编码格式是不是UTF-8。[https:://forums.docker.com/t/docker-compose-not-working-rst-stream-with-error-code-internal-error/136137/8 此网页不属于本网站，不保证其安全性  继续访问       取消 https://forums.docker.com/t/docker-compose-not-working-rst-stream-with-error-code-internal-error/136137/8 https://forums.docker.com/t/docker-compose-not-working-rst-stream-with-error-code-internal-error/136137/8]"
+        }
+    ]
+}

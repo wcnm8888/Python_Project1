@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39801659",
+    "title": "idea顶栏下为什么有些奇怪的白条",
+    "post_time": "2024-04-08 15:21",
+    "uid": "65333319",
+    "content": "",
+    "replies": [
+        {
+            "mid": "13018657",
+            "mtime": "2024-04-09 14:36",
+            "mcontent": "win 的缩放问题，你拖动窗口或者拉动工具栏的位置就会消失，原因是非点对点缩放，如果可以接受的话这么改可以基本解决问题：系统100%缩放，使用idea的整体缩放Appearance & Behavior =》Appearance =》 Accessibility =》 Zoom 110% 或者更大"
+        }
+    ]
+}

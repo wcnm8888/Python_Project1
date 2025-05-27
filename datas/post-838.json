@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40863154",
+    "title": "[Python] 用Python练习做简单的管理系统 注册有点问题",
+    "post_time": "2024-07-13 14:56",
+    "uid": "34965675",
+    "content": "刚学Python大佬们帮我看看 登入增删查都正常 就是注册有问题",
+    "replies": [
+        {
+            "mid": "731907",
+            "mtime": "2024-07-13 15:20",
+            "mcontent": "错误提示很明确了  sign_up_password空类型的变量"
+        },
+        {
+            "mid": "2858747",
+            "mtime": "2024-07-13 16:39",
+            "mcontent": "place返回None，要分两句，一句赋值，一句place。"
+        }
+    ]
+}

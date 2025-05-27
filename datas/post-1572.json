@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39092450",
+    "title": "爬虫求助贴",
+    "post_time": "2024-01-24 22:04",
+    "uid": "63597023",
+    "content": "用ios Stream抓包重发和浏览器重发都能请求到正确的数据，但是用python或者postman请求就获取不到正确的数据，url，headers什么的完全一致。图片中available：10是正确的",
+    "replies": [
+        {
+            "mid": "1884407",
+            "mtime": "2024-01-25 08:31",
+            "mcontent": "浏览器进程有登录后恩cookie等，python的呢？"
+        },
+        {
+            "mid": "62221327",
+            "mtime": "2024-01-26 13:01",
+            "mcontent": "建议用burpsuite抓个包比较一下请求"
+        },
+        {
+            "mid": "60335164",
+            "mtime": "2024-01-26 15:53",
+            "mcontent": "cookie这些呢？还有些网站有ja3指纹验证，header头顺序验证，有限制只http2.0"
+        },
+        {
+            "mid": "63597023",
+            "mtime": "2024-01-27 12:43",
+            "mcontent": "直接复制curl去postman重发，结果和图上一样，但是直接浏览器重发数据就正确"
+        },
+        {
+            "mid": "60335164",
+            "mtime": "2024-01-27 13:24",
+            "mcontent": "不止一个人跟你讲了先看下cookie，你都无视了。。。。。。"
+        },
+        {
+            "mid": "63597023",
+            "mtime": "2024-01-27 14:05",
+            "mcontent": "解决了，网站只支持http/2，改为httpx请求就行"
+        }
+    ]
+}

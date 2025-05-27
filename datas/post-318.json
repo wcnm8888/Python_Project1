@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42785199",
+    "title": "GitHub上如何将issue进行置顶?",
+    "post_time": "2024-12-19 20:34",
+    "uid": "60163611",
+    "content": "自己维护了一个开源项目, 建了一个issue用来存放一些常见的问题, 然后不close它",
+    "replies": [
+        {
+            "mid": "63213928",
+            "mtime": "2024-12-20 00:44",
+            "mcontent": "点进去 点pin"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43656701",
+    "title": "[Python] 求助，python3.13.2如何安装zipline？",
+    "post_time": "2025-03-27 19:20",
+    "uid": "37616969",
+    "content": "一直报错“ error: subprocess-exited-with-error”，“error: metadata-generation-failed”，网上找了些攻略，也没有安装成功。",
+    "replies": [
+        {
+            "mid": "38554127",
+            "mtime": "2025-03-28 12:56",
+            "mcontent": "可能是python版本太高了，默认仓库这边最高也就支持到Python3.6"
+        },
+        {
+            "mid": "2858747",
+            "mtime": "2025-03-28 18:20",
+            "mcontent": "为啥一定要3.13.2呢？zipline-reloaded支持到3.12，有Microsoft Visual C++ 14.0的话可能3.13也行。"
+        },
+        {
+            "mid": "37616969",
+            "mtime": "2025-03-28 20:01",
+            "mcontent": "官网下载那是3.13.2，直接点了就下了，没留意下面选Windows后，现在看了下，发现能选其他低版本的。"
+        },
+        {
+            "mid": "38435070",
+            "mtime": "2025-03-29 00:05",
+            "mcontent": "用3.8的吧，支持win7的最高版本。开发程序肯定是按兼容性最高的来整。"
+        },
+        {
+            "mid": "37616969",
+            "mtime": "2025-03-29 16:06",
+            "mcontent": "好的，我重新搞一下。"
+        },
+        {
+            "mid": "38941985",
+            "mtime": "2025-03-31 23:44",
+            "mcontent": "3.13太新了，很多软件还没适配。你自己用的话，根据你要用的软件适配的python版本来。"
+        }
+    ]
+}

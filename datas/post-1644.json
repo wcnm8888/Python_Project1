@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38889742",
+    "title": "[求助] 问个关于TS类型判断的问题，这种情况有不使用 any 让错误消失的办法吗？",
+    "post_time": "2024-01-03 16:53",
+    "uid": "40525562",
+    "content": "如上图，我需要接收控件的 @change 事件回调来的数值，但是在这个UI框架下，返回的类型被标记得很全面...布尔，数字，字符串等等都有，但是我的数据只有可能返回数字或字符串，结果就报了这个警告。",
+    "replies": [
+        {
+            "mid": "40937643",
+            "mtime": "2024-01-03 18:34",
+            "mcontent": "@change=\"($value)=>{yourFunction($value as number|string)}用as盖掉。不知道其他老哥有没有更好的办法"
+        },
+        {
+            "mid": "43318754",
+            "mtime": "2024-01-06 00:33",
+            "mcontent": "ignore"
+        }
+    ]
+}

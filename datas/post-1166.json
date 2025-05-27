@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39964273",
+    "title": "人大金仓数据库怎么集成进mybatisplus",
+    "post_time": "2024-04-24 17:44",
+    "uid": "38505714",
+    "content": "我用了@TableName,配置了schema=xxx，但是查询的时候一直爆unknown database xxx，这个怎么解决。我用navicat同样的语句就能查出来，有大神解答一下吗？",
+    "replies": [
+        {
+            "mid": "64808800",
+            "mtime": "2024-04-25 01:20",
+            "mcontent": "没适配吧"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2024-04-25 08:44",
+            "mcontent": "要不然。。把jdbc驱动和url都换成pg的试试？"
+        },
+        {
+            "mid": "38505714",
+            "mtime": "2024-04-25 09:06",
+            "mcontent": "好的我试试"
+        }
+    ]
+}

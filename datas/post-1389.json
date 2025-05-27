@@ -1,0 +1,64 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39464960",
+    "title": "求教一个关于C++模板的问题",
+    "post_time": "2024-03-03 10:19",
+    "uid": "64375529",
+    "content": "如代码所示，这里的两个函数模板boo，如果两个boo的定义都存在，那么编译报错，但把boo(int)删掉后，反而行得通了。我自己电脑用的编译器是微软那个，用基于gcc和clang的在线编译网站也一样，求教大神这是为什么。",
+    "replies": [
+        {
+            "mid": "731907",
+            "mtime": "2024-03-03 13:43",
+            "mcontent": "class U = typename B<T>::type>改成class U =B<T>>"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-03-03 17:15",
+            "mcontent": "好久没用模板都忘光了,不过我印象里这种策略要用sfinae来实现,你这个情况不属于sfinae吧这个error发生在struct B的instantiation而不是boo的substitution,sfinae在这个情况下是无法发挥作用的这是cppref上面关于sfinae的描述:This rule applies during overload resolution of function templates: When substituting the explicitly specified or deduced type for the template parameter fails, the specialization is discarded from the overload set instead of causing a compile error. 虽然instantiation是由substitution触发的,但是substitution管不到instantiation报error ,非常符合我对编译器的认识 我的gcc的报错:Code c:1:2:3:4:5:6:7:8:\na.cpp: In instantiation of ‘struct B<void>’:\na.cpp:7:20:   required by substitution of ‘template<class T, class U> void boo(int) [with T = void; U = <missing>]’\na.cpp:15:23:   required from here\na.cpp:4:9: error: ‘void’ is not a class, struct, or union type\n    4 |   using type = typename A::type;\n      |         ^~~~\n这个error跟直接尝试instantiate一个B<void>报的error是一样的至于为什么boo(double)不报错,应该是因为编译器发现你没用到B<void>,压根没去instantiate吧,模板一个重要的原则就是不必要就不instantiate在函数里面加一行typename U::type c,就会报一样的error了"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2024-03-03 18:00",
+            "mcontent": "感谢大佬解惑，我是在网上自学C++模板，那个教程讲到SFINAE这一部分举的几个例子我自己改了改遇到这种情况"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-03-03 18:08",
+            "mcontent": "人生苦短,别太纠结这种dirty技巧了,能用就行,不是专门写库的有个了解就行,大不了苦一苦用户能用constexpr-if还是尽量用constexpr-if吧,enable_if什么的早该爆金币了"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2024-03-03 19:54",
+            "mcontent": "那个教程就是先让学SFINAE，感受一下用这个黑魔法有多么折磨和痛苦，才能理解C++20的概念约束多么伟大和人性化"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-03-03 23:25",
+            "mcontent": "concept那茴字的四种写法也挺抽象的，cpp委员会能整点好活，但不多而且我上次看的时候各大编译器好像还没完全支持concept"
+        },
+        {
+            "mid": "64007411",
+            "mtime": "2024-03-04 08:26",
+            "mcontent": "学完约束总感觉自己应该重新去学一遍数学了"
+        },
+        {
+            "mid": "64762033",
+            "mtime": "2024-03-05 15:32",
+            "mcontent": "好哥哥求一下那个教程是啥"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2024-03-05 15:56",
+            "mcontent": "一个B站的付费课，视频是付费的教案是免费的，我看教案自学。作者的教案存放在github里[https:://github.com/Mq-b/Modern-Cpp-templates-tutorial 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/Mq-b/Modern-Cpp-templates-tutorial https://github.com/Mq-b/Modern-Cpp-templates-tutorial]"
+        },
+        {
+            "mid": "63644820",
+            "mtime": "2024-03-12 15:40",
+            "mcontent": "这种情况好像不同版本的编译器的实现不一样，有些会自动实例化，只要用了b<void>就一定会报错。"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-03-12 16:10",
+            "mcontent": "模板也不是一口气全部实例化的，只有用到的部分会被实例化即便B<void>实例化了，由于B的成员没有被用到，理论上B的成员是不会被实例化的顺便翻了一下cppref当然我也不是啥语言律师，你说的这个情况不知道属不属于ub"
+        }
+    ]
+}

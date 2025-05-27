@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42247700",
+    "title": "[求助] 小白问下，GitHub要下载压缩包，但是找不到可以下载的地方",
+    "post_time": "2024-10-28 19:53",
+    "uid": "65005107",
+    "content": "在找某款插件的时候，在Git找到。上面提供了脚本安装跟浏览器安装两种方法。",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-10-29 07:03",
+            "mcontent": "github全公开的，你打码有什么意思呢不如网址放出来，说不定早有人帮你找好下载链接了"
+        },
+        {
+            "mid": "66270461",
+            "mtime": "2024-10-29 08:05",
+            "mcontent": "。。。"
+        },
+        {
+            "mid": "992969",
+            "mtime": "2024-10-29 08:26",
+            "mcontent": "应该是最下面那个artifacts里面的，但是这玩意儿是有时限的，过期了就没了可以看看release里有没有最不济可以自己fork一个然后跑action"
+        },
+        {
+            "mid": "61231126",
+            "mtime": "2024-10-29 08:36",
+            "mcontent": "根据线索看了下你这个应该是[https:://github.com/MotooriKashin/Bilibili-Old 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/MotooriKashin/Bilibili-Old https://github.com/MotooriKashin/Bilibili-Old]这个仓库的插件理论上说它这个actions里面的构建产物过期了不好整你要是真想用插件版的话建议你下个node.js自己编译打包，不会太麻烦要不还是直接用Tampermonkey版比较适合小白"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-10-29 16:49",
+            "mcontent": "没办法，上网多了，有些时候有些人会觉得有引流嫌疑，只能这样了"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-10-29 16:50",
+            "mcontent": "好的，谢谢，主要我要用360浏览器，还想着有压缩包比给浏览器装油猴简单点"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-10-29 16:51",
+            "mcontent": "好的，非常感谢"
+        }
+    ]
+}

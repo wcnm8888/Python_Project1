@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39365226",
+    "title": "[求助]有没有大佬知道下面两条命令的意思啊",
+    "post_time": "2024-02-21 18:28",
+    "uid": "64938258",
+    "content": "setenv bootargs 'mem=2048M console=ttyAMA0,115200 clk_ignore_unused ubi.mtd=2 root=ubi0:ubifs rootfstype=ubifs rw mtdparts=hinand:1M(boot),10M(kernel),32M(rootfs.ubifs),466M(app)'",
+    "replies": [
+        {
+            "mid": "64589898",
+            "mtime": "2024-02-21 20:44",
+            "mcontent": "还是问gpt吧"
+        },
+        {
+            "mid": "65015346",
+            "mtime": "2024-02-22 00:38",
+            "mcontent": "果然还是电脑更懂电脑"
+        },
+        {
+            "mid": "64938258",
+            "mtime": "2024-02-22 15:28",
+            "mcontent": "确实"
+        }
+    ]
+}

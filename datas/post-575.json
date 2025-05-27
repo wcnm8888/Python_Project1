@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41748001",
+    "title": "现在全栈项目用nextjs怎么样",
+    "post_time": "2024-09-21 18:34",
+    "uid": "63957354",
+    "content": "个人娱乐项目，意向类型是效率工具、erp等。",
+    "replies": [
+        {
+            "mid": "60519280",
+            "mtime": "2024-09-22 00:01",
+            "mcontent": "哪怕不是个人娱乐项目，是正经的业务需求，nestjs的性能和稳定性也比spring全家桶和各种python玩具强多了"
+        },
+        {
+            "mid": "43187732",
+            "mtime": "2024-09-22 16:19",
+            "mcontent": ""
+        },
+        {
+            "mid": "62175194",
+            "mtime": "2024-09-22 16:35",
+            "mcontent": "nest别来碰瓷spring了，还性能，笑死看看techempower benchmark nest在什么吊车尾位置再来吹牛逼"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-09-23 10:59",
+            "mcontent": "在比spring快1倍的位置啊，怎么了？"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2024-09-23 13:46",
+            "mcontent": "不知道楼上吹nest的大佬用的什么天顶星科技版本[https:://www.techempower.com/benchmarks/#hw=ph&test=db&section=data-r22 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.techempower.com/benchmarks/#hw=ph&test=db&section=data-r22 https://www.techempower.com/benchmarks/#hw=ph&test=db&section=data-r22]"
+        }
+    ]
+}

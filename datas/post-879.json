@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40613316",
+    "title": "关于面向GPT编程",
+    "post_time": "2024-06-21 11:50",
+    "uid": "42568093",
+    "content": "VPN不稳定，老是被封IP，可以用kimi代替吗？有没有用过的老哥评价一下",
+    "replies": [
+        {
+            "mid": "26377507",
+            "mtime": "2024-06-21 14:00",
+            "mcontent": "用VPN是犯法的，楼主且行且珍惜"
+        },
+        {
+            "mid": "42568093",
+            "mtime": "2024-06-21 14:16",
+            "mcontent": "不是哥们，不用vpn咋用chatGPT"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-06-21 15:54",
+            "mcontent": "你应该问的是“如何找一个稳定可用的XXX”"
+        },
+        {
+            "mid": "251661",
+            "mtime": "2024-06-21 17:03",
+            "mcontent": "你买个稳定的节点自己搞就行了"
+        },
+        {
+            "mid": "64637806",
+            "mtime": "2024-06-22 09:56",
+            "mcontent": "gpt3.5比kimi还是强不少。前面刚学习的时候开了个4.0 后面就直接用kimi了。懒得折腾"
+        },
+        {
+            "mid": "43120094",
+            "mtime": "2024-06-22 11:31",
+            "mcontent": ""
+        },
+        {
+            "mid": "251661",
+            "mtime": "2024-06-22 14:55",
+            "mcontent": "你弄个固定的节点，私信你了。"
+        },
+        {
+            "mid": "63521444",
+            "mtime": "2024-06-22 15:27",
+            "mcontent": "我说一个解决办法cloudflare 有 workers AI github 里面有 别人开源的项目:[https:://github.com/Jazee6/cloudflare-ai-web 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/Jazee6/cloudflare-ai-web https://github.com/Jazee6/cloudflare-ai-web]对接好后可以直接自己部署一个平台里面可以直接用3.5"
+        },
+        {
+            "mid": "62543811",
+            "mtime": "2024-06-23 13:08",
+            "mcontent": "之前看过up主(好像是电丸科技)说过这话题--有合法渠道，不是vpn，要申请的"
+        },
+        {
+            "mid": "64946209",
+            "mtime": "2024-06-24 22:44",
+            "mcontent": "可以试试 [https:://www.coze.com/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.coze.com/ https://www.coze.com/] 这个网址，创建agent后可以直接用gpt-4o"
+        },
+        {
+            "mid": "62051178",
+            "mtime": "2024-06-24 23:44",
+            "mcontent": "里面有好多，哪个是gpt-4o?"
+        },
+        {
+            "mid": "62255321",
+            "mtime": "2024-06-26 00:41",
+            "mcontent": "文心一言kimi都可以"
+        },
+        {
+            "mid": "62855938",
+            "mtime": "2024-07-02 09:51",
+            "mcontent": "这几个都还可以，问代码我觉得通义更好一点"
+        },
+        {
+            "mid": "42822636",
+            "mtime": "2024-07-02 10:33",
+            "mcontent": "文心还花钱"
+        },
+        {
+            "mid": "63370366",
+            "mtime": "2024-07-02 18:33",
+            "mcontent": "直接copilot chat不香么"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-07-03 11:11",
+            "mcontent": "big brother is watching over you."
+        },
+        {
+            "mid": "60027817",
+            "mtime": "2024-07-04 03:28",
+            "mcontent": "我靠，高手不少啊"
+        },
+        {
+            "mid": "919214",
+            "mtime": "2024-07-04 20:43",
+            "mcontent": "专业用户表示国内deepseek-code-v2编码能力不错的，kimi只能说钱都放在营销上了"
+        },
+        {
+            "mid": "65400813",
+            "mtime": "2024-07-05 14:22",
+            "mcontent": "自己搭建。[https:://github.com/wuzhejia/vless-vpn-guide 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/wuzhejia/vless-vpn-guide https://github.com/wuzhejia/vless-vpn-guide]"
+        }
+    ]
+}

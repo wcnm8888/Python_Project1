@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42440589",
+    "title": "[求助] 老RTS的这种复古的伪3D画面具体是怎么实现的？",
+    "post_time": "2024-11-14 10:05",
+    "uid": "198406",
+    "content": "就是类似暗黑2、帝国2、星际1、哥萨克3这种实质是2D的游戏，被称作Isometric",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-11-14 10:48",
+            "mcontent": "Isometric tile map unity本身就支持 不需要插件 去youtube搜关键字就行"
+        }
+    ]
+}

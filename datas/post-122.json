@@ -1,0 +1,94 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43088771",
+    "title": "请教扑克牌摸五张牌摸到顺子的概率怎么算",
+    "post_time": "2025-01-22 11:27",
+    "uid": "66529821",
+    "content": "摸到顺子的概率，摸到同花顺的概率",
+    "replies": [
+        {
+            "mid": "42581685",
+            "mtime": "2025-01-22 11:50",
+            "mcontent": "抽很多很多次，然后计算其中出顺子/同花顺的频率总次数越多越接近概率"
+        },
+        {
+            "mid": "14364750",
+            "mtime": "2025-01-25 12:54",
+            "mcontent": "来自ai,不保证正确性"
+        },
+        {
+            "mid": "5248453",
+            "mtime": "2025-01-25 15:08",
+            "mcontent": "长图，不知道能不能看清"
+        },
+        {
+            "mid": "66529821",
+            "mtime": "2025-01-25 20:03",
+            "mcontent": "啊原来是这么算有没有老哥有简单方法"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-01-25 20:42",
+            "mcontent": "这就是个排列组合的数学题吧。有数学公式可以非常准确的算出来。难道楼主想用代码跑概率？"
+        },
+        {
+            "mid": "66529821",
+            "mtime": "2025-01-26 16:06",
+            "mcontent": "不是我就是想问问有没有不算具体所有可能用另一种方法分析我自己分析半天但是和这个ai的差太多，应该是错了"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-01-26 18:18",
+            "mcontent": "摸到顺子的概率=1-不摸到顺子的概率。但是计算“不摸到顺子的概率”更复杂。"
+        },
+        {
+            "mid": "64902933",
+            "mtime": "2025-01-27 17:03",
+            "mcontent": "其实你可以把你的想法发出来给大家看一看。虽然楼上的答案是对的，但是算是最基础的顺子以及同花顺的概率模型。实际赌场中会有一些手段来改变赌局的概率(例如：发牌后切走一张牌来增加不确定性的行为)，这些行为就是为了避免一些心算能力强的玩家通过算术来掌握牌局，毕竟赌场的本质是“赌博”而不是“计算”。要是你有什么有意思的想法就发出来呗，大家都是普通人，讨论讨论也挺好的。"
+        },
+        {
+            "mid": "66529821",
+            "mtime": "2025-01-28 22:13",
+            "mcontent": "我感觉那种先抽一张，在抽第二张到第五张整成顺子那种，这么算"
+        },
+        {
+            "mid": "41935479",
+            "mtime": "2025-01-28 22:16",
+            "mcontent": "不要想太复杂，计算机单纯用穷举法有能力枚举所有的抽牌情况"
+        },
+        {
+            "mid": "64902933",
+            "mtime": "2025-01-29 19:23",
+            "mcontent": "其实你这个方法最后算出来的结果跟上面那个结论是一样的，只不过你这个方法比较麻烦。我觉得思路是这样的，每一轮抽卡都要考虑能够组成顺子的可能性。那么第一轮就是100%，因为无论抽到什么牌，你后续都可以组成顺子。但是从第二轮开始就需要穷举了，因为你第一轮抽到 A 或者 7 或者 K，他们这一轮抽卡能组成顺子的概率都各不相同(例如 A 只能组成 10-A 或者 A-5 的顺子，7 就能组成 3-J 中任意的连续序列顺子，K 就只能组成 9-A 中任意的连续序列顺子)，从上述例子就能看到概率不同了。然后到这一步，其实你只能不停地穷举可以组成顺子和不能组成顺子的情况，最终变成他们上面提出的公式(找到所有组合数，然后找出能够组成顺子的组合数，也就是组合问题)。"
+        },
+        {
+            "mid": "65214610",
+            "mtime": "2025-01-30 02:44",
+            "mcontent": "古典概型，都不需要计算机，直接按计算器就行了牌按照一副牌，顺子我按德扑的规则，从A2345到10JQKA，考虑到花色，顺子的情况是10*4^5=10240总的抽牌可能性是52张牌抽5张的组合=52！/(5!*47!)=2598960概率就是10240/2598960=0.003940037553482931也就是0.394%"
+        },
+        {
+            "mid": "66529821",
+            "mtime": "2025-01-31 09:18",
+            "mcontent": "对对对就是这样"
+        },
+        {
+            "mid": "64902933",
+            "mtime": "2025-01-31 19:14",
+            "mcontent": "那估计只是你没把所有情况算完，不然你的答案跟他们的答案应该是一致的(有一些小数点误差)。你可以算一个更简单的模型，就是2345抽两张牌组成连续数字的概率。这个模型通过人手或者心算能算出来，算出来以后你大概也就知道算顺子和同花顺概率的方法了。"
+        },
+        {
+            "mid": "62361561",
+            "mtime": "2025-02-26 16:10",
+            "mcontent": "using System;using System.Collections.Generic;using System.Linq;namespace WinformDevFramework{    public class ProbabilityCalculator    {        private static Random random = new Random();        public static double CalculateStraightProbability(int simulations)        {            int straightCount = 0;            for (int i = 0; i < simulations; i++)            {                var deck = GenerateDeck();                var hand = DrawHand(deck);                if (IsStraight(hand))                {                    straightCount++;                }            }            return (double)straightCount / simulations;        }        private static List<int> GenerateDeck()        {            List<int> deck = new List<int>();            for (int i = 0; i < 4; i++) // 4 suits            {                for (int j = 1; j <= 13; j++) // 13 ranks                {                    deck.Add(j);                }            }            return deck;        }        private static List<int> DrawHand(List<int> deck)        {            List<int> hand = new List<int>();            for (int i = 0; i < 5; i++)            {                int index = random.Next(deck.Count);                hand.Add(deck[index]);                deck.RemoveAt(index);            }            return hand;        }        private static bool IsStraight(List<int> hand)        {            hand.Sort();            for (int i = 0; i < hand.Count - 1; i++)            {                if (hand + 1 != hand)                {                    return false;                }            }            return true;        }    }}### 代码说明：- GenerateDeck 方法生成一副标准的扑克牌(不考虑花色，只考虑点数)。- DrawHand 方法从牌堆中随机抽取5张牌。- IsStraight 方法检查抽取的5张牌是否为顺子。- CalculateStraightProbability 方法通过多次模拟抽牌，计算出顺子的概率。### 使用方法：您可以调用 CalculateStraightProbability 方法并传入模拟次数(例如 1000000)来估算顺子的概率。请注意，这种方法是基于模拟的，结果会随着模拟次数的增加而更加接近真实概率。"
+        },
+        {
+            "mid": "64758232",
+            "mtime": "2025-02-28 14:21",
+            "mcontent": "海、海上狼人杀？"
+        },
+        {
+            "mid": "27252864",
+            "mtime": "2025-03-05 08:48",
+            "mcontent": "他想要的应该是实时概率吧"
+        }
+    ]
+}

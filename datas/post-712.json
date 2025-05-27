@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41254927",
+    "title": "[讨论] [JS] 油管对使用代码主动点击广告跳过键好像有防范，有人知道原理吗？",
+    "post_time": "2024-08-14 11:13",
+    "uid": "40525562",
+    "content": "我在尝试写个浏览器插件，在油管的广告跳过按键出现后主动点击跳过，但是我发现油管对代码主动点击有防范，在这个点击事件上：",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2024-08-14 14:37",
+            "mcontent": "说到点击防范, 那应该就是这个了[https:://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted 此网页不属于本网站，不保证其安全性  继续访问       取消 https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted]"
+        }
+    ]
+}

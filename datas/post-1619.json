@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38958643",
+    "title": "[分享] 整了一个非常简陋的浏览器用的划词翻译插件",
+    "post_time": "2024-01-11 00:49",
+    "uid": "8284643",
+    "content": "之前一直使用\"Google 翻译插件\", 但随着 translate.google.cn 的关闭已经不能正常使用了.",
+    "replies": [
+        {
+            "mid": "64388721",
+            "mtime": "2024-01-11 16:44",
+            "mcontent": "在2022年末，Google将中国境内部署的翻译服务下线，导致Chrome网页翻译功能失效。即使是在使用了SwitchyOmega的全局代理模式下，Chrome网页翻译功能依然无法使用。问题原因根据网络搜索，原因是Chrome网页翻译功能存在BUG。当Chrome使用网页翻译功能时，会向`translate.googleapis.com`发起请求，后续才进行翻译。这里我们称这个请求为`First request`。问题在于，`First request`不遵循扩展的代理设置，但是遵循系统代理。解决办法由于 First request 遵循系统代理，因此需要让translate.googleapis.com走系统代理。我个人使用的是系统代理的PAC模式，配置`translate.googleapis.com`使用代理。在我本机上，使用nginx提供的http服务，提供`localhost/proxy.pac`，其内容：```jsvar PROXY = 'PROXY localhost:1081;';var DIRECT = 'DIRECT;';function FindProxyForURL(url, host) {  if (host.endsWith(\"translate.googleapis.com\")){    return PROXY;  }  return DIRECT;}```在系统的代理设置(设置-网络和Internet-代理)中，开启`使用设置脚本`，脚本地址填写`[http:://localhost/proxy.pac` 此网页不属于本网站，不保证其安全性  继续访问       取消 http://localhost/proxy.pac` http://localhost/proxy.pac`]，保存，重启Chrome。"
+        },
+        {
+            "mid": "64846580",
+            "mtime": "2024-01-12 09:55",
+            "mcontent": "谢谢楼主 star了"
+        }
+    ]
+}

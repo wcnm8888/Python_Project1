@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40480638",
+    "title": "[求助]求助一个非常逆天的微软账号问题，恶心好几天了",
+    "post_time": "2024-06-09 17:29",
+    "uid": "62325266",
+    "content": "我有个老outlook账号，18年注册的吧，前一阵子换的手机号了，忘了把老的手机解开绑定了沿用的还是老手机，电脑登陆的也是这个号，管理员和浏览器都是。",
+    "replies": [
+        {
+            "mid": "42252406",
+            "mtime": "2024-06-09 18:02",
+            "mcontent": "这种事情只能联系微软国内客服。。。。程序员跟系统产品运营没有交集。年会可能有。"
+        },
+        {
+            "mid": "62325266",
+            "mtime": "2024-06-09 18:49",
+            "mcontent": "问一下微软国内客服的渠道老哥知道吗？我找了很久没找到"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-06-10 02:17",
+            "mcontent": "这个你试过了吗？如果试过，你还没绑定两步验证器、备用邮箱、备用手机，那看起来确实没辙，只能打电话给老号码，请求有偿收短信发给你了。"
+        },
+        {
+            "mid": "18678153",
+            "mtime": "2024-06-10 03:40",
+            "mcontent": "这年头手机号是真没办法换，我移动卡绑了n多东西，8元保号套餐是打算一直用下去了，根本不可能换的。"
+        },
+        {
+            "mid": "63362839",
+            "mtime": "2024-06-10 13:25",
+            "mcontent": "[https:://m.baidu.com/from=1000539d/ssid=0/s?word=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D&sa=tb&ts=7072178&t_kt=0&ie=utf-8&rsv_t=cf70wI1zScH%252BzycDD2LQ5h2JX1sWtQqaNyettqKLvMDMASvcngTF%252BKbGygkOQLM&rsv_pq=12351025893933397538&ss=&rqlang=&oq=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D 此网页不属于本网站，不保证其安全性  继续访问       取消 https://m.baidu.com/from=1000539d/ssid=0/s?word=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D&sa=tb&ts=7072178&t_kt=0&ie=utf-8&rsv_t=cf70wI1zScH%252BzycDD2LQ5h2JX1sWtQqaNyettqKLvMDMASvcngTF%252BKbGygkOQLM&rsv_pq=12351025893933397538&ss=&rqlang=&oq=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D https://m.baidu.com/from=1000539d/ssid=0/s?word=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D&sa=tb&ts=7072178&t_kt=0&ie=utf-8&rsv_t=cf70wI1zScH%252BzycDD2LQ5h2JX1sWtQqaNyettqKLvMDMASvcngTF%252BKbGygkOQLM&rsv_pq=12351025893933397538&ss=&rqlang=&oq=%E5%BE%AE%E8%BD%AF%E5%AE%A2%E6%9C%8D%E7%94%B5%E8%AF%9D]"
+        },
+        {
+            "mid": "65476434",
+            "mtime": "2024-06-11 05:15",
+            "mcontent": "最简单(可能是唯一)的方法是找到原来手机号的机主。这么想：你的 outlook 账号是没有实名认证的(你当年肯定不会拿着身份证+照片去注册一个邮箱，微软也不支持这样的注册方式)。那么如果你有其他方法可以找回，意味着黑客也能通过同样的方法盗取别人账号。所以你这个问题，除非拿到原来的手机号，否则无解。注：本来有一种可能方法，就是利用当前还有效的 cookie，说不定能让你修改邮件。但是该方法已经被你自己浪费了，因为你已经在游览器里注销了 outlook，你不再有有效 cookie 了。"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41344522",
+    "title": "手机WiFi实现原理咨询",
+    "post_time": "2024-08-20 16:02",
+    "uid": "65458902",
+    "content": "坛友们，请教个技术问题，我把路由器和光猫的网线拔掉后，手机连着路由器无线，手机是怎么感知到没有网络的，是有某种探测吗？",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2024-08-20 16:36",
+            "mcontent": "Captive Portal"
+        },
+        {
+            "mid": "65458902",
+            "mtime": "2024-08-20 16:49",
+            "mcontent": "大佬可以细说下吗？"
+        },
+        {
+            "mid": "65458902",
+            "mtime": "2024-08-20 16:51",
+            "mcontent": "是家里路由器的场景，不涉及认证"
+        },
+        {
+            "mid": "734189",
+            "mtime": "2024-08-20 17:06",
+            "mcontent": "老的安卓系统会ping一个地址，国外rom刷了之后因为ping不通?导致显示没有网络。新的不知道"
+        },
+        {
+            "mid": "27010922",
+            "mtime": "2024-08-20 17:55",
+            "mcontent": "对的，和Windows检测原理一致"
+        },
+        {
+            "mid": "60730779",
+            "mtime": "2024-08-30 19:44",
+            "mcontent": "应该不是 ping，是发一个 HTTP 请求，一般服务器会响应一个 200 或者 204 表示正常。比如 Android 是请求这个 [https:://www.google.com/generate_204 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.google.com/generate_204 https://www.google.com/generate_204]，服务器返回 HTTP 204captive.apple.com 是 200"
+        },
+        {
+            "mid": "38361313",
+            "mtime": "2024-08-31 19:14",
+            "mcontent": "给目标服务器发个请求，没回复就是断网了呗"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43555204",
+    "title": "想自己做个程序",
+    "post_time": "2025-03-17 00:06",
+    "uid": "-1",
+    "content": "最近AI比较火，自己提了要求，大模型按照要求做了出来，大概是爬取当日选定的基金和股票的净值，然后存在excel中，但是各种调试都实现不了功能，有大手指、德华或者彦祖，帮忙看看代码，告知问题出在哪里",
+    "replies": [
+        {
+            "mid": "63213928",
+            "mtime": "2025-03-17 02:31",
+            "mcontent": "你这比“我有个天才的想法，就差个程序员了”还离谱，你这是带薪上班是吧？"
+        },
+        {
+            "mid": "42816275",
+            "mtime": "2025-03-17 09:12",
+            "mcontent": "哪有问题直接问ai，让他接着帮你改"
+        },
+        {
+            "mid": "63744196",
+            "mtime": "2025-03-17 09:29",
+            "mcontent": "怎么没听明白，是大模型按照要求做出来了，但是没有实现你想要的功能吗？还是大模型已经把数据爬出来存在EXCEL中，实现不了其他功能？"
+        },
+        {
+            "mid": "62396512",
+            "mtime": "2025-03-17 09:42",
+            "mcontent": "很明显是模型给了代码，但给不了他想要的结果理论上他想调试，但又不懂代码根本不知道怎么下手我估计爬虫这关都没过去，建议题主放弃或者 gayhub 找找现成的"
+        },
+        {
+            "mid": "-2",
+            "mtime": "2025-03-17 11:09",
+            "mcontent": "不是，只是想借这个多学一点，之前大学里接触过，但是只学了个皮毛，刚好大模型有写代码功能，自己介于懂与不懂之间，想和大佬们讨论一下，程序里有哪些缺的，以至于没有实现功能"
+        },
+        {
+            "mid": "-3",
+            "mtime": "2025-03-17 11:10",
+            "mcontent": "改了差不多三天了，还是没有实现，来找大佬们来了"
+        },
+        {
+            "mid": "-4",
+            "mtime": "2025-03-17 11:11",
+            "mcontent": "是写出代码来啦，只是没有实现想要的功能"
+        },
+        {
+            "mid": "-5",
+            "mtime": "2025-03-17 11:24",
+            "mcontent": ""
+        },
+        {
+            "mid": "-6",
+            "mtime": "2025-03-17 11:29",
+            "mcontent": ""
+        },
+        {
+            "mid": "-7",
+            "mtime": "2025-03-17 11:34",
+            "mcontent": "from werkzeug.utils import secure_filenamefrom datetime import datetimeimport pandas as pdimport requestsfrom datetime import datetimeimport osimport jsonimport reimport timeapp = Flask(__name__)# ------------------- 全局配置 -------------------REQUEST_INTERVAL = 3  # API请求间隔(秒)MAX_RETRY = 3  # 单API最大重试次数ALLOWED_EXTENSIONS = {'xlsx'}# 路径配置BASE_DIR = os.getcwd()UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')OUTPUT_FOLDER = os.path.join(BASE_DIR, 'outputs')CACHE_DIR = os.path.join(BASE_DIR, 'data_cache')# 初始化目录os.makedirs(UPLOAD_FOLDER, exist_ok=True)os.makedirs(OUTPUT_FOLDER, exist_ok=True)os.makedirs(CACHE_DIR, exist_ok=True)app.config.update({    'UPLOAD_FOLDER': UPLOAD_FOLDER,    'OUTPUT_FOLDER': OUTPUT_FOLDER,    'CACHE_DIR': CACHE_DIR,    'ALLOWED_EXTENSIONS': ALLOWED_EXTENSIONS})# ------------------- 工具函数 -------------------def allowed_file(filename):    return '.' in filename and \\           filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']def read_cache(cache_key):    \"\"\"读取缓存数据\"\"\"    cache_file = os.path.join(app.config['CACHE_DIR'], f\"{cache_key}.json\")    if os.path.exists(cache_file):        with open(cache_file, 'r', encoding='utf-8') as f:            return json.load(f)    return Nonedef write_cache(cache_key, data):    \"\"\"写入缓存数据\"\"\"    cache_file = os.path.join(app.config['CACHE_DIR'], f\"{cache_key}.json\")    with open(cache_file, 'w', encoding='utf-8') as f:        json.dump(data, f, ensure_ascii=False, indent=4)# ------------------- 数据获取模块 -------------------def fetch_fund_data(fund_code, date):    \"\"\"获取基金数据(天天基金网API)\"\"\"    for attempt in range(MAX_RETRY):        try:            url = f\"[http:://fundgz.1234567.com.cn/js/{fund_code}.js\" 此网页不属于本网站，不保证其安全性  继续访问       取消 http://fundgz.1234567.com.cn/js/{fund_code}.js\" http://fundgz.1234567.com.cn/js/{fund_code}.js\"]            response = requests.get(url, timeout=10)            response.raise_for_status()            # 解析JSONP数据            raw_data = response.text            if match := re.search(r'jsonpgz\\((.*?)\\);', raw_data):                data = json.loads(match.group(1))                return {                    '净值': data.get('dwjz', 'N/A'),                    '涨跌幅': data.get('gszzl', 'N/A')                }            return None        except Exception as e:            print(f\"[基金API] 代码:{fund_code} 第{attempt + 1}次失败: {str(e)}\")            time.sleep(REQUEST_INTERVAL)    print(f\"[基金API] 代码:{fund_code} 最终失败\")    return Nonedef fetch_stock_data(stock_code, date):    \"\"\"获取股票数据(腾讯财经API)\"\"\"    for attempt in range(MAX_RETRY):        try:            # 补全市场代码            market_code = f\"sh{stock_code}\" if stock_code.startswith('6') else f\"sz{stock_code}\"            url = f\"[http:://qt.gtimg.cn/q={market_code}\" 此网页不属于本网站，不保证其安全性  继续访问       取消 http://qt.gtimg.cn/q={market_code}\" http://qt.gtimg.cn/q={market_code}\"]            response = requests.get(url, timeout=10)            response.raise_for_status()            # 解析文本数据            raw_data = response.text.split('~')            if len(raw_data) >= 5:                return {                    '价格': raw_data[3],                    '涨跌幅': raw_data[4]                }            return None        except Exception as e:            print(f\"[股票API] 代码:{stock_code} 第{attempt + 1}次失败: {str(e)}\")            time.sleep(REQUEST_INTERVAL)    print(f\"[股票API] 代码:{stock_code} 最终失败\")    return None# ------------------- 文件处理模块 -------------------def process_upload(filepath, date):    \"\"\"处理上传文件\"\"\"    try:        df = pd.read_excel(filepath)        results = []        for _, row in df.iterrows():            fund_code = str(row.get('基金代码', '')).strip()            stock_code = str(row.get('股票代码', '')).strip()            # 验证代码格式            if not fund_code.isdigit() or not stock_code.isdigit():                continue            # 获取数据(带缓存)            fund_cache_key = f\"fund_{fund_code}_{date}\"            stock_cache_key = f\"stock_{stock_code}_{date}\"            fund_data = read_cache(fund_cache_key) or fetch_fund_data(fund_code, date)            stock_data = read_cache(stock_cache_key) or fetch_stock_data(stock_code, date)            if fund_data:                write_cache(fund_cache_key, fund_data)            if stock_data:                write_cache(stock_cache_key, stock_data)            # 构建结果            results.append({                '基金名称': row.get('基金名称', ''),                '基金代码': fund_code,                '基金净值': fund_data.get('净值', 'N/A') if fund_data else 'N/A',                '基金涨跌幅': fund_data.get('涨跌幅', 'N/A') if fund_data else 'N/A',                '股票名称': row.get('股票名称', ''),                '股票代码': stock_code,                '股票价格': stock_data.get('价格', 'N/A') if stock_data else 'N/A',                '股票涨跌幅': stock_data.get('涨跌幅', 'N/A') if stock_data else 'N/A',                '日期': date            })        return pd.DataFrame(results)    except Exception as e:        print(f\"[文件处理] 错误: {str(e)}\")        return None# ------------------- Flask路由 -------------------@app.route('/', methods=['GET', 'POST'])def index():    if request.method == 'POST':        # 验证文件上传        if 'file' not in request.files:            return render_template('error.html', message='未检测到文件上传')        file = request.files['file']        if file.filename == '':            return render_template('error.html', message='请选择有效文件')        if not allowed_file(file.filename):            return render_template('error.html', message='仅支持.xlsx文件')        try:            # 保存文件            filename = secure_filename(file.filename)            upload_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)            file.save(upload_path)            # 处理数据            date = request.form.get('date') or datetime.now().strftime('%Y-%m-%d')            output_filename = f'result_{date}.xlsx'            output_path = os.path.join(app.config['OUTPUT_FOLDER'], output_filename)            df = process_upload(upload_path, date)            if df is not None and not df.empty:                df.to_excel(output_path, index=False)                return send_file(output_path, as_attachment=True)            return render_template('error.html', message='数据获取失败，请检查文件内容')        except Exception as e:            return render_template('error.html', message=f'处理失败: {str(e)}')    return render_template('index.html', datetime=datetime)  # 传递 datetime 到模板# ------------------- 启动应用 -------------------if __name__ == '__main__':    app.run(host='0.0.0.0', port=5000, debug=True)"
+        },
+        {
+            "mid": "-8",
+            "mtime": "2025-03-17 11:35",
+            "mcontent": "这个是html的起始页<!DOCTYPE html><html><head>    <meta charset=\"UTF-8\">    <title>基金股票数据查询</title>    <link href=\"[https:://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" 此网页不属于本网站，不保证其安全性  继续访问       取消 https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"] rel=\"stylesheet\"></head><body class=\"bg-light\">    <div class=\"container mt-5\" style=\"max-width: 600px;\">        <div class=\"card shadow\">            <div class=\"card-header bg-primary text-white\">                <h4 class=\"mb-0\">基金股票数据查询系统</h4>            </div>            <div class=\"card-body\">                <form method=\"post\" enctype=\"multipart/form-data\">                    <div class=\"mb-3\">                        <label class=\"form-label\">上传Excel文件</label>                        <input type=\"file\" class=\"form-control\" name=\"file\" accept=\".xlsx\" required>                    </div>                    <div class=\"mb-3\">                        <label class=\"form-label\">选择日期</label>                        <input type=\"date\" class=\"form-control\" name=\"date\"                                value=\"{{ datetime.now().strftime('%Y-%m-%d') }}\">                    </div>                    <button type=\"submit\" class=\"btn btn-primary w-100\">提交查询</button>                </form>            </div>        </div>    </div></body></html>"
+        },
+        {
+            "mid": "-9",
+            "mtime": "2025-03-17 11:36",
+            "mcontent": "这是html的报错页<!DOCTYPE html><html><head>    <meta charset=\"UTF-8\">    <title>错误提示</title>    <link href=\"[https:://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" 此网页不属于本网站，不保证其安全性  继续访问       取消 https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"] rel=\"stylesheet\"></head><body class=\"bg-light\">    <div class=\"container mt-5\" style=\"max-width: 600px;\">        <div class=\"card shadow\">            <div class=\"card-header bg-danger text-white\">                <h4 class=\"mb-0\">操作失败</h4>            </div>            <div class=\"card-body\">                <p class=\"text-danger\">{{ message }}</p>                <a href=\"/\" class=\"btn btn-secondary\">返回首页</a>            </div>        </div>    </div></body></html>"
+        },
+        {
+            "mid": "65296380",
+            "mtime": "2025-03-17 22:26",
+            "mcontent": "这种情况建议去找大学生("
+        },
+        {
+            "mid": "43058103",
+            "mtime": "2025-03-18 01:03",
+            "mcontent": "付费的话，我可以一对一，远程指导。"
+        },
+        {
+            "mid": "64772918",
+            "mtime": "2025-04-09 09:21",
+            "mcontent": "想学爬虫不如去找套视频看看，ai写代码目前只是工具，而不是工程师。"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2025-04-09 12:24",
+            "mcontent": "你都上大模型了这点调试问的deepseek啊……说真的你要是真的不明白里头弯弯绕绕，做出来的东西我建议你自己先别用，不然怎么被坑的都不知道"
+        },
+        {
+            "mid": "41825551",
+            "mtime": "2025-04-09 13:01",
+            "mcontent": "看来大模型写代码, 还是更适合经验丰富的程序员同学, 感觉这本质上是加大编程领域的贫富差距"
+        },
+        {
+            "mid": "62279799",
+            "mtime": "2025-04-09 13:08",
+            "mcontent": "没看懂啊，你的需求是将爬取的数据写入文件中，为什么要做个web，还要上传文件呢？我看你代码里面调了api，正确思路不是直接对api发送请求获得数据后，筛选清理一下，创建文件，再写入不就可以吗说实话不要高估ai的能力，ai不是神笔马良你给他说几句话就能给你实现的。"
+        }
+    ]
+}

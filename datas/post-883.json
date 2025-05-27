@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40698316",
+    "title": "如何才能提交代码到github? 折腾了半天没成功.",
+    "post_time": "2024-06-28 15:38",
+    "uid": "63478635",
+    "content": "按照以前的经验, 我安装了git, 和TortoiseGit (小乌龟)",
+    "replies": [
+        {
+            "mid": "734189",
+            "mtime": "2024-06-28 15:42",
+            "mcontent": "github官方有个叫github desktop的软件，我以前用它的。"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-06-28 15:43",
+            "mcontent": "这玩意好像不支持windows7,  我的电脑不允许我跑win10的虚拟机, 太卡了.."
+        },
+        {
+            "mid": "734189",
+            "mtime": "2024-06-28 15:51",
+            "mcontent": "虽然我觉得一定会有办法，但是还是弄个比较主流的开发环境吧，不然可能会不断有糟心的事情(可以考虑别用win, 重启太多比较糟心。。。)"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-06-28 16:10",
+            "mcontent": "支持 ssh 的 git 客户端都可以，类似 github desktop 的有 Git Extensions, SourceTree。[https:://docs.github.com/authentication/connecting-to-github-with-ssh 此网页不属于本网站，不保证其安全性  继续访问       取消 https://docs.github.com/authentication/connecting-to-github-with-ssh https://docs.github.com/authentication/connecting-to-github-with-ssh]公钥要在 [https:://github.com/settings/keys 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/settings/keys https://github.com/settings/keys] 点 New SSH Key 输入，大概长这样Code c:ssh-ed25519 一大串BASE64 公钥名称(一般是邮箱)我这个是 ssh-ed25519 格式的，github 也支持 ssh-rsa 等很多格式，用 openssh 生成的时候选合适的格式就行。putty 要载入那个没有后缀的文件 (私钥)，大概长这样Code c:\n-----BEGIN OPENSSH PRIVATE KEY-----\n一大串BASE64\n-----END OPENSSH PRIVATE KEY-----\n然后克隆/推送代码时用的远程仓库地址要用 ssh 格式的：git@github.com:{你的github用户名}/{仓库}.git"
+        },
+        {
+            "mid": "62767347",
+            "mtime": "2024-06-28 16:46",
+            "mcontent": "你安装的git自带了一个简易的ui窗口，用这个去生成，或者搜一下用命令生成密钥的方式再去具体生成的目录复制也行"
+        },
+        {
+            "mid": "63612075",
+            "mtime": "2024-06-28 18:00",
+            "mcontent": "如果只是想用个人仓库，其实国内的gitee也可以用，也支持密码登录"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-06-28 18:43",
+            "mcontent": "谢谢楼上的大神们的建议. 我打算直接在linux下用命令行提交算了, 虽然没有图形界面, 会不太习惯, 但是就我一个人提交, 不需要解决冲突的情况下, 应该还是可以的, 先凑合着用, 出毛病了再想办法... git clone git@github.com:... git add . git commit -m \"first commit\" git branch -M main git push -u origin main"
+        },
+        {
+            "mid": "65465193",
+            "mtime": "2024-06-28 18:48",
+            "mcontent": "你 windows 装个 putty 生成 sshkey，或者把你 Linux 上生成的 key 对复制到 windows 用户家目录下，新建.ssh 文件夹放里面，key 和系统无关"
+        },
+        {
+            "mid": "34060823",
+            "mtime": "2024-06-28 20:55",
+            "mcontent": "听你的说法，你在自己的Linux电脑上装了一个win7虚拟机用来写代码？！"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-06-28 21:12",
+            "mcontent": "不是, 这个win7虚拟机是我专门想用来提交github代码的, 宿主机平时要提交一些公司的代码, 我不想混在一起."
+        },
+        {
+            "mid": "41525142",
+            "mtime": "2024-06-29 03:03",
+            "mcontent": "Git可以设置往不同的repo提交代码用不同的用户。"
+        },
+        {
+            "mid": "6707662",
+            "mtime": "2024-06-29 07:07",
+            "mcontent": "生成ssh公钥：具体文档见[https:://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5 此网页不属于本网站，不保证其安全性  继续访问       取消 https://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5 https://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5]"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-06-29 12:04",
+            "mcontent": "你这种情况很正常啊，我这个图里涂掉的都是公司的代码，没涂掉的是 github 开源项目和我自己的代码，有什么混不混在一起的？我甚至可以给同一个代码仓库设置两个远程地址，公司那个(origin)往公司推 (用公司的账号)，自己那个(eti2024)往自己的仓库推 (用我自己的账号)。公司和我的私人仓库都用的阿里云 Codeup (默认 private)，只不过地址和用户名不同。我这种情况私人仓库也可以用 github / gitlab 之类的，但要注意设置 private。"
+        },
+        {
+            "mid": "42726180",
+            "mtime": "2024-07-01 08:04",
+            "mcontent": "一直用windows自带的ssh客户端，不清楚win7有没有。。。配置里加个433端口就行了"
+        },
+        {
+            "mid": "2504017",
+            "mtime": "2024-07-01 17:29",
+            "mcontent": "[https:://docs.github.com/en/get-started/start-your-journey/hello-world 此网页不属于本网站，不保证其安全性  继续访问       取消 https://docs.github.com/en/get-started/start-your-journey/hello-world https://docs.github.com/en/get-started/start-your-journey/hello-world]参考GitHub的完整教学内容"
+        },
+        {
+            "mid": "60036685",
+            "mtime": "2024-07-01 22:37",
+            "mcontent": "我们一般都用终端，先用ssh-keygen命令生成公钥和私钥，一般生成的位置在～/.ssh/id_rsa，然后在GitHub上配置私钥，然后就可以clone代码了，git clone [仓库地址]。我不太推荐用gui，习惯了终端操作会比用gui更快。在你学会了git的各种命令后你就可以安装zsh，配上git插件，就可以通过简单几个字母代替一长串的命令输入。例如我工作中用gf来拉远程分支，gco切换分支，gm来commit，gp推本地分支到远程"
+        },
+        {
+            "mid": "63958521",
+            "mtime": "2024-07-03 14:31",
+            "mcontent": "我用GitHub一直都是用用户名和access token的。从来没有折腾过SSH啥的。"
+        },
+        {
+            "mid": "63478635",
+            "mtime": "2024-07-03 14:58",
+            "mcontent": "哪里有access token? 没找到..."
+        },
+        {
+            "mid": "65904715",
+            "mtime": "2024-07-04 11:50",
+            "mcontent": "我建议好歹把 git 学明白啊, 至少 git 的 ssh 登录要整明白啊。另外，windows 下的 ssh keygen 可以用 cygwin。(很久不用 windows 了，不确定 win11 是否支持)补充：如果不想打命令行的话，推荐 sourcetree。"
+        }
+    ]
+}

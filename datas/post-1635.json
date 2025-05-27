@@ -1,0 +1,59 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38742751",
+    "title": "[求助] 如何实时将摄像头捕获的图像压缩为h.264格式的帧并通过tcpip发送",
+    "post_time": "2023-12-20 02:54",
+    "uid": "60725917",
+    "content": "rt，已经实现了压缩为jpg格式并用socket发送到另一端播放达成直播的效果，但到h264格式这里就找不到一个提供对应编码接口的开源库了",
+    "replies": [
+        {
+            "mid": "62546497",
+            "mtime": "2023-12-20 08:40",
+            "mcontent": "你要找的现成轮子是不是叫：obs-studio协议部分：[https:://github.com/obsproject/obs-studio/blob/master/plugins/obs-outputs/rtmp-stream.c 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/obsproject/obs-studio/blob/master/plugins/obs-outputs/rtmp-stream.c https://github.com/obsproject/obs-studio/blob/master/plugins/obs-outputs/rtmp-stream.c]编码部分：[https:://github.com/obsproject/obs-studio/blob/master/plugins/obs-ffmpeg/obs-ffmpeg.c 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/obsproject/obs-studio/blob/master/plugins/obs-ffmpeg/obs-ffmpeg.c https://github.com/obsproject/obs-studio/blob/master/plugins/obs-ffmpeg/obs-ffmpeg.c]"
+        },
+        {
+            "mid": "62627428",
+            "mtime": "2023-12-20 08:54",
+            "mcontent": "h264要用关键帧推算预测帧啊，必须要一段视频才能开始压缩，同样的vp9 av1也要一段视频才能开始，你得先把收集到的一段时间的图像存起来，压缩了再发送ffmpeg我确实不会用，我想到的是把每24帧图像存成yuv数组，用libvpx软编码成vp9再发送"
+        },
+        {
+            "mid": "60725917",
+            "mtime": "2023-12-20 09:43",
+            "mcontent": "谢谢老哥，我研究一下"
+        },
+        {
+            "mid": "60725917",
+            "mtime": "2023-12-20 09:44",
+            "mcontent": "是啊，所以我说提供数帧一起压缩返回压缩后的数组的接口也行，就是没找到"
+        },
+        {
+            "mid": "15201903",
+            "mtime": "2023-12-20 11:06",
+            "mcontent": "转rtsp？"
+        },
+        {
+            "mid": "8492846",
+            "mtime": "2023-12-21 00:44",
+            "mcontent": "其实你的需求不包括逐帧吧，只要实时性要求不高的话，把大于1张图片转为h.264视频再发送也可以达成目的。类似imageio-ffmpeg这样的库可以用将图片转换为H.264视频。"
+        },
+        {
+            "mid": "63571721",
+            "mtime": "2023-12-21 09:24",
+            "mcontent": "我们公司有安卓通过usb接摄像头的产品，我有过一个疑惑，ffmpeg的编码是不是可以通过npu去实现？摄像头怎么去调用npu？安卓端跟我说的是，摄像头有多种接口，可以单张图片，也可以返回没有编码的纯图片组成的视频流(我忘了这个是什么编码的)，也可以直接返回h264的流，这个是摄像头固件实现的，不需要与cpu或者npu交互的，我java的，对摄像头那些不熟，上面是我跟我们公司安卓硬件的一次交流"
+        },
+        {
+            "mid": "62371808",
+            "mtime": "2023-12-22 13:58",
+            "mcontent": "为什么不用rtsp呢，有些摄像头不是有rtsp接口都可以直接拉流播放。"
+        },
+        {
+            "mid": "1330358",
+            "mtime": "2024-01-06 14:59",
+            "mcontent": "rtsp解码占用cpu太高了，延迟也高"
+        },
+        {
+            "mid": "65224287",
+            "mtime": "2024-01-07 22:46",
+            "mcontent": "ffmpeg 有标准输入输出的，前接摄像头视频输出后接网络接口就行ffmpeg -i stdio:0 -c:v libx264 -f <某个流媒体容器格式> -o stdio:1凭记忆打的不准确"
+        }
+    ]
+}

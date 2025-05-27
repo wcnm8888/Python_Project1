@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42053200",
+    "title": "求助，win11运行里\\\\ip地址想访问共享盘总要网络凭据",
+    "post_time": "2024-10-14 10:14",
+    "uid": "38657241",
+    "content": "我已经把所有网络最下边那个密码保护的共享关了，是家庭版win11，想访问共享盘一直要网络凭据怎么办啊",
+    "replies": [
+        {
+            "mid": "8777681",
+            "mtime": "2024-10-14 10:42",
+            "mcontent": "运行control userpasswords2然后在 高级Tab 页下，管理密码windows凭据，添加windows凭据密码就可以一直记住密码，不用访问时再输入了"
+        }
+    ]
+}

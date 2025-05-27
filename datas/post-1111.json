@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40094607",
+    "title": "python爬虫",
+    "post_time": "2024-05-07 23:23",
+    "uid": "64061910",
+    "content": "大佬们好，问个问题 ，用python爬虫，使用 bs4的beautifulsoup对爱奇艺风云榜同一个页面解析爬取内容，有时候能爬出来内容，代码不变但是有时候爬取为空是什么原因显示错误时 list out of range ，能够打印解析的标签，但是爬出来的都是空表格",
+    "replies": [
+        {
+            "mid": "62153763",
+            "mtime": "2024-05-09 13:41",
+            "mcontent": "不贴代码，贴报错也是够离谱的。现在python爬虫有较为通用的基础解，具体可以看百度员工开源的mediacrawler"
+        },
+        {
+            "mid": "60076249",
+            "mtime": "2024-05-09 14:17",
+            "mcontent": "我猜是触发网站反爬机制了"
+        }
+    ]
+}

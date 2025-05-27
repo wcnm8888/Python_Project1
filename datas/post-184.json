@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43257587",
+    "title": "react项目创建出现报错",
+    "post_time": "2025-02-12 11:07",
+    "uid": "66431164",
+    "content": "有没有大神说一下这是为啥",
+    "replies": [
+        {
+            "mid": "420082",
+            "mtime": "2025-02-12 12:18",
+            "mcontent": "问问无敌的deepseek"
+        },
+        {
+            "mid": "2018261",
+            "mtime": "2025-02-12 14:25",
+            "mcontent": "看了下新的官方文档已经没有这个创建方式了，都是几个依赖框架的npx 可能已经弃用了"
+        },
+        {
+            "mid": "38910309",
+            "mtime": "2025-02-12 15:01",
+            "mcontent": "现在用 vite 创建 吧，npx create vite"
+        },
+        {
+            "mid": "63984785",
+            "mtime": "2025-02-13 17:59",
+            "mcontent": "cra已经被官方弃用了 用vite吧"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40616553",
+    "title": "[C/C++] [求助] 初学者,C,dll相关请教大佬问题.",
+    "post_time": "2024-06-21 16:55",
+    "uid": "41235397",
+    "content": "大致问题是这样的",
+    "replies": [
+        {
+            "mid": "64637806",
+            "mtime": "2024-06-22 10:10",
+            "mcontent": "先LoadLibrary加载dll，再用一个函数指针指向GetProcAddress解读出的dll中的函数。最后不使用后关闭dll。具体实现可以问问kimi"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-22 11:17",
+            "mcontent": "动态库一般是在编译的时候直接链接的，不需要手动获取函数指针啥的，你只需要在c代码里面声明要调用的函数即可举个例子：假设动态库名为libmylib.so,里面有一个函数foo,原型如下：int foo(char,double);一般动态库会给你提供一个头文件，比如mylib.h,这个头文件里面就有对应的函数声明，那么在你自己的代码里面调用动态库里的函数:Code c:1:2:3:4:5:6:// mycall.c\n#include <mylib.h>\nint main() {\n  int i = foo('a',1.14514);\n  return i;\n}要注意的是，如果没有这个头文件，你自己手动声明一个一样的也是可以的，这里还涉及一个叫calling convention的东西，可以自行搜索编译链接Code c:$ gcc -lmylib mycall.c -o mycall然后就会得到一个名叫mycall的可执行文件还有另一种方法是动态加载动态库，即在运行时动态加载(上面那种方法是在程序开始时直接加载)，基本就是1L说的那种方法，使用dlopen,dlsym,dlclose之类的函数，这种我也没怎么用过"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-06-23 01:43",
+            "mcontent": "也可以不用DLL，远程调用"
+        }
+    ]
+}

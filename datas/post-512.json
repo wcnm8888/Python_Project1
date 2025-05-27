@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42087805",
+    "title": "请问idea这里怎么关闭",
+    "post_time": "2024-10-17 00:37",
+    "uid": "22040",
+    "content": "2024版本，这里怎么关闭，或者缩小些也好，找半天都没有地方设置",
+    "replies": [
+        {
+            "mid": "63651771",
+            "mtime": "2024-10-17 07:07",
+            "mcontent": "这也不是窗口啊，就是word wrap,超过这条线会被报line too long的linting错误之类，默认记得是120？你可以改长点"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39234408",
+    "title": "有什么好用的开源软件推荐么？",
+    "post_time": "2024-02-07 03:19",
+    "uid": "63155354",
+    "content": "最近在用的一些:",
+    "replies": [
+        {
+            "mid": "43187732",
+            "mtime": "2024-02-07 08:55",
+            "mcontent": "浏览器：chromium, firefox播放器：vlc"
+        },
+        {
+            "mid": "62627428",
+            "mtime": "2024-02-07 10:49",
+            "mcontent": "nanazippowertoystirling-pdffancontrolmagpielightsparkmotrix"
+        },
+        {
+            "mid": "63957354",
+            "mtime": "2024-02-07 12:59",
+            "mcontent": "obsidian本地知识库"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-02-07 14:17",
+            "mcontent": "编辑音频我用lmms...图片浏览这块用imagine64文件搜索就是 everything音乐用 winamp截图sharex本地设备传输我用的filezilla ftp的"
+        },
+        {
+            "mid": "61928519",
+            "mtime": "2024-02-11 22:57",
+            "mcontent": "转码 ffmpeg输入法 rimeLinux 的 i3wm，macOS 的 yabai手写笔记 xournal++纠正：#3 的 Obsidian 是闭源的，形如 Logseq 的 markdown 编辑器才是开源的"
+        },
+        {
+            "mid": "60767725",
+            "mtime": "2024-02-12 01:32",
+            "mcontent": "qbittorrent 下种子aria2c 下载器kitty/alacritty terminal emulatormpv 视频播放器atuin shell历史搜索，用来代替ctrl+r和向上starship shell prompt[https:://github.com/massgravel/Microsoft-Activation-Scripts 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/massgravel/Microsoft-Activation-Scripts https://github.com/massgravel/Microsoft-Activation-Scripts] 微软激活工具tmux  终端复用squirrel rime for macOSMos macOS 滚轮设置工具excalidraw 画图的，手绘风格很好看drawio 画图的，这个比较全，uml，er什么都有  补充一下，可以直接用python -m http.server传文件，不过要求server有python，client和server在一个局域网内"
+        },
+        {
+            "mid": "15214686",
+            "mtime": "2024-02-13 17:30",
+            "mcontent": "Everything真好用，ffmpeg总感觉达不到想要的效果"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-02-13 19:05",
+            "mcontent": "kitty，终端模拟器，支持连字、分窗口、分tab，性能很好，不需要连字可以用alacritty，性能更好nushell，shell，写脚本很方便，很现代化，可惜补全有点拉胯，日常还是zsh好用starship，prompt美化，配置很友好方便mpd+mpc，音乐播放器套装，顺便推荐一下我一直在用的第三方网易云go-musicfoxlsd/exa，ls的替代品，我用lsdbat，cat的替代品，支持代码高亮ripgrep，grep的替代品btop，top替代品，颜值很高，功能很全，很好用zathura，pdf阅读器，很轻量fd，find替代品，更快更好用"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-02-29 14:51",
+            "mcontent": "linux用户推荐向。"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-02-29 15:56",
+            "mcontent": "win对终端的需求并不重吧,好像很多人都是直接凑合用vscode附带终端的如果不需要连字的话可以用alacritty,有win版本,性能比kitty更好,也有多窗口支持下面的nushell和starship都是有win的"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-02-29 17:28",
+            "mcontent": "cmd和powershell虽然有。vscode建议换成vscodium，把遥测扣了的code。但是微软的尿性是终端跟系统深度绑死。。。我去看一看alacritty，感谢分享。"
+        },
+        {
+            "mid": "1804902",
+            "mtime": "2024-03-07 23:33",
+            "mcontent": "自用的scoop软件列表。首先scoop就是一个win下命令行安装软件的工具，一键安装升级很省心。Name---- 7zip  //压缩解压缩aws //aws的命令行，平时工作用aws-session-manager-plugin //同上blender //3d建模colorcontrol //显示器色彩管理dark //adobe lightroom的开源替代darktable  //同上everything  //搜索fancontrol //风扇管理ffmpeg //视频处理gimp //photoshop的开源替代git //工作用handbrake //视频转码hashcat  //hash破解localsend //本地网络文件分享miktex  //latex包mobaxterm //windows终端软件msiafterburne //小飞机rtss //小飞机插件 显示fpsrufus //U盘烧录sharex //截图smartsystemmenu //右键菜单增强teracopy-np //系统快速copy，验证md5等texstudio //latex的编辑软件"
+        },
+        {
+            "mid": "5254815",
+            "mtime": "2024-03-13 02:15",
+            "mcontent": "Terminal 不就是开源的"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-03-13 13:42",
+            "mcontent": "求一个搜索的副关键词。"
+        },
+        {
+            "mid": "5254815",
+            "mtime": "2024-03-13 14:16",
+            "mcontent": "微软的 gh 里就有"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-03-13 14:23",
+            "mcontent": ""
+        },
+        {
+            "mid": "10356440",
+            "mtime": "2024-03-14 09:19",
+            "mcontent": "fzf           更好的findkdenlive  视频剪辑wiliwili     B站客户端winfetch neofetchwinscp    scp图形界面zoxide     更好的cd；智能匹配历史scoop     包管理器，以上都可以用scoop安装"
+        }
+    ]
+}

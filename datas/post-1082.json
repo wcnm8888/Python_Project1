@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40159952",
+    "title": "[求助]有没有用remix ide的大佬啊，小白想问点问题",
+    "post_time": "2024-05-14 05:14",
+    "uid": "36219683",
+    "content": "我修改以太币数量后部署合约就给我报错，到底是什么原因啊，我是想往下面部署的合约那里的ETH不为0来着。",
+    "replies": [
+        {
+            "mid": "992969",
+            "mtime": "2024-05-14 16:14",
+            "mcontent": "这不是写了吗the called function should be payable"
+        }
+    ]
+}

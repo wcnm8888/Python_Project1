@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39556162",
+    "title": "求一个算法",
+    "post_time": "2024-03-13 17:08",
+    "uid": "36419736",
+    "content": "需求是这样，模拟参数int[] nums = {480,480,480,480,480,480,480,480,480,480,1320,1320,1320,1320,1320,1320,1320,1320,1320,1320,660,660,660,660,660,660,1010,1010,1010,1010,1010,640,640,640,640,640,640,1200,1200,1200,1030,1030,1030,1030,1030,1030,290,290,290,290,500,500,500,500,500,500}; 这是参数，凑整千，几个数相加都行，只要能被1000整除的结果就行，单个组合最多和为20000，每次输出一下本次凑整千的组成。几个XXX，几个XXX，总和为XXX，然后输出一下没有用到的数字。",
+    "replies": [
+        {
+            "mid": "8777681",
+            "mtime": "2024-03-13 17:25",
+            "mcontent": "动态规划 背包问题？[https:://blog.csdn.net/weixin_45309833/article/details/98198014 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.csdn.net/weixin_45309833/article/details/98198014 https://blog.csdn.net/weixin_45309833/article/details/98198014][https:://labuladong.online/algo/dynamic-programming/knapsack3/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://labuladong.online/algo/dynamic-programming/knapsack3/ https://labuladong.online/algo/dynamic-programming/knapsack3/]随便搜一下能搜到啊。"
+        },
+        {
+            "mid": "36419736",
+            "mtime": "2024-03-13 17:34",
+            "mcontent": "我看了看，好像不太一样吧，如果我不满20000我就凑19000，再不满就再凑18000，只到凑不出来为止而且我凑出来的数必须要被1000整除才行说实话看的有点懵，对算法真是一窍不通"
+        },
+        {
+            "mid": "36419736",
+            "mtime": "2024-03-13 18:54",
+            "mcontent": "有没有大佬"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-13 22:57",
+            "mcontent": "import randomdef find_combinations(nums, target=20):    nums= [x / 1000 for x in nums]    # Remove elements that alone exceed the target    nums = [n for n in nums if n <= target]    # Function to try finding combinations that meet the criteria    def backtrack(start, path, remaining):        if sum(path) > target:            return  # Early termination if sum exceeds target        if sum(path) == target and float(sum(path)).is_integer():            yield (path, [n for n in original_nums if n not in path])            return        for i in range(start, len(remaining)):            # Skip duplicates            if i > start and remaining == remaining[i-1]:                continue            # Early termination if the sum with the largest remaining element is still less than target            if sum(path) + remaining > target:                break            yield from backtrack(i + 1, path + [remaining], remaining)    # Shuffle nums to start with a random element in the combinations    original_nums = nums.copy()    random.shuffle(nums)    # Use a generator to find the combinations    return backtrack(0, [], nums)# Example Usage# Find one combination starting with a random elementcombinations_generator = find_combinations(num_trans, 1)try:    combination, remaining = next(combinations_generator)    print(f\"Combination: {combination}, Sum: {sum(combination)}, Remaining: {remaining}\")except StopIteration:    print(\"No combination found that meets the criteria.\")Combination: [0.5, 0.5], Sum: 1.0, Remaining: [0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.64, 0.64, 0.64, 0.64, 0.64, 0.64, 0.29, 0.29, 0.29, 0.29]  找单个数的，你可以改个loop从小找到大，工程上的应用我就不写了"
+        }
+    ]
+}

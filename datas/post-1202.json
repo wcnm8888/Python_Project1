@@ -1,0 +1,79 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39777177",
+    "title": "关于c#中 值类型的范围疑问",
+    "post_time": "2024-04-05 21:48",
+    "uid": "38009580",
+    "content": "代码小白，看微软官方文档介绍数据类型，有几个疑问。",
+    "replies": [
+        {
+            "mid": "63782286",
+            "mtime": "2024-04-05 22:18",
+            "mcontent": "应该是1后面7个0。感兴趣的话可以看看《computer system: a programmer’s perspective》。如果你只想知道你的这个问题的答案，了解一下two’s complement。"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-05 23:10",
+            "mcontent": "好的，谢谢大佬。"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-04-06 01:01",
+            "mcontent": "byte啥时候还有符号呢？哪里的文章，坑人不是。0-255[https:://learn.microsoft.com/zh-cn/dotnet/api/system.byte.minvalue?view=net-8.0#system-byte-minvalue 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/zh-cn/dotnet/api/system.byte.minvalue?view=net-8.0#system-byte-minvalue https://learn.microsoft.com/zh-cn/dotnet/api/system.byte.minvalue?view=net-8.0#system-byte-minvalue]"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-06 10:02",
+            "mcontent": "可能是我网上搜的教程文章是自媒体瞎编误导了，看了官方文档，重新编辑了一下主题，辛苦大佬再解答下，谢谢了。"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-04-06 10:22",
+            "mcontent": "微软的产品，一律先看官方文档。虽然他们路线总是坚持不下来，但是文档英文版起码该写的还写。翻译版就不推荐了，本地化不咋地。"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-06 10:49",
+            "mcontent": "好的，谢谢。大佬能帮忙看下重新编辑的前两个尤其是第一个问题吗，因为我看英文文档也是写的±5.0 × 10−324 to ±1.7 × 10308，看不明白。"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-04-06 10:55",
+            "mcontent": "2是单纯没显示全公式导致的问题decimal.max=79,228,162,514,264,337,593,543,950,335范围是±1.0 x 10^-28 to ±7.9 x 10^28这个网址[https:://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types]"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-06 11:17",
+            "mcontent": "大佬你说的这个我明白，我的意思是double范围官方写的是±5.0 × 10−324 to ±1.7 × 10308从数学上来讲后面的±1.7 × 10308不是包含在±5.0 × 10−324里面么，况且vs软件里查询到的double最大值和最小值是后面的那部分，前边的±5.0 × 10−324该如何理解呢。"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-04-06 11:48",
+            "mcontent": "关于浮点数，建议直接搜索ieee754维基里面有很详细的解释浮点数一般用的很少，我也不是专业相关人士，就不乱说了"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-04-07 10:20",
+            "mcontent": "zhihu.com/question/21711083"
+        },
+        {
+            "mid": "43377109",
+            "mtime": "2024-04-07 11:48",
+            "mcontent": "C# 看微软官方文档入门是最快的"
+        },
+        {
+            "mid": "33957012",
+            "mtime": "2024-04-07 15:21",
+            "mcontent": "如果讨论浮点数能够表示的最大数和最小数，那就是±1.7e308如果讨论浮点数能够表示的绝对值最小(但不是数学上的最小)的非0的数，那就是±5.0e-324"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-07 18:37",
+            "mcontent": "那我就明白了，刚好看了一部分上面一位推荐的计算机数据存储机制。也就是说后面那部分表示整数的范围，但是由于计算机存储的数据是有长度限制的，所以前面部分相当于规定了小数部分的范围。1.7和5.0都是因为二进制存储里的1……1和0 . ……1分别对应1.7e308和5.0e-324。打个比方就是如果计算机存储范围是±0.5到±10那么±11 ±X.0X这种都是超范围的，实际上小数位只有0.5，其他的都会被四舍五入掉。这样理解对吧？"
+        },
+        {
+            "mid": "42612294",
+            "mtime": "2024-04-15 17:09",
+            "mcontent": "类似这个意思，1.1234500282822……..这样的数虽然比100小但是计算机里却是要花更多位的浮点数的定义你可以看ieee的浮点数定义，并不是你认为的那么简单的形式，第一位是符号位"
+        }
+    ]
+}

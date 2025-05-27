@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39568565",
+    "title": "[求助] 老哥们，docker的有些一直exited的容器，要怎么进入呢",
+    "post_time": "2024-03-14 20:41",
+    "uid": "62073702",
+    "content": "一般就是",
+    "replies": [
+        {
+            "mid": "60205023",
+            "mtime": "2024-03-14 21:01",
+            "mcontent": "你容器服务退出了，容器也就死了"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-14 21:02",
+            "mcontent": "本质上还是要重写，你这里面用的啥系统，如果是ubuntu可以在最后加个/bin/bash来开启bash shell"
+        },
+        {
+            "mid": "38851866",
+            "mtime": "2024-03-14 21:14",
+            "mcontent": "run 后接的是镜像image，重启容器container要用 start 或者 restart"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 21:14",
+            "mcontent": "是用docker exec -it bash吗，我试过因为容器一直是exited，他让我启动后再操作"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 21:16",
+            "mcontent": "run 后面不加-it的话，开出来的容器一直是exited的，启动不起来"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 21:18",
+            "mcontent": "没别的办法吗，感觉操作docker受的限制好大"
+        },
+        {
+            "mid": "41178844",
+            "mtime": "2024-03-14 21:33",
+            "mcontent": "看下log输出 不行再cp要的东西出来看"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 21:36",
+            "mcontent": "cp出来，不会要把容器的/ 目录全部挂载出来看吧我还没想到过挂载不了，只能选择非/目录"
+        },
+        {
+            "mid": "60205023",
+            "mtime": "2024-03-14 21:38",
+            "mcontent": "你看看有个-d的选项，守护进程启动"
+        },
+        {
+            "mid": "41178844",
+            "mtime": "2024-03-14 21:43",
+            "mcontent": "是自己打的image run么 ？如果记得目录结构可以针对性少复制点。 不过，先用log命令看看已退出的容器是出啥问题导致退出的吧，一般都会有错误信息吧"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-14 21:54",
+            "mcontent": "不是，直接docker run XXX bin/bash你docker exec 直接就是跑这个cmd，就你现在的状态，要测试内部的话可能得加-v $HOME:/mnt 然后跑一个什么echo $(CMD) > /mnt/log.log 什么的探测"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 21:55",
+            "mcontent": "守不住，容器保持不了running的状态，"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 22:21",
+            "mcontent": "老哥牛逼，我进去了，我用你的方法docker run xxx /bin/bash 发现原来的command 中的参数变为/bin/bash 了，然后我查了查，用--entrypoint /bin/sh 吧原来的command替换掉了，因为他的镜像好像没有/bin/bash"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-14 22:41",
+            "mcontent": "恭喜～还有entrypoint 虽然很好用但基本上就是给docker as microservice用的，docker as environment 的image最后一般就SHELL/CMD  [bin/bash]"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-14 23:09",
+            "mcontent": "嗯嗯，docker 做微服务就是类似nginx这种吧，entrypoint是nginx，吧端口和挂载地址映射下，然后用docker exec container command这种命令进行控制。然后环境就是entrypoint是bash或者sh 。怎么感觉对entrypoint没啥要求。不过如果在docker run xxx 的时候没加-it 之后怎么start 都没法让这个容器变成非exited状态。只能重新remove重新建一个"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-15 02:48",
+            "mcontent": "我记得有docker stop，找你要stop的container就能停"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-15 07:34",
+            "mcontent": "没啥用，一直是exited 状态。"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-15 07:44",
+            "mcontent": "停错了…… stop后面应该是你的container id， 不是image name"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-03-15 08:42",
+            "mcontent": "没停错老哥，停的不是827吗，一般里面有东西在运行的stop后再start 他状态就会变成up，run的时候不加 -it或者command 只有ls / 或者/bin/bash 的容器，只能运行一次，之后一直处在exited 状态，不知道怎么才能调成up，"
+        }
+    ]
+}

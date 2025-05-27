@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39581466",
+    "title": "佬们能不能看看这个Android stdio的flutter 插件错误",
+    "post_time": "2024-03-16 11:13",
+    "uid": "61583165",
+    "content": "lz大一，老师让我们搞项目做手机app，组内暂定flutter框架，啥都配好了死活没有new flutter project.",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2024-03-26 19:03",
+            "mcontent": "flutter create app_name然后用VSCode 打开app_name 文件夹"
+        },
+        {
+            "mid": "61583165",
+            "mtime": "2024-03-27 08:41",
+            "mcontent": "多谢"
+        }
+    ]
+}

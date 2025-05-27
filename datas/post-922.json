@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40411843",
+    "title": "[求助] 各位前辈，初学C/C++，想请教些问题，谢谢",
+    "post_time": "2024-06-03 20:26",
+    "uid": "64834983",
+    "content": "1、个人感觉，通过教材或者结合视频来学习，主要是掌握语法知识，书上的习题大体上写过了，逻辑和数学的训练不少，这之后应该做些什么",
+    "replies": [
+        {
+            "mid": "64347472",
+            "mtime": "2024-06-03 20:32",
+            "mcontent": "同有这样的疑惑，还停留在只会在oj上刷题的水平"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-03 23:21",
+            "mcontent": "1.只看书用处有限,语言也在更新,上手真实的项目后你会发现一大堆东西你还是不会,善用cppref[https:://en.cppreference.com/w/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://en.cppreference.com/w/ https://en.cppreference.com/w/]2.一般人不需要,只要你会调库就行;说实话我觉得自己实现一遍意义也不大,数据结构算法优化的水挺深的,能手写大概能应付一下面试?形式大于意义要从事相关专业除外3.挑一个喜欢的跟着做,个人私货是建议你写个toy compiler[https:://github.com/codecrafters-io/build-your-own-x 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/codecrafters-io/build-your-own-x https://github.com/codecrafters-io/build-your-own-x]4.图形学水也挺深的,不建议初学者在游戏或者ui之类上花费精力纯终端玩腻了可以玩玩音视频,gst的官方教程也挺好的[https:://gstreamer.freedesktop.org/documentation/tutorials/index.html?gi-language=c 此网页不属于本网站，不保证其安全性  继续访问       取消 https://gstreamer.freedesktop.org/documentation/tutorials/index.html?gi-language=c https://gstreamer.freedesktop.org/documentation/tutorials/index.html?gi-language=c]5.在linux上开发必学gcc,至少知道怎么完整地从源码编译到可执行程序,包括链接动态库静态库之类的内容搭配make使用,cmake暂时不必要,等你会make了再学也行[https:://www.gnu.org/software/make/manual/make.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.gnu.org/software/make/manual/make.html https://www.gnu.org/software/make/manual/make.html]这些东西都是为了节省你的生命而开发出来的"
+        },
+        {
+            "mid": "64834983",
+            "mtime": "2024-06-04 20:30",
+            "mcontent": "谢谢老哥的建议，我按照链接去看一看"
+        },
+        {
+            "mid": "38435070",
+            "mtime": "2024-06-21 16:38",
+            "mcontent": "不要重复造轮子啊。专注于自己的业务逻辑代码，ui，算法全部调用成熟库啊。"
+        }
+    ]
+}

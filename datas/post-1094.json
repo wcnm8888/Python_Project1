@@ -1,0 +1,69 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39631413",
+    "title": "[求助] [Python] 一段把照片转化为像素画的python程序出错。",
+    "post_time": "2024-03-21 20:14",
+    "uid": "65005107",
+    "content": "",
+    "replies": [
+        {
+            "mid": "63478635",
+            "mtime": "2024-03-22 12:01",
+            "mcontent": "格式乱了, 没法调试.从你的报错来看, 非常明确的就是语法错误. 这段代码应该连pycharm的验证都过不了.你要么传个txt文件上来, 调试试试."
+        },
+        {
+            "mid": "60213424",
+            "mtime": "2024-03-22 12:49",
+            "mcontent": "output_path前面的缩进用的字符和前面用的不一样，tab和空格的区别，换成一样的。output_path那行语法分析都分析不出来output_path是个变量缩进调整正确后直接跑起来了没问题。跑出来你这就是一个转分辨率的程序，你找常规工具直接跑不就行了…"
+        },
+        {
+            "mid": "42368844",
+            "mtime": "2024-03-26 19:16",
+            "mcontent": "感谢楼主, 脚本效果很好"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-03-26 22:41",
+            "mcontent": "感谢，我后来找到别的方法就把代码删了，一言那也删了，所以找不到原来的格式了"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-03-26 22:42",
+            "mcontent": "非常感谢，根据您说的，我复制后试了下，还是同样的问题。后来找到别的代码了。"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-03-26 22:44",
+            "mcontent": "请问可以把代码用TXT传成附件上来么？我后来删了代码，复制上面的格式也不对。后来换了别的"
+        },
+        {
+            "mid": "60213424",
+            "mtime": "2024-03-27 16:15",
+            "mcontent": "[https://img.nga.178.com/attachments/mon_202403/27/-4bvoQk5f-f5lmK1.zip?filename=image%5fconvert%5fto%5fminecraft%5fstyle%2ezip https://img.nga.178.com/attachments/mon_202403/27/-4bvoQk5f-f5lmK1.zip?filename=image%5fconvert%5fto%5fminecraft%5fstyle%2ezip]"
+        },
+        {
+            "mid": "63952612",
+            "mtime": "2024-03-27 17:41",
+            "mcontent": "评价是不如qq截图打马赛克"
+        },
+        {
+            "mid": "64066435",
+            "mtime": "2024-04-06 23:41",
+            "mcontent": "大佬可以分享一下代码吗，楼主的用不了"
+        },
+        {
+            "mid": "65005107",
+            "mtime": "2024-04-07 19:16",
+            "mcontent": "七楼那个就可以，你试下"
+        },
+        {
+            "mid": "42747729",
+            "mtime": "2024-04-08 09:46",
+            "mcontent": "卧槽，粥！"
+        },
+        {
+            "mid": "42368844",
+            "mtime": "2024-05-12 20:12",
+            "mcontent": "粥!"
+        }
+    ]
+}

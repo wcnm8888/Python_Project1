@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40865195",
+    "title": "[Python]  远程服务器 Git+ 无法连接到github,奇思妙想一下",
+    "post_time": "2024-07-13 18:42",
+    "uid": "62795112",
+    "content": "具体就是，远程服务器用我本地电脑的网络去连接github, 然后pip install git+....... , 我想的好处就是随时可以转换，请问这种操作可行么，我发现配置环境好多因为网的问题才这么难整，但是又不能开，平时外面针对服务器的攻击太多了",
+    "replies": [
+        {
+            "mid": "63347905",
+            "mtime": "2024-07-29 13:57",
+            "mcontent": "ip代理，开个腾讯云99包年装tinyproxy，服务器连tinyproxy就能用tx的信道。主要还是因为github没被墙，tx敢给稳定连接。换成什么Android/python/chatgpt光代理也是没用的。pc的问题是公网ip，没有的话，服务器是不能主动连pc的。这两个问题可以私聊"
+        },
+        {
+            "mid": "63347905",
+            "mtime": "2024-07-29 14:00",
+            "mcontent": "不过既然你本地能直连，github仓库克隆到pc，pc再传给服务器不就行了嘛=、="
+        }
+    ]
+}

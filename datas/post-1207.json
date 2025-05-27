@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39847431",
+    "title": "[求助] [暂时解决]有什么抓包软件可以自己写脚本处理responseBody 然后显示处理后的结果",
+    "post_time": "2024-04-12 17:44",
+    "uid": "63952612",
+    "content": "responseBody用了aes加密 已知解密秘钥 有什么软件能让他显示解密后的内容",
+    "replies": [
+        {
+            "mid": "65295969",
+            "mtime": "2024-04-12 17:44",
+            "mcontent": "注入啊 springboot"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-04-13 10:27",
+            "mcontent": "postman可以写js处理请求内容前提是http请求"
+        },
+        {
+            "mid": "5041763",
+            "mtime": "2024-04-13 13:48",
+            "mcontent": "nginx加lua脚本可以获取body，然后再解密应该也可以吧"
+        },
+        {
+            "mid": "63952612",
+            "mtime": "2024-04-13 13:58",
+            "mcontent": "可惜postman现在要收钱了 好久没用过了"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-04-13 14:01",
+            "mcontent": "收钱是团队5人以上一个人还是免费用的"
+        },
+        {
+            "mid": "63952612",
+            "mtime": "2024-04-13 14:06",
+            "mcontent": "看到nginx突然想起我可以搞个反代服务来打log 还是这个好"
+        },
+        {
+            "mid": "65590918",
+            "mtime": "2024-04-14 09:18",
+            "mcontent": "wireshark [@[@] ]"
+        }
+    ]
+}

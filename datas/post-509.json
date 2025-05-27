@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42016448",
+    "title": "c#开发控制注册表权限碰到个死循环问题了。",
+    "post_time": "2024-10-11 14:41",
+    "uid": "34495419",
+    "content": "先是用RegistryAccessRule设置了一个注册表项目权限为AccessControlType.Deny",
+    "replies": [
+        {
+            "mid": "202131",
+            "mtime": "2024-10-18 13:08",
+            "mcontent": "试一下换别的账号能操作吗？要是能的话，恢复时候换另一个账号来恢复。"
+        }
+    ]
+}

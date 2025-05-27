@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40519176",
+    "title": "android studio求助",
+    "post_time": "2024-06-13 01:05",
+    "uid": "61629766",
+    "content": "大佬们，为啥每次创建新项目都会报错，然后那个得去build.gradle里面手动改compileversion和targetversion才能运行成功。比方说建完都是34得改成28才能跑，但是电脑里api34跟28的都有，这就很奇怪了",
+    "replies": [
+        {
+            "mid": "34940373",
+            "mtime": "2024-06-13 09:29",
+            "mcontent": "什么错"
+        },
+        {
+            "mid": "14489400",
+            "mtime": "2024-06-13 13:59",
+            "mcontent": "compile和targer升级可能会要求同步升级jdk和AGP"
+        },
+        {
+            "mid": "42368844",
+            "mtime": "2024-06-13 15:35",
+            "mcontent": "能跑就不要问了我这新装的Android Studio Iguana | 2023.2.1 Patch 2 每次新建项目都要修改build.gradle"
+        }
+    ]
+}

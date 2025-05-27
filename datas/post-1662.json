@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38797721",
+    "title": "oracle物化视图自动刷新使用union all和sysdate相关(解决请老哥喝可乐)",
+    "post_time": "2023-12-25 14:14",
+    "uid": "60400271",
+    "content": "大佬们，现在问题锁定在我创建物化视图的Sql中含有union all和sysdate，导致on commit 报错无法创建物化视图，有啥办法可以解决么，还是从机制上就不可以实现，union all是在子查询中",
+    "replies": [
+        {
+            "mid": "60400271",
+            "mtime": "2023-12-26 08:45",
+            "mcontent": "紫薯布丁zsbd"
+        },
+        {
+            "mid": "-1",
+            "mtime": "2024-01-02 05:46",
+            "mcontent": "帮你用chatgpt问了一嘴。ChatGPT 4User现在问题锁定在我创建物化视图的Sql中含有union all和sysdate，导致on commit 报错无法创建物化视图，有啥办法可以解决么，还是从机制上就不可以实现，union all是在子查询中ChatGPT在Oracle数据库中，物化视图(Materialized View)的创建受到一些限制，特别是当它涉及到UNION ALL和SYSDATE。UNION ALL在物化视图中通常是允许的，但SYSDATE可能是问题的关键所在，因为它引入了一个不确定的元素，这可能与物化视图的刷新机制冲突。如果您的物化视图需要在每次提交(commit)时刷新，并且包含SYSDATE，则可能会遇到问题。ON COMMIT刷新要求物化视图的定义是确定的，而SYSDATE是一个持续变化的值，这会导致冲突。解决方案可能包括：修改刷新方法：改用基于时间间隔的刷新策略，如DBMS_REFRESH或ON DEMAND，而不是ON COMMIT。移除SYSDATE：如果可能，考虑从物化视图定义中移除SYSDATE。您可以尝试使用其他方法获取日期，例如使用触发器或定时作业来更新一个代替SYSDATE的列。使用视图代替：如果上述解决方案不可行，您可能需要考虑使用普通视图而非物化视图。要提供更具体的建议，我需要更多关于您当前物化视图定义的详细信息。"
+        }
+    ]
+}

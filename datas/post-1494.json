@@ -1,0 +1,69 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39201384",
+    "title": "[C#] 请问解多元一次方程组，有什么好的算法现成的吗，关键字是什么我自己搜一下。。",
+    "post_time": "2024-02-04 09:16",
+    "uid": "64283382",
+    "content": "[C#] 请问解多元一次方程组，有什么好的算法现成的吗，关键字是什么我自己搜一下。。",
+    "replies": [
+        {
+            "mid": "992969",
+            "mtime": "2024-02-04 09:35",
+            "mcontent": "找几个数学库看一下就懂了"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2024-02-04 11:11",
+            "mcontent": "之前嫌轮子太麻烦，自己造了一个，java版的，自己改下？Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:/**\n  * 示例，求解方程组\n  * 1 * x1 + 2 * x2 = 5\n  * 3 * x1 + 4 * x2 = 6\n  * @param args\n  */\n public static void main(String[] args) {\n     double[][] a = new double[][]{\n             {1, 2},\n             {3, 4}\n     };\n     double[][] b = new double[][]{\n             {5},\n             {6}\n     };\n     double[] x = solveLinearEquations(a, b);\n     System.out.println(\"x1=\" + x[0] + \",x2=\" + x[1]);\n }\n+ 点击显示隐藏的内容 ..."
+        },
+        {
+            "mid": "63659663",
+            "mtime": "2024-02-04 13:03",
+            "mcontent": "有个math.net的数学库"
+        },
+        {
+            "mid": "63965853",
+            "mtime": "2024-02-04 15:25",
+            "mcontent": "这东西直接找gpt帮你写个就完了。多元一次有解的"
+        },
+        {
+            "mid": "63782286",
+            "mtime": "2024-02-04 18:21",
+            "mcontent": "小学低年级会学的那个算法，你用代码实现一下就行了。专业名字叫高斯消元，线性代数里叫reduced echelon form还是啥。但实际上就是你上小学二三年级时学的那个解法。"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-02-05 01:00",
+            "mcontent": "不是，用矩阵算，矩阵运算是最效率的。[https:://blog.csdn.net/flyfish1986/article/details/118635703 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.csdn.net/flyfish1986/article/details/118635703 https://blog.csdn.net/flyfish1986/article/details/118635703]"
+        },
+        {
+            "mid": "12787737",
+            "mtime": "2024-02-06 11:02",
+            "mcontent": "不用矩阵吗？"
+        },
+        {
+            "mid": "62546497",
+            "mtime": "2024-02-07 00:04",
+            "mcontent": "解线性方程组一般都用Z3，微软出品值得信赖[https:://github.com/Z3Prover/z3 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/Z3Prover/z3 https://github.com/Z3Prover/z3]"
+        },
+        {
+            "mid": "6359546",
+            "mtime": "2024-02-07 00:14",
+            "mcontent": "using MathNet.Numerics.LinearAlgebra;public class Program{    public static void Main()    {        // 假设我们有如下方程组：        // 3x + 2y - z = 1        // 2x - 2y + 4z = -2        // -x + 0.5y - z = 0        // 我们可以把它转换为矩阵形式来求解        // 系数矩阵        var matrixA = Matrix<double>.Build.DenseOfArray(new double[,]        {            { 3, 2, -1 },            { 2, -2, 4 },            { -1, 0.5, -1 }        });        // 常数向量        var vectorB = Vector<double>.Build.Dense(new double[] { 1, -2, 0 });        // 使用MathNet.Numerics求解        var result = matrixA.Solve(vectorB);        // 输出解        Console.WriteLine(\"解为：\");        Console.WriteLine(\"x = \" + result[0]);        Console.WriteLine(\"y = \" + result[1]);        Console.WriteLine(\"z = \" + result[2]);    }}"
+        },
+        {
+            "mid": "62725023",
+            "mtime": "2024-02-07 14:15",
+            "mcontent": "高斯消元法求解线性方程组，解的情形共有三种，分别是无解、有无穷多组解、有唯一解。可以让GPT给你提供代码"
+        },
+        {
+            "mid": "42936170",
+            "mtime": "2024-02-18 18:06",
+            "mcontent": "lapack"
+        },
+        {
+            "mid": "65503049",
+            "mtime": "2024-02-21 14:31",
+            "mcontent": "数值计算直接用矩阵运算，如果是要解析解的话高斯消元法，实在不行matlab现成的函数工具应该都行。"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43596797",
+    "title": "有没有大佬研究过obs的源码",
+    "post_time": "2025-03-21 11:17",
+    "uid": "61065717",
+    "content": "我想用rust实现obs的一个视频配置的功能",
+    "replies": [
+        {
+            "mid": "42368844",
+            "mtime": "2025-04-04 22:11",
+            "mcontent": "这个配置框是驱动提供的, 没有就是没有"
+        }
+    ]
+}

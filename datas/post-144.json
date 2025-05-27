@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43366486",
+    "title": "关于AI模型",
+    "post_time": "2025-02-24 17:06",
+    "uid": "65075332",
+    "content": "在github上找的模型项目下载跑通之后怎么才能做成demo那种形式呢，刚接触不是很懂，求大佬们指点",
+    "replies": [
+        {
+            "mid": "12194861",
+            "mtime": "2025-02-25 11:04",
+            "mcontent": "模型项目是哪种？是调接口还是跑本地模型的？一般能放到github上的项目本身就是个demo。你只要调整网络环境让别人能访问就行了。"
+        },
+        {
+            "mid": "42685479",
+            "mtime": "2025-02-26 11:19",
+            "mcontent": "[https:://github.com/hiyouga/LLaMA-Factory 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/hiyouga/LLaMA-Factory https://github.com/hiyouga/LLaMA-Factory]跟着quickstart做。目前llama-factory的api部署是最简单的。"
+        }
+    ]
+}

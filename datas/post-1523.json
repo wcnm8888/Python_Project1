@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39215861",
+    "title": "[求助] yum remove docker-compose-plugin  这个命令执行后，为啥docker 服务也被卸载了？",
+    "post_time": "2024-02-05 14:39",
+    "uid": "63143366",
+    "content": "官网这块手动安装插件没搞懂  也操作不成功",
+    "replies": [
+        {
+            "mid": "38554127",
+            "mtime": "2024-02-12 19:26",
+            "mcontent": "你这里截图部分的安装操作也没有要求你去使用yum remove命令呀"
+        }
+    ]
+}

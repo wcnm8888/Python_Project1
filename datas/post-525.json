@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42014890",
+    "title": "开始学ubuntu,有合适的书或者文字网站推荐吗",
+    "post_time": "2024-10-11 12:42",
+    "uid": "60382665",
+    "content": "最好涵盖基本命令操作，系统维护，vi使用，shell编写",
+    "replies": [
+        {
+            "mid": "62349350",
+            "mtime": "2024-10-11 13:00",
+            "mcontent": "gpt就足够了"
+        },
+        {
+            "mid": "43187732",
+            "mtime": "2024-10-11 14:09",
+            "mcontent": "可以看鸟哥吧。"
+        },
+        {
+            "mid": "60382665",
+            "mtime": "2024-10-11 17:49",
+            "mcontent": "鸟哥是centos，我想找更契合的"
+        },
+        {
+            "mid": "42158089",
+            "mtime": "2024-10-11 22:06",
+            "mcontent": "基础指令感觉看看菜鸟教程就行了 后面用到啥再问gpt啥 一股脑看一堆其实也记不住"
+        },
+        {
+            "mid": "66163168",
+            "mtime": "2024-10-12 18:51",
+            "mcontent": "我也看的鸟哥 ubuntu跟centos其实大差不差。  刚好也能学下二者区别"
+        },
+        {
+            "mid": "65037130",
+            "mtime": "2024-10-13 11:38",
+            "mcontent": "建议pip install shell-gpt"
+        },
+        {
+            "mid": "64219520",
+            "mtime": "2024-10-13 23:31",
+            "mcontent": "马哥教育Linux高端运维云计算就业班[https:://www.alipan.com/s/JLVAaP8ek1f 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/JLVAaP8ek1f https://www.alipan.com/s/JLVAaP8ek1f]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。向军linux课程1-68集[https:://www.alipan.com/s/4gf8SRQE8Ar 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/4gf8SRQE8Ar https://www.alipan.com/s/4gf8SRQE8Ar]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。华为首套Linux认证工程师课程[https:://www.alipan.com/s/sPMSDa812cR 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/sPMSDa812cR https://www.alipan.com/s/sPMSDa812cR]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。"
+        },
+        {
+            "mid": "39133312",
+            "mtime": "2024-10-14 03:57",
+            "mcontent": "vim是和双拼、五笔一类的东西，重要的是使用而不是教程。安装vim自带一个vim-tutroial，把那上面的东西做完了就可以入门了。"
+        },
+        {
+            "mid": "39133312",
+            "mtime": "2024-10-14 04:02",
+            "mcontent": "shell编写，mit有一门叫什么第一个基础课之类的。不过shell这东西没有深入的必要，python或者其它DSL去解决问题。"
+        }
+    ]
+}

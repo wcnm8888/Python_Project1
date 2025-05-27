@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41144867",
+    "title": "怎么可以批量添加批注呀",
+    "post_time": "2024-08-06 15:23",
+    "uid": "60945330",
+    "content": "wps/word 把一个重复词语批量添加同一批注，需要用到宏不",
+    "replies": [
+        {
+            "mid": "65171953",
+            "mtime": "2024-08-07 13:51",
+            "mcontent": "Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:\nSub AddCommentsToSpecificString()\n    Dim searchString As String\n    Dim commentText As String\n    Dim rng As Range\n\n    ' 要查找的特定字符串\n    searchString = \"voluptatem\"\n    ' 批注内容\n    commentText = \"一个批注\"\n\n    ' 遍历文档中的所有段落\n    For Each rng In ActiveDocument.StoryRanges\n        With rng.Find\n            .Text = searchString\n            .Replacement.Text = \"\"\n            .Forward = True\n            .Wrap = wdFindStop\n            .Format = False\n            .MatchCase = False\n            .MatchWholeWord = True\n            .MatchWildcards = False\n            .MatchSoundsLike = False\n            .MatchAllWordForms = False\n\n            ' 查找并添加批注\n            Do While .Execute\n                rng.Comments.Add rng, commentText\n                rng.Collapse wdCollapseEnd\n            Loop\n        End With\n    Next rng\n\n    MsgBox \"批注已添加完成。\"\nEnd Sub\ncopilot生成的vba的位置"
+        },
+        {
+            "mid": "60945330",
+            "mtime": "2024-08-07 13:59",
+            "mcontent": "[quote]+R by  [娘希匹114514] (2024-08-07 13:51)Code c:1:2:3:4:5:6:7:8:9:10:11:\nSub AddCommentsToSpecificString()\n    Dim searchString As String\n    Dim commentText As String\n    Dim rng As Range\n\n    ' 要查找的特定字符串\n    searchString = \"voluptatem\"\n    &#3[/quote]\n\n感谢[s:a2:干杯]感谢"
+        }
+    ]
+}

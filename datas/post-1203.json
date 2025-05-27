@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39873846",
+    "title": "[C/C++][乱氵] 不能被定义、无法被实例，你是？",
+    "post_time": "2024-04-15 10:47",
+    "uid": "63778832",
+    "content": "rt，在学C++关键字，想到了这个代码",
+    "replies": [
+        {
+            "mid": "43089971",
+            "mtime": "2024-04-15 11:39",
+            "mcontent": "错啦,marker type嘛我愿称他们为c头4Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:37:38:39:40:41:42:43:44:45:46:47:48:49:50:51:52:\n#include <cstdio>\n#include <type_traits>\n#include <utility>\n\nstruct VirtualFinal {\n  virtual void foo() final = 0;\n};\n\nstruct ConsDelete {\n  ConsDelete() = delete;\n};\n\nclass ConsPrivate {\n  ConsPrivate() {}\n};\n\ntemplate <typename T> class MissingPartial {};\n\ntemplate <> class MissingPartial<int>;\n\ntemplate <typename Marker> auto bar() {\n  if constexpr (std::is_same_v<Marker, int>) {\n    return 0;\n  } else if constexpr (std::is_same_v<Marker, double>) {\n    return 1.14514;\n  } else if constexpr (std::is_same_v<Marker, VirtualFinal>) {\n    return std::pair(false, \"vf\");\n  } else if constexpr (std::is_same_v<Marker, ConsDelete>) {\n    return std::pair(3.14159, \"cd\");\n  } else if constexpr (std::is_same_v<Marker, ConsPrivate>) {\n    return std::pair(\"e\", \"cp\");\n  } else if constexpr (std::is_same_v<Marker, MissingPartial<int>>) {\n    return std::pair(nullptr, \"mp\");\n  } else {\n    return \"unknown\";\n  }\n}\n\nint main() {\n  auto bar1 = bar<int>();\n  auto bar2 = bar<double>();\n  auto [bar3b, bar3c] = bar<VirtualFinal>();\n  auto [bar4f, bar4c] = bar<ConsDelete>();\n  auto [bar5c, bar5c2] = bar<ConsPrivate>();\n  auto [bar6p, bar6c] = bar<MissingPartial<int>>();\n  auto bar7 = bar<void>();\n\n  printf(\"%d, %f, %s, %f, %s, %p, %s\\n\", bar1, bar2, bar3c, bar4f, bar5c, bar6p, bar7);\n  return 0;\n}"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41663626",
+    "title": "各位大佬求助k8s",
+    "post_time": "2024-09-14 14:38",
+    "uid": "60752006",
+    "content": "最近导师给了个k8s的相关学习任务，请问各位大佬k8s有没有什么好的入门方式",
+    "replies": [
+        {
+            "mid": "64114905",
+            "mtime": "2024-09-14 14:56",
+            "mcontent": "kubernetes in action，入门最好的，有能力可以直接看英文版第二版在Manning上有，但是作者写了十几章后鸽掉了"
+        },
+        {
+            "mid": "60752006",
+            "mtime": "2024-09-14 15:01",
+            "mcontent": "谢谢大佬"
+        }
+    ]
+}

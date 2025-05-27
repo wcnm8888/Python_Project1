@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42585233",
+    "title": "qt qprocess",
+    "post_time": "2024-11-28 13:18",
+    "uid": "42581685",
+    "content": "使用qt的qprocess类的start方法启动了一个进程，然后使用windows任务管理器关闭了这个进程，但在原进程里打印process的state一直为running",
+    "replies": [
+        {
+            "mid": "62654106",
+            "mtime": "2024-12-21 22:13",
+            "mcontent": "是这样的，qprocess不是可以拿到pid吗，去主动检查下是否存在就行"
+        }
+    ]
+}

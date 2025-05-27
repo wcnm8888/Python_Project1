@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39437104",
+    "title": "求一个函数",
+    "post_time": "2024-02-29 11:42",
+    "uid": "7138733",
+    "content": "搜了搜答案。没看到特别合适的，想来求助下老哥们，右边想统计的是单日内来的人的个数，统计一个月的总数，比如2月29日张三教练的学员小白，一天来了两次但只统计一次怎么统计，还需要区分是第一次来还是反复来的",
+    "replies": [
+        {
+            "mid": "1884407",
+            "mtime": "2024-03-01 12:02",
+            "mcontent": "纯公式我已经思维跟不上了，只会用powerquery拉拉如果可以先全局去重，剔除这个例外情况？"
+        },
+        {
+            "mid": "63453772",
+            "mtime": "2024-03-01 14:36",
+            "mcontent": "做个隐藏列做前三列每行的concacate，基于这个隐藏列做unique，然后countif"
+        },
+        {
+            "mid": "7138733",
+            "mtime": "2024-03-01 15:15",
+            "mcontent": "谢谢老哥 get了"
+        },
+        {
+            "mid": "63326825",
+            "mtime": "2024-03-01 17:29",
+            "mcontent": "方式一=COUNTA(UNIQUE((FILTER(原始!D:D&原始!A:A,(原始!B:B=A2)*(原始!C:C=$B$1),\"\"))))方式二中间表(去重)A1单元格公式=LET(I,COUNTA(原始!A:A),ud,UNIQUE((OFFSET(原始!A1,0,0,I,4))),ud)结果表A1单元格公式=LET(I,COUNTA(中间表!D:D)-1,ud,(OFFSET(中间表!A2,0,0,I,4)),co,UNIQUE(INDEX(ud,0,2)),r,TRANSPOSE(SORT(UNIQUE(INDEX(ud,0,3)))),report,HSTACK(VSTACK(“教练“,co),VSTACK(r,COUNTIFS(中间表!B:B,co,中间表!C:C,r))),report)"
+        }
+    ]
+}

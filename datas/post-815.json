@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40925971",
+    "title": "vscode有办法能方便地对比c代码和生成的汇编代码吗?",
+    "post_time": "2024-07-19 00:11",
+    "uid": "60489271",
+    "content": "类似这样的效果:",
+    "replies": [
+        {
+            "mid": "61008037",
+            "mtime": "2024-07-19 01:02",
+            "mcontent": "visual studio的话，调试的时候可以看反汇编"
+        },
+        {
+            "mid": "60576372",
+            "mtime": "2024-07-19 08:46",
+            "mcontent": "这不是都写了名字了么, VSC最近出了godbolt的拓展, 用就是了"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-07-19 18:53",
+            "mcontent": "何必呢，ida不是爽多了"
+        },
+        {
+            "mid": "62546497",
+            "mtime": "2024-07-20 14:26",
+            "mcontent": "[https:://hex-rays.com/ida-free/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://hex-rays.com/ida-free/ https://hex-rays.com/ida-free/] 请"
+        }
+    ]
+}

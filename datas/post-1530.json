@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39133406",
+    "title": "求助，格式化电脑出现error",
+    "post_time": "2024-01-29 08:36",
+    "uid": "62329054",
+    "content": "按照网上的方法，把HKEY_LOCAL_MACHINE\\SYSTEM\\Setup\\Status\\ChildCompletion/setup.exe默认值改成3，电脑会突然蓝屏",
+    "replies": [
+        {
+            "mid": "60143271",
+            "mtime": "2024-02-10 02:50",
+            "mcontent": "问题背景硬件配置和环境说下啊"
+        }
+    ]
+}

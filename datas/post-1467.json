@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39415531",
+    "title": "mac部署stable diffusion启动问题",
+    "post_time": "2024-02-27 09:09",
+    "uid": "24919592",
+    "content": "昨天mac mini到了，折腾了一晚上终于把stable diffusion部署好了",
+    "replies": [
+        {
+            "mid": "42812343",
+            "mtime": "2024-02-27 09:40",
+            "mcontent": "做个批处理发到开机启动里面。"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-02-27 11:36",
+            "mcontent": "使用mac的快捷指令，或者raycast"
+        }
+    ]
+}

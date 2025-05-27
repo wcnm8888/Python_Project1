@@ -1,0 +1,69 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39872501",
+    "title": "一个小白请教问题(应该是和数据库相关)",
+    "post_time": "2024-04-15 08:39",
+    "uid": "37767491",
+    "content": "运营商的底层员工，平时主要是管着下面的渠道商户，合计合计业务量、分配指标，统计点酬金啥的，今年部门让报一个项目，领导的意思大概就是让平时的数据呈现得很高大上。。。旦Excel就是不行，估摸着让我搞个数据库。 但小白只会用excel，现在来这里请教老哥们几个问题",
+    "replies": [
+        {
+            "mid": "3363460",
+            "mtime": "2024-04-15 09:37",
+            "mcontent": "你这可不光是数据库的问题，数据呈现那是 BI (Business Intelligence)。BI 交给一个只会 Excel 的小白去做，那有点 “利用下班时间写个淘宝系统” 那味了。不过如果你们的数据都是用 Excel 保存的，那确实第一步是把数据存到数据库，不然每次统计数据都要在几千几万个 Excel 来回横跳。BI 有成熟的产品，例如微软的 PowerBI，阿里云的 Power BI，国内也有很多做这个的。我们公司之前也有类似需求，后来发现无非就是拿订单表翻来覆去通过各种姿势、统计出各种维度，把市面上的 BI 系统研究了一圈之后，最后还是决定让研发在 OA 系统里做了几个统计页面完事。"
+        },
+        {
+            "mid": "37767491",
+            "mtime": "2024-04-15 09:41",
+            "mcontent": "大概明白了，那请问老哥，现在推是推不掉了，老哥有没有知道有路子可以付费解决的吗"
+        },
+        {
+            "mid": "26606137",
+            "mtime": "2024-04-15 10:41",
+            "mcontent": "要求不高mysql+echarts  就能解决  中间用python 或者 php  写一些简单代码就行 echarts  上花里胡哨的玩意拉满就行了你先搜搜echarts 看看那些玩意 是你想要的东西不"
+        },
+        {
+            "mid": "60736449",
+            "mtime": "2024-04-15 10:48",
+            "mcontent": "echarts + 你的数据库在加点桥接就差不多了感觉"
+        },
+        {
+            "mid": "37767491",
+            "mtime": "2024-04-15 10:54",
+            "mcontent": "好的谢谢老哥，小白再多请教一句，这个最后出来的东西，我随便发给别人，别人一下子就能点开看到是吧？"
+        },
+        {
+            "mid": "26606137",
+            "mtime": "2024-04-15 10:59",
+            "mcontent": "肯定的啊 有网就能看"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-04-15 11:01",
+            "mcontent": "[https:://www.microsoft.com/zh-cn/power-platform/products/power-bi 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.microsoft.com/zh-cn/power-platform/products/power-bi https://www.microsoft.com/zh-cn/power-platform/products/power-bi][https:://learn.microsoft.com/zh-cn/training/modules/get-started-with-power-bi/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/zh-cn/training/modules/get-started-with-power-bi/ https://learn.microsoft.com/zh-cn/training/modules/get-started-with-power-bi/]你先看看 Power BI 这种是不是你老板想要的，Power BI 相对还是比较便宜的。[https:://help.aliyun.com/zh/quick-bi/product-overview/billing-methods-of-quick-bi?spm=a2c4g.11186623.0.0.44812eedXjcaKC 此网页不属于本网站，不保证其安全性  继续访问       取消 https://help.aliyun.com/zh/quick-bi/product-overview/billing-methods-of-quick-bi?spm=a2c4g.11186623.0.0.44812eedXjcaKC https://help.aliyun.com/zh/quick-bi/product-overview/billing-methods-of-quick-bi?spm=a2c4g.11186623.0.0.44812eedXjcaKC]其他解决方案(尤其是国内某些解决方案)报价都比较高，不是个人能承担的。另外，楼上说的 echarts，如果你们本来就有研发人员那就可以考虑，不然还是考虑用现成的产品比较好。"
+        },
+        {
+            "mid": "37767491",
+            "mtime": "2024-04-15 11:54",
+            "mcontent": "感谢！感谢！"
+        },
+        {
+            "mid": "37449036",
+            "mtime": "2024-04-15 12:36",
+            "mcontent": "上面那些算是正经做法，不用sql也可以mongodb+配套BI 邪道一点你也可以用oauth这种东西直接把云端excel变成数据库本身"
+        },
+        {
+            "mid": "12987347",
+            "mtime": "2024-04-16 18:03",
+            "mcontent": "那个 本身EXCEL也可以作为成品BI产品的数据源"
+        },
+        {
+            "mid": "21416956",
+            "mtime": "2024-04-16 22:58",
+            "mcontent": "钱够的话直接买BI产品"
+        },
+        {
+            "mid": "63977723",
+            "mtime": "2024-04-16 23:46",
+            "mcontent": "运营商感觉可以内部问问，说不定采购专有云的时候已经捎带买了这类BI产品。如果内部没有的话稍微有点麻烦的，PowerBI和QuickBI能点点就买的都是公共云版本，你们数据能上公共云吗？"
+        }
+    ]
+}

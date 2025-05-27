@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39237989",
+    "title": "[求助] Linux怎么解除输入法和DE的依赖关系",
+    "post_time": "2024-02-07 13:12",
+    "uid": "60644983",
+    "content": "DE：Budgie 10.9.1",
+    "replies": [
+        {
+            "mid": "64611563",
+            "mtime": "2024-02-23 03:22",
+            "mcontent": "你不想卸载依赖的话直接-R不就行了"
+        }
+    ]
+}

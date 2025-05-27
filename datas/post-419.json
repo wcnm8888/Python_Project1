@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42430348",
+    "title": "[求助] 部署k8s，批准worker节点csr请求后get nodes为空",
+    "post_time": "2024-11-13 11:14",
+    "uid": "63592399",
+    "content": "跟着这个视频做的",
+    "replies": [
+        {
+            "mid": "62668493",
+            "mtime": "2024-11-13 12:21",
+            "mcontent": "把node的命令贴一下"
+        },
+        {
+            "mid": "63592399",
+            "mtime": "2024-11-13 12:32",
+            "mcontent": "什么意思？是kubectl get nodes吗。还是说是woeker节点kubelet的启动kubelet.confkubelet-bootstrap.kubeconfigkubelet-config.jso"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38882903",
+    "title": "mysql workbench怎么修改背景颜色",
+    "post_time": "2024-01-02 21:50",
+    "uid": "61583165",
+    "content": "找了半天教程没找到，说在codeeditor文件里改style32，现在找不到了，有没有老哥说一下。我眼受不了了",
+    "replies": [
+        {
+            "mid": "34350802",
+            "mtime": "2024-01-02 23:31",
+            "mcontent": "要修改 MySQL Workbench 的背景颜色，您可以通过应用程序的偏好设置来调整颜色方案。这里是一个通用的指南：1. 打开 MySQL Workbench。2. 在 Windows 上，选择 `Edit` > `Preferences`；在 macOS 上，选择 `MySQL Workbench` > `Preferences`。3. 在 `Appearance` 部分，导航到 `Fonts and Colors` 标签页。4. 在这里，您可以自定义 MySQL Workbench 中各种元素的颜色方案，包括 SQL 编辑器和结果集网格。如果您想要特别改为深色主题，并且使用的是 Windows 系统，且 MySQL Workbench 的版本是 8.0.26 或更高，您可以手动更新负责 Workbench 代码编辑器中颜色方案的 XML 文件。您需要用 GitHub 上提供的深色主题版本的 `code_editor.xml` 文件来替换原文件。`code_editor.xml` 文件通常位于 `C:\\Program Files\\MySQL\\MySQL Workbench X.X\\data\\` 路径下。在 Linux 系统上，您可以在系统设置中启用深色外观选项，然后手动更改 `code_editor.xml` 文件。您可以在 `/usr/share/mysql-workbench/data/` 目录下找到 `code_editor.xml` 文件。更改或编辑此文件前，建议先创建备份。更改后，重启 MySQL Workbench 以查看更新的颜色方案。"
+        },
+        {
+            "mid": "60672599",
+            "mtime": "2024-01-06 10:08",
+            "mcontent": "老哥，这个怎么感觉像ai的回答"
+        },
+        {
+            "mid": "61583165",
+            "mtime": "2024-01-06 14:42",
+            "mcontent": "好像就是ai"
+        }
+    ]
+}

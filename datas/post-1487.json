@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39377892",
+    "title": "Maven依赖问题求解答",
+    "post_time": "2024-02-22 23:06",
+    "uid": "42612294",
+    "content": "maven已经import完毕库里下了相关依赖，但是这里报红，点add dependency之后发现需要的依赖版本和maven导的依赖版本不一致",
+    "replies": [
+        {
+            "mid": "65377956",
+            "mtime": "2024-02-23 00:37",
+            "mcontent": "下个maven analyse排个包"
+        }
+    ]
+}

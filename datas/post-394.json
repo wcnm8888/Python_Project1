@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42496884",
+    "title": "rider运行c#，报错找不到.net framework 3.5",
+    "post_time": "2024-11-19 17:43",
+    "uid": "65539307",
+    "content": "新建桌面应用程序，下拉框只有.net2.0,.net 2.5,.net 3.5。",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-11-19 20:34",
+            "mcontent": "现在.NET 9都出了为什么还要新建3.5的？你什么环境？有试过vs编译吗？"
+        },
+        {
+            "mid": "65539307",
+            "mtime": "2024-11-20 06:43",
+            "mcontent": "在.net framework下面，新建的winform工程。不是.net core，我用.net 8.0是正常的。没有在vs编译过"
+        }
+    ]
+}

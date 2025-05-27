@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41490377",
+    "title": "搞了一个在openwrt上的supervisor编译，想了解一下这个软件的usecase",
+    "post_time": "2024-08-31 10:01",
+    "uid": "43377109",
+    "content": "感觉挺强大的，尤其是openwrt这种没有systemd的系统，拿来做podman容器的守护进程我看是一点问题都没有。",
+    "replies": [
+        {
+            "mid": "60720955",
+            "mtime": "2024-10-02 19:01",
+            "mcontent": "在ubuntu上用过，主要是拿来做其他程序的守护，当系统重启时supervisor自动拉起来程序，或者程序崩溃时自动重新启动程序。"
+        }
+    ]
+}

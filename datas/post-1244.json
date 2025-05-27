@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39770865",
+    "title": "代码小白尝试修复Mod求助",
+    "post_time": "2024-04-05 08:54",
+    "uid": "38009580",
+    "content": "玩戴森球计划，有几个Mod原作者不更新了，想自己修复一下，但是无从下手，还望大佬们指点一二，能直接解决问题最好，指个路告诉我去看哪些代码教程也行，在下感激不尽。",
+    "replies": [
+        {
+            "mid": "65507303",
+            "mtime": "2024-04-05 14:31",
+            "mcontent": "你可以试着问下GPT"
+        },
+        {
+            "mid": "65295969",
+            "mtime": "2024-04-05 15:34",
+            "mcontent": "你是认真的吗 太专业了"
+        },
+        {
+            "mid": "62627428",
+            "mtime": "2024-04-05 16:33",
+            "mcontent": "问作者要源码现在的unity都是用il2cpp编译的，你用dnspy只能看见com调用的地址你要看调用过程得用ida之类的看，再用dnspy用il重写方法才能修复，不过你自己都说涉及到类改过成员了，用il重写还不如自己去写一个新的mod甚至如果你要改某些il2cpp没暴露的函数你得用detour之类的库做inlinehook"
+        },
+        {
+            "mid": "62480715",
+            "mtime": "2024-04-05 16:40",
+            "mcontent": "第一个问题可以试试注释(//)掉[https:://github.com/LittleSaya/IndexOutOfRangeDSPMod/blob/master/DSPTransportStat/Plugin.cs#L164 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/LittleSaya/IndexOutOfRangeDSPMod/blob/master/DSPTransportStat/Plugin.cs#L164 https://github.com/LittleSaya/IndexOutOfRangeDSPMod/blob/master/DSPTransportStat/Plugin.cs#L164]这行。不过看起来作者本人( [https:://github.com/LittleSaya 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/LittleSaya https://github.com/LittleSaya] )还在活跃，只是没时间维护而已。楼主可以去[https:://github.com/LittleSaya/IndexOutOfRangeDSPMod/issues 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/LittleSaya/IndexOutOfRangeDSPMod/issues https://github.com/LittleSaya/IndexOutOfRangeDSPMod/issues]问问，以你这种态度，肯定能得到回应或指点。"
+        },
+        {
+            "mid": "38009580",
+            "mtime": "2024-04-07 18:52",
+            "mcontent": "Reply to +R by  [Jamieco] (2024-04-05 16:33)感谢两位，已经在github上留言过了，目前我只能看懂代码的描述部分和一些简单结构。准备自学一下C#看懂大概再去提问吧，起码要能提出具体问题而不是像现在一样连问题在哪都找不到。这个游戏没加密，搜了下b站有制作mod教学，已经在学C#了，今天刚学完基本语法(if for 这些等)，看了下教程大纲，估计再有5-6天能学完。到时候应该能做到看懂代码的逻辑结构定位问题点。学的还挺有意思，甚至有点沉迷敲代码了，这不比玩游戏强多了，学会了以后想要什么mod就能自己手搓一个，这也太爽了。"
+        }
+    ]
+}

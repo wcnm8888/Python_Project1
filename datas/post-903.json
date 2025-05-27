@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40671962",
+    "title": "有使用Python的兄弟姐妹么？请教一下，Anaconda是免费的么？",
+    "post_time": "2024-06-26 17:43",
+    "uid": "61389447",
+    "content": "指的是商用！",
+    "replies": [
+        {
+            "mid": "64734864",
+            "mtime": "2024-06-26 18:25",
+            "mcontent": "个人使用免费，公司组织使用好像有个人数限制，超过200人是要付费的，之间合作的一个公司就因为这个收到了anaconda的律师函"
+        },
+        {
+            "mid": "43399067",
+            "mtime": "2024-06-26 18:31",
+            "mcontent": "使用miniconda，这个完全免费。一样的工具，还小些，自己安装库就行了。"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-06-26 19:21",
+            "mcontent": "miniconda协议和anaconda一样的直接python+pip不就得了，你有啥离不开conda的？"
+        },
+        {
+            "mid": "65151803",
+            "mtime": "2024-06-26 20:28",
+            "mcontent": "我在公司用，被公司警告了"
+        },
+        {
+            "mid": "61389447",
+            "mtime": "2024-06-26 21:19",
+            "mcontent": "看来还是用Python自带的pip吧……"
+        },
+        {
+            "mid": "60028416",
+            "mtime": "2024-06-26 22:02",
+            "mcontent": "直接pip或者docker"
+        },
+        {
+            "mid": "61389447",
+            "mtime": "2024-06-27 06:34",
+            "mcontent": "docker啥意思？里面放Python环境？"
+        },
+        {
+            "mid": "65855073",
+            "mtime": "2024-06-27 15:23",
+            "mcontent": "python+pip就行"
+        },
+        {
+            "mid": "251661",
+            "mtime": "2024-06-27 22:05",
+            "mcontent": "他的意思是docker里把环境配好。 直接用docker开发"
+        }
+    ]
+}

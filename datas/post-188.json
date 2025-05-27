@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43243460",
+    "title": "有没有懂esp32 开发的老哥，帮帮孩子吧",
+    "post_time": "2025-02-10 16:28",
+    "uid": "38655131",
+    "content": "开发板： ESP32-C3 super mini      平台：arduino ide",
+    "replies": [
+        {
+            "mid": "60312782",
+            "mtime": "2025-02-11 04:46",
+            "mcontent": "刚好做过一个项目跟你用的板子一模一样，这是B站一个大佬的解决方案，就是这块板子没有串口芯片，得让USB当串口，很简单就解决了"
+        }
+    ]
+}

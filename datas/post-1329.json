@@ -1,0 +1,8 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39635841",
+    "title": "[分享] [讨论]Unity UIToolkit 创建编辑器应用时, 控件自动初始化绑定",
+    "post_time": "2024-03-22 09:48",
+    "uid": "14364750",
+    "content": "简介: 在使用UIToolkit 创建编辑器扩展/窗口 经常要使用类似Root.Q<Button>(\"按钮名字\");来查找控件, 本文介绍方法可省略此步骤.",
+    "replies": []
+}

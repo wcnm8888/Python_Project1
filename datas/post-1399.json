@@ -1,0 +1,79 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39485212",
+    "title": "gitlab合并分支",
+    "post_time": "2024-03-05 15:35",
+    "uid": "63280747",
+    "content": "A合并到B",
+    "replies": [
+        {
+            "mid": "19411590",
+            "mtime": "2024-03-05 15:42",
+            "mcontent": "本地合并，合并完了再推送到远程"
+        },
+        {
+            "mid": "63280747",
+            "mtime": "2024-03-05 16:15",
+            "mcontent": ""
+        },
+        {
+            "mid": "419596",
+            "mtime": "2024-03-05 17:00",
+            "mcontent": "创建一个A‘分支，把A上想要提交的commits cherry pick过来。然后从A'提PR到B"
+        },
+        {
+            "mid": "37531616",
+            "mtime": "2024-03-05 18:16",
+            "mcontent": "楼上cherry pick+1"
+        },
+        {
+            "mid": "60296004",
+            "mtime": "2024-03-06 12:18",
+            "mcontent": "cherry pick"
+        },
+        {
+            "mid": "61481383",
+            "mtime": "2024-03-08 05:21",
+            "mcontent": "话说cherry pick到底是啥意思？？"
+        },
+        {
+            "mid": "60427395",
+            "mtime": "2024-03-08 08:42",
+            "mcontent": "先revert不想要的提交再合并"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-03-08 09:23",
+            "mcontent": "字面意思：“摘樱桃”，把“好的”摘了，“坏的”扔了。"
+        },
+        {
+            "mid": "60405384",
+            "mtime": "2024-03-08 14:19",
+            "mcontent": "你没有推送权限，合并干啥？"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-03-08 15:14",
+            "mcontent": "pick之后最好编译pass再提pr。。。不然rollback去check那可是相当exciting("
+        },
+        {
+            "mid": "64297229",
+            "mtime": "2024-03-08 21:51",
+            "mcontent": "你倒是百度一下啊。"
+        },
+        {
+            "mid": "61594953",
+            "mtime": "2024-03-09 11:55",
+            "mcontent": "楼上说的cherry-pick可以，不过为啥a会有不想合入的提交，如果是需求和bug也应该拉两个分支单独改完之后再合"
+        },
+        {
+            "mid": "1294018",
+            "mtime": "2024-03-11 11:26",
+            "mcontent": "单独再拉个分支，把a上想合并的提交cherry pick过去，再合并到b不就行了？不过你不怕有bug？"
+        },
+        {
+            "mid": "65183987",
+            "mtime": "2024-03-11 16:04",
+            "mcontent": "[https:://blog.csdn.net/weixin_70280523/article/details/127987392?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1-127987392-blog-123419388.235^v43^pc_blog_bottom_relevance_base1&spm=1001.2101.3001.4242.2&utm_relevant_index=2 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.csdn.net/weixin_70280523/article/details/127987392?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1-127987392-blog-123419388.235^v43^pc_blog_bottom_relevance_base1&spm=1001.2101.3001.4242.2&utm_relevant_index=2 https://blog.csdn.net/weixin_70280523/article/details/127987392?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1-127987392-blog-123419388.235^v43^pc_blog_bottom_relevance_base1&spm=1001.2101.3001.4242.2&utm_relevant_index=2]百度一下吧"
+        }
+    ]
+}

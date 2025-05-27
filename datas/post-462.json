@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42085408",
+    "title": "ollama无法运行",
+    "post_time": "2024-10-16 20:38",
+    "uid": "42597663",
+    "content": "小白尝试问第一个问题，就是关于ollama模型的",
+    "replies": [
+        {
+            "mid": "41318649",
+            "mtime": "2024-10-16 23:31",
+            "mcontent": "cuda的问题？"
+        },
+        {
+            "mid": "62746519",
+            "mtime": "2024-10-17 10:13",
+            "mcontent": "换其他模型是否可以，如果可以就是模型问题"
+        },
+        {
+            "mid": "60004252",
+            "mtime": "2024-10-30 19:48",
+            "mcontent": "自用：docker run -d --name ollama-0 -v ollama:/root/.ollama -p 11434:11434 --gpus=all ollama/ollamadocker exec -it ollama-0 ollama run llama3.1"
+        }
+    ]
+}

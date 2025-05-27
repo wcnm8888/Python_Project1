@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41987038",
+    "title": "nginx 反向代理时的握手问题",
+    "post_time": "2024-10-09 17:03",
+    "uid": "65068978",
+    "content": "最近搞了个新项目，用的阿里云的服务器，服务器还在备案中，先搭建一个测试环境(用的就是还在备案中的服务器)，nginx 是通过宝塔装的 版本是1.22.1 。申请好域名，解析完成后，配置到nginx中，通过域名请求接口，发现是不是会出现 连接问题。nginx 的日志中显示 peer closed connection in SSL handshake (104: Connection reset by peer) while SSL handshaking，照着网上的教程，检查了证书以及修改了nginx配置文件，还是无法解决。有没有熟悉这个问题老哥帮忙解答下，小弟万分感谢",
+    "replies": [
+        {
+            "mid": "65068978",
+            "mtime": "2024-10-09 17:04",
+            "mcontent": "附上nginx 配置信息server {    listen 443 ssl;    server_name xxx.com;    ssl_protocols  TLSv1.1 TLSv1.2 TLSv1.3;    ssl_session_cache shared:SSL:10m;    ssl_session_timeout 10m;    location / {      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  proxy_set_header X-Real-IP $remote_addr;      proxy_ssl_server_name on;      proxy_ssl_session_reuse off;      proxy_pass [http:://127.0.0.1:39001;/ 此网页不属于本网站，不保证其安全性  继续访问       取消 http://127.0.0.1:39001;/ http://127.0.0.1:39001;/]    proxy_read_timeout 120s;    proxy_connect_timeout 120s;      proxy_send_timeout 120s;    }    access_log  /www/wwwlogs/test.api.access.log;    ssl_certificate  /www/server/nginx/ssl_cert/xxx .com.pem;# 指定证书文件的路径   ssl_certificate_key /www/server/nginx/ssl_cert/xxx .com.key; # 指定私钥文件的路径}"
+        },
+        {
+            "mid": "151107",
+            "mtime": "2024-10-11 12:01",
+            "mcontent": "新手直接 用 宝塔面板，然后看里面的配置，自己慢慢学做笔记，不懂就百度和google。不然没人教，你自己研究要好长时间"
+        },
+        {
+            "mid": "42215966",
+            "mtime": "2024-10-13 18:12",
+            "mcontent": "是啥样的，客户端往服务端发请求，哪方发出的重连指定呢"
+        },
+        {
+            "mid": "65068978",
+            "mtime": "2024-11-07 14:19",
+            "mcontent": "服务端发出的重连请求。破案了，是阿里云的备案问题，应该是未备案成功的服务器使用域名时，服务器会阻断握手。备案成功后域名访问一切正常。"
+        },
+        {
+            "mid": "42215966",
+            "mtime": "2024-11-07 14:56",
+            "mcontent": "soga，原来我用阿里云也遇到了这个问题，但是当时切服务器解决的"
+        },
+        {
+            "mid": "65605396",
+            "mtime": "2024-11-11 17:59",
+            "mcontent": "借楼问一下nginx本地反代访问网站，我看着需要鼓捣配置文件，还要安装openssl，那么需要用到什么软件来编写配置文件？"
+        }
+    ]
+}

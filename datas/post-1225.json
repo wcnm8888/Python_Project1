@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39819975",
+    "title": "[求助]android页面设计怎么设计才会好看一点呢？",
+    "post_time": "2024-04-10 12:33",
+    "uid": "64751658",
+    "content": "毕设要写app，但是整出来的页面被朋友夸奖“像是十年前的页面”，因为功能不算特别大而且本人没有艺术细胞所以设计的痛不欲生。稍微好看一点工作量直接翻倍但是不好看又不好接受",
+    "replies": [
+        {
+            "mid": "6707662",
+            "mtime": "2024-04-10 16:05",
+            "mcontent": "不会android，以下纯属个人臆想1. 找一个类似的app 模仿一下2. 找一个好看的界面库装修一下"
+        },
+        {
+            "mid": "65295969",
+            "mtime": "2024-04-10 16:08",
+            "mcontent": "有专业的插件啊 像vue一样"
+        },
+        {
+            "mid": "34685369",
+            "mtime": "2024-04-10 16:47",
+            "mcontent": "官方例子[https:://github.com/material-components/material-components-android-examples 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/material-components/material-components-android-examples https://github.com/material-components/material-components-android-examples]"
+        },
+        {
+            "mid": "41402251",
+            "mtime": "2024-04-10 22:10",
+            "mcontent": "找个原生的ui库，或者使用web开发，ui库都一大堆"
+        }
+    ]
+}

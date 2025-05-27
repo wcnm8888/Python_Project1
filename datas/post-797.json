@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40535691",
+    "title": "C语言问题求解",
+    "post_time": "2024-06-14 14:30",
+    "uid": "39147977",
+    "content": "#include \"stdio.h\"",
+    "replies": [
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 16:58",
+            "mcontent": "建议不要野路子入门,不然你很可能学到大量错误的知识,c更是重灾区你知道你写的代码在干什么吗?"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 14:55",
+            "mcontent": "我不是在入门，是在工程上发现的问题"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 14:57",
+            "mcontent": "这是典型的初学者容易搞不明白的东西w是个指针,存储的是malloc分配的一个地址,这个地址当然每次都不一样w指向的地址分配后未经初始化,w[0]的值当然是随机的,一个固定值还是一个\"真随机\"值都是随机,取决于你的机器你只分配了一个uint的空间,却试图访问w[1],这更是典型的越界,大部分情况下可能给你读个随机值出来,运气不好会把程序弄崩建议去了解一下什么是ub"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 15:07",
+            "mcontent": "我是故意做一次越界访问，如果w[0]或者w[1]要是随机值，我就不来提问了，问题就是他俩是一个无论怎么运行都不会变的固定值。  我正是要让它变成随机值，固定值容易被越界攻击后进行分析。"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 15:28",
+            "mcontent": "你搞这行的还问这种问题?这是机器相关的,c语言不管这种东西,根据你的机器去查对应的文档"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 15:38",
+            "mcontent": "C语言之外的我才会问啊，c语言本身的我还问啥，换了台电脑，换了编译环境，值还是不变。"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 15:50",
+            "mcontent": "内存分配跟硬件和操作系统都有关系,既然你知道有安全问题,那不是能找到对应的应对方法?要是没有这样的方法就说明管不了这个问题"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-06-14 16:10",
+            "mcontent": "问题是你希望w[1]一个越界访问w[0]一个未初始化值能给你什么惊喜吗 bug难道不是未初始化和越界本身而不是这个print出的值是什么吧print w值又是指针的地址 完全没入门的水平也能debug工程问题吗"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 16:12",
+            "mcontent": "你也许不明白里面的含义，所以才会问出这个问题。第一个输出地址是随机的，这很正确。在第一个输出正确的前提下，为什么第二个输出不是随机的?"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-06-14 16:18",
+            "mcontent": "第一个地址只是在你这里看起来随机 在某些条件和环境下面完全可能固定 第二个值跟第一个值没有一毛钱关系 这是个未初始化值 是什么都有可能 跟今天天气可能都有关"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 16:23",
+            "mcontent": "c语言没有规定过malloc分配的内存未初始化的时候到底是什么,你这些操作要么是ub要么是implementation defined换句话说,一个crt,每次malloc都给你全部清0,和另一个crt,每次都给你一个随机值,这两件事实是可以共存的,这就是我一直在说的\"机器相关\""
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 16:23",
+            "mcontent": "如果是什么都有可能就没问题了，问题就是他是一个固定不变的值，怎么运行都不变。"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 16:39",
+            "mcontent": "那就有另一个问题，一个crt固定分配00，另一个crt固定分配ff，有没有哪个crt是随机分配的呢？"
+        },
+        {
+            "mid": "3363460",
+            "mtime": "2024-06-14 16:41",
+            "mcontent": "1. 为什么 printf(\"%02x\\n \", w); 是随机数因为 malloc 分配的内存地址是随机的。2. 为什么 w[0] 是 0xCDCDCDCD，w[1] 是 0xFDFDFDFD[https:://www.softwareverify.com/blog/unusual-memory-bit-patterns/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.softwareverify.com/blog/unusual-memory-bit-patterns/ https://www.softwareverify.com/blog/unusual-memory-bit-patterns/][https:://www.geeksforgeeks.org/when-and-why-will-a-compiler-initialize-memory-to-0xcd-0xdd-etc-on-malloc-free-new-delete/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.geeksforgeeks.org/when-and-why-will-a-compiler-initialize-memory-to-0xcd-0xdd-etc-on-malloc-free-new-delete/ https://www.geeksforgeeks.org/when-and-why-will-a-compiler-initialize-memory-to-0xcd-0xdd-etc-on-malloc-free-new-delete/]malloc 分配但未经初始化的内存会用 0xCD 填充，所以 w[0] 是 0xCDCDCDCD。malloc 分配的这一段内存的前面和后面还各有一段4字节的 guard region，用 0xFDFDFDFD 填充，所以 w[1] 是 0xFDFDFDFD。这些 magic values 是为了方便开发人员调试程序，从内存的值就能看出这段内存的大致用途，避免使用未经初始化 (0xCDCDCDCD) 或已经释放的内存 (0xDDDDDDDD)。通常只有 Debug 环境下 malloc 才会使用这些 magic values；Release 版的话，可能是 0，也可能是这段内存之前被申请(并释放)后保存的值，把你的程序编译成 Release 再运行一遍就知道了。另外还与编译器有关，Visual C++ 会使用这些 magic values，C 语言编译器一般没有这种行为(因为填充会影响性能)，GCC 或其他编译器不一定。"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-06-14 16:58",
+            "mcontent": "“是一个固定的值” 是 “是什么都有可能”  的一种情况 这是MSVC的一种实现方式 换其他编译器就会是另外的情况 明白？"
+        },
+        {
+            "mid": "39147977",
+            "mtime": "2024-06-14 17:02",
+            "mcontent": "还是楼上说的明白些"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-06-14 17:34",
+            "mcontent": "突然想起来那个经典的梗\"烫烫烫\"的来源好像就是这里,windows特供"
+        },
+        {
+            "mid": "-1",
+            "mtime": "2024-06-14 17:42",
+            "mcontent": "[https:://blog.csdn.net/VVBBBBB/article/details/118045729 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.csdn.net/VVBBBBB/article/details/118045729 https://blog.csdn.net/VVBBBBB/article/details/118045729]微软编译器关于堆的正常操作。你要是懂一点，这就是来装逼的，正经人谁来这问；要是一点不懂，你也说不出故意的话。"
+        },
+        {
+            "mid": "63159041",
+            "mtime": "2024-06-15 11:51",
+            "mcontent": "我觉得14楼说的没问题第二个是未定义行为，结果取决于编译器"
+        }
+    ]
+}

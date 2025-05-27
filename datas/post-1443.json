@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39346489",
+    "title": "有没有学过autohotkey编程的？",
+    "post_time": "2024-02-19 19:25",
+    "uid": "65341459",
+    "content": "我感觉在windows系统里用很方便啊，虽然没有其他热门语言那么广泛，但是胜在体量小不用配置环境",
+    "replies": [
+        {
+            "mid": "63258928",
+            "mtime": "2024-02-27 22:15",
+            "mcontent": "[https:://meta.appinn.net/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://meta.appinn.net/ https://meta.appinn.net/]小众软件里有很多ahk分享"
+        },
+        {
+            "mid": "65597734",
+            "mtime": "2024-03-02 17:05",
+            "mcontent": "这个看过，因为不熟悉语法放弃，后来选了 pyautogui 实现自动化操作"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-03-03 13:05",
+            "mcontent": "有两个，autohotkey和autoit简单比较，autohotkey是BASIC语法，autoit是C++语法，AHK 擅长热键自动化，AutoIt 则擅长 COM 自动化。这俩都是用于流程自动化的，你要说他俩是编程语言，似乎有点勉强。"
+        },
+        {
+            "mid": "64473610",
+            "mtime": "2024-03-04 05:20",
+            "mcontent": "ahk拿来写过游戏脚本，每日自动清体力这东西和Python定位略像，只会它不够，会别的再会它做很多事比较方便"
+        }
+    ]
+}

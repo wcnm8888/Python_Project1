@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39925829",
+    "title": "老哥们，有个MobaXterm连接虚拟机ssh的问题请教一下",
+    "post_time": "2024-04-20 16:43",
+    "uid": "43184321",
+    "content": "",
+    "replies": [
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 16:48",
+            "mcontent": "自顶一下，zsbd"
+        },
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 17:27",
+            "mcontent": "centos?会不会是SELinux和防火墙没关"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 17:42",
+            "mcontent": "是centos，防火墙这个看了，我防火墙好像都没安装，用iptables和firewall查看防火墙，都显示not load，SELinux是什么？这个没查到相关的问题"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 17:43",
+            "mcontent": "是centos，防火墙这个看了，我防火墙好像都没安装，用iptables和firewall查看防火墙，都显示not load，SELinux是什么？这个没查到相关的问题"
+        },
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 18:17",
+            "mcontent": "你搜一下centos关闭SELinux"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 19:23",
+            "mcontent": "好的，我试试。"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 19:27",
+            "mcontent": "还是不行，我让文件里的那个disabled了，然后重启，没用而且我发现，他用telnet连不上22端口"
+        },
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 19:57",
+            "mcontent": "telnet默认端口是23啊，ssh才是22"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 20:02",
+            "mcontent": "不是，我的意思是，我用telnet去连虚拟机的ssh，telnet不通。"
+        },
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 20:06",
+            "mcontent": "肯定不通啊，ssh和telnet是两个互不兼容的东西"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 20:42",
+            "mcontent": "那这是不是无解了"
+        },
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 20:58",
+            "mcontent": "centos装个telnet服务不就行了，telnet连telnet"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 21:21",
+            "mcontent": "在虚拟机装了telnet以后，然后用mobaXterm的telnet连虚拟机的telnet，报connection timed out了。。"
+        },
+        {
+            "mid": "63978329",
+            "mtime": "2024-04-20 21:40",
+            "mcontent": "你虚拟机关了试试还能不能ping通呢  ，不能的话试试虚拟机反向操作你电脑能不能有反应看看是单向不通还是双向不通"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 22:09",
+            "mcontent": "虚拟机关了以后，竟然还能ping通虚拟机的ip，见鬼了！"
+        },
+        {
+            "mid": "43184321",
+            "mtime": "2024-04-20 22:15",
+            "mcontent": "这是我虚拟机的ip和本地网络VMnet8的配置，老哥们看看有啥问题吗？"
+        },
+        {
+            "mid": "60213424",
+            "mtime": "2024-04-20 23:04",
+            "mcontent": ""
+        },
+        {
+            "mid": "5254815",
+            "mtime": "2024-04-21 01:15",
+            "mcontent": "学习的话不是上 wsl吗，谁让你用虚拟机的，而且 centos 都要被淘汰了，趁早换成大厂的系统"
+        },
+        {
+            "mid": "1781995",
+            "mtime": "2024-04-21 02:07",
+            "mcontent": "你改本机ip干嘛，现在你ping的是本机肯定有问题。本机ip自动获取，虚拟机网络选nat，centos开启网卡并自动获取ip，关防火墙，iptables -F清理一下，基本没其他问题了"
+        }
+    ]
+}

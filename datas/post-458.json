@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42286483",
+    "title": "clickhouse相关问题求大佬解答",
+    "post_time": "2024-10-31 19:52",
+    "uid": "41680626",
+    "content": "坛里有用过clickhouse的大佬吗？目前遇到一个clickhouse与s3备份和恢复相关的问题，求解答",
+    "replies": [
+        {
+            "mid": "41680626",
+            "mtime": "2024-10-31 19:55",
+            "mcontent": "使用clickhouse自带的base back up到aws s3之后，将s3的文件下载到本地，想用restore from file 的方式恢复数据，不知道为啥这个关键字不生效，看起来还是从restore from s3,应该是读取了下载下来的.backup文件，这个有什么解决办法吗困扰好几天了"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43114458",
+    "title": "[求助] unity解包遇到分开的模型有没有办法合到一起",
+    "post_time": "2025-01-24 19:17",
+    "uid": "41935479",
+    "content": "前几天苟活了十年的网游《robocraft》因为没钱关服了，为了抢救遗产我就想把里面的战斗地图导出",
+    "replies": [
+        {
+            "mid": "41149589",
+            "mtime": "2025-01-25 11:23",
+            "mcontent": "打开unity把几个场景一起拖到scene里面()"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43500682",
+    "title": "单纯语音转文字，有哪些模型好用？",
+    "post_time": "2025-03-11 11:22",
+    "uid": "64338868",
+    "content": "用了挺久的ggml-large-v2 v3",
+    "replies": [
+        {
+            "mid": "38565245",
+            "mtime": "2025-03-11 14:39",
+            "mcontent": "modelscope找找看"
+        }
+    ]
+}

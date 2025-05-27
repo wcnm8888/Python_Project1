@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39663362",
+    "title": "pyqt/qt求助，图片缩略图+复选怎么做?",
+    "post_time": "2024-03-25 00:35",
+    "uid": "42090631",
+    "content": "图像处理的程序，根据缩略图选几张出来处理并计算，还是用QListWidget吗？",
+    "replies": [
+        {
+            "mid": "64757780",
+            "mtime": "2024-03-25 02:06",
+            "mcontent": "帮你问一下AI这个示例演示了如何使用PyQt5创建一个带有图片缩略图和复选功能的界面。你可以根据你的具体需求进行修改和扩展。Code py:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:37:38:39:40:41:42:43:44:45:46:47:48:49:50:51:52:53:54:55:56:57:58:59:60:61:62:63:64:65:66:67:68:69:70:71:72:73:\nimport sys\nfrom PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QListWidget, QListWidgetItem, QCheckBox, QLabel\nfrom PyQt5.QtGui import QIcon, QPixmap\nfrom PyQt5.QtCore import Qt\n\nclass ThumbnailWidget(QWidget):\n    def __init__(self, image_paths):\n        super().__init__()\n        self.image_paths = image_paths\n        self.init_ui()\n\n    def init_ui(self):\n        layout = QVBoxLayout()\n        self.list_widget = QListWidget()\n        self.list_widget.setViewMode(QListWidget.IconMode)\n        self.list_widget.setIconSize(QPixmap(100, 100).size())\n        self.list_widget.setResizeMode(QListWidget.Adjust)\n        self.list_widget.setSpacing(10)\n\n        for image_path in self.image_paths:\n            item = QListWidgetItem()\n            icon = QIcon(image_path)\n            item.setIcon(icon)\n            item.setCheckState(Qt.Unchecked)\n            self.list_widget.addItem(item)\n\n        layout.addWidget(self.list_widget)\n\n        button_layout = QHBoxLayout()\n        self.select_all_button = QCheckBox(\"Select All\")\n        self.select_all_button.stateChanged.connect(self.select_all)\n        button_layout.addWidget(self.select_all_button)\n\n        self.process_button = QLabel(\"Process\")\n        self.process_button.setStyleSheet(\"background-color: #4CAF50; color: white; padding: 5px;\")\n        self.process_button.mousePressEvent = self.process_selected\n        button_layout.addWidget(self.process_button)\n\n        layout.addLayout(button_layout)\n\n        self.setLayout(layout)\n\n    def select_all(self, state):\n        for i in range(self.list_widget.count()):\n            item = self.list_widget.item(i)\n            if state == Qt.Checked:\n                item.setCheckState(Qt.Checked)\n            else:\n                item.setCheckState(Qt.Unchecked)\n\n    def process_selected(self, event):\n        selected_images = []\n        for i in range(self.list_widget.count()):\n            item = self.list_widget.item(i)\n            if item.checkState() == Qt.Checked:\n                selected_images.append(self.image_paths[i])\n        print(\"Selected images:\", selected_images)\n        # 在这里添加你的图像处理代码\n\nif __name__ == '__main__':\n    app = QApplication(sys.argv)\n    image_paths = [\n        'image1.jpg',\n        'image2.jpg',\n        'image3.jpg',\n        'image4.jpg',\n        'image5.jpg'\n    ]\n    thumbnail_widget = ThumbnailWidget(image_paths)\n    thumbnail_widget.show()\n    sys.exit(app.exec_())\n这个示例代码创建了一个`ThumbnailWidget`类，它继承自`QWidget`。在`init_ui`方法中，我们创建了一个`QListWidget`来显示图片缩略图，并为每个图片添加一个复选框。我们还添加了一个\"Select All\"复选框和一个\"Process\"按钮。在`select_all`方法中，我们处理\"Select All\"复选框的状态变化，并相应地更新每个图片项的复选状态。在`process_selected`方法中，我们遍历列表中的所有图片项，检查它们的复选状态，并将选中的图片路径添加到`selected_images`列表中。然后，你可以在这里添加你的图像处理代码。请确保将`image_paths`列表中的图片路径替换为你实际要使用的图片路径。"
+        },
+        {
+            "mid": "42090631",
+            "mtime": "2024-03-25 10:02",
+            "mcontent": "[quote]+R by  [SdNt] (2024-03-25 02:06)帮你问一下AI这个示例演示了如何使用PyQt5创建一个带有图片缩略图和复选功能的界面。你可以根据你的具体需求进行修改和扩展。Code py:\nimp......[/quote]\n忘了还有AI这个利器了，多谢帮忙"
+        },
+        {
+            "mid": "65121899",
+            "mtime": "2024-04-12 17:07",
+            "mcontent": "QT我还是会的，想做什么，要不我帮你做吧，源码也可以给你"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42366138",
+    "title": "[求助]请坛友们推荐一款C#框架",
+    "post_time": "2024-11-07 11:24",
+    "uid": "41717155",
+    "content": "背景：本人目前在制造业从事上位机开发，工作内容是维护一款基于WinForm开发的客户端，纯搬砖，但工作压力较小。之前干过嵌入式应用软件开发，Simulink+StateFlow建模、生成代码，集成调试什么的。",
+    "replies": [
+        {
+            "mid": "61414352",
+            "mtime": "2024-11-07 13:46",
+            "mcontent": "ChatGPT给出如下意见MAUI 支持android ios macOS windows  Blazor 支持web"
+        },
+        {
+            "mid": "41717155",
+            "mtime": "2024-11-07 17:14",
+            "mcontent": "感谢答复"
+        },
+        {
+            "mid": "41367026",
+            "mtime": "2024-11-07 19:26",
+            "mcontent": "巨硬自己在弄的跨平台的C#软件框架应该最新的是MAUI如果我没记错的话。Blazor从我个人的理解上大概主要是基于服务器的网页，可能算是全栈？基础的主要写的是html+c#。另外就是MAUI的窗口我记得是支持内嵌网页 WebView2 的，所以或许之后也能塞个blazor进去。"
+        },
+        {
+            "mid": "65242828",
+            "mtime": "2024-11-07 20:35",
+            "mcontent": "MAUI Blazor Hybrid app"
+        },
+        {
+            "mid": "7450113",
+            "mtime": "2024-11-07 21:37",
+            "mcontent": "maui看了看没看懂，不如学学vue做uniapp，有代码基础很好学"
+        },
+        {
+            "mid": "202131",
+            "mtime": "2024-11-08 06:49",
+            "mcontent": "首选abp框架，它将c#开发中的常见套路做成了模块封装。例如依赖注入，对象映射，各种数据库访问等等。但是它的重心是在web方面，所以还需要选择一款桌面框架，这有三个个选择:maui,wpf或者avalonia，这里wpf只能window平台上用，maui和avalonia可以打包成安卓或ios应用。接下来还要选择一个让界面开发更省心方便的框架，这方面有prism，caliburn.micro，communityToolkit.mvvm等等。所以你可以找以下关键字:abp + wpf + caliburn.micro，abp + wpf + prism，abp+maui+ prism，abp + avalonia +…我个人喜欢用abp+wpf+caliburn.micro的组合，小型应用很快很方便。缺点就是程序大了以后没有prism好管理。"
+        }
+    ]
+}

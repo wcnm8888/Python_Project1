@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41017235",
+    "title": "请教一个问题，关于.TXT修改为.bat",
+    "post_time": "2024-07-27 15:28",
+    "uid": "60808083",
+    "content": "taskkill /f /t /im wpsupdate.exe",
+    "replies": [
+        {
+            "mid": "42252406",
+            "mtime": "2024-07-27 17:33",
+            "mcontent": "命令成功执行了，但是由于没有这两个进程，显示没找到的错误。"
+        },
+        {
+            "mid": "60808083",
+            "mtime": "2024-07-27 21:57",
+            "mcontent": "谢谢大佬说明"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43599263",
+    "title": "jupyter notebook 就是一坨屎!",
+    "post_time": "2025-03-21 15:40",
+    "uid": "63478635",
+    "content": "尤其是更到的v7以后, 各种环境问题, 今天能用的东西, 明天打开就不能用了, 一会不能格式化代码了, 一会不能切换核心了. 天天都有各种问题. 一坨屎.",
+    "replies": [
+        {
+            "mid": "38554127",
+            "mtime": "2025-03-21 18:07",
+            "mcontent": "我记得官方早就推荐改用jupyterlab了吧"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-03-21 19:47",
+            "mcontent": "vscode定位是文本编辑器，不是IDE啊。jupyter擅长的是每行代码分别执行以及即时显示结果。如果你需要编写python项目，那还是pycharm好使吧。在pycharm面前，jupyter、vscode都是弟弟！"
+        },
+        {
+            "mid": "66561973",
+            "mtime": "2025-03-21 21:24",
+            "mcontent": ""
+        },
+        {
+            "mid": "731907",
+            "mtime": "2025-03-21 23:18",
+            "mcontent": "还是我说的那句话，jupyter擅长的是运行单行代码，结果所见即所得，适合科学研究，根本不适合你所要的格式化代码。"
+        },
+        {
+            "mid": "38554127",
+            "mtime": "2025-03-22 02:36",
+            "mcontent": "还好吧，我测试了一下vscode中通过Jupyter插件创建notebook文件，可以正常进行补全，也能通过vscode提供的Black Formatter插件或者利用基础的python或者pylance插件进行格式化终究是工具罢了，如果真的是面向数据分析场景，实际上JetBrains家的DataSpell会比Pycharm更加开箱即用一些"
+        }
+    ]
+}

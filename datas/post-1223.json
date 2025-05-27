@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39694472",
+    "title": "麻烦，办公室新换打印机只支持win10驱动，但办公室里电脑系统多种多样",
+    "post_time": "2024-03-28 09:00",
+    "uid": "61937992",
+    "content": "从xp到11都有，和打印机连的是win10.要我写个脚本，把各个电脑的打印信息，统一调动打印机电脑的驱动进行打印，怎么搞方便快捷一点？",
+    "replies": [
+        {
+            "mid": "61937992",
+            "mtime": "2024-03-28 09:03",
+            "mcontent": "。。。垃圾aiimport win32printimport win32ui# 设置共享打印机的路径，格式为 \\\\计算机名\\打印机共享名printer_name = r\"\\\\Win10ComputerName\\SharedPrinterName\"hprinter = win32print.OpenPrinter(printer_name)hdc = win32ui.CreateDC()hdc.CreatePrinterDC(printer_name)try:    hdc.StartDoc(\"My Network Printing Document\")    hdc.StartPage()    hdc.TextOut(100, 100, \"Hello, this is a test print from a network computer.\")    hdc.EndPage()    hdc.EndDoc()finally:    hdc.DeleteDC()"
+        },
+        {
+            "mid": "1884407",
+            "mtime": "2024-03-28 10:20",
+            "mcontent": "或许换个思路，建个smb共享目录叫打印队列win10系统做服务器，用脚本检查名为打印队列的目录是否有文件，若有，发送打印并删除(或剪切至已打印目录)开机自运行并做个每个几分钟检查的循环 只是没法控制打印，例如份数，页边距等，建议打印文档都先输出成已排版的pdf"
+        },
+        {
+            "mid": "13147636",
+            "mtime": "2024-03-28 18:11",
+            "mcontent": "软路由接打印机"
+        },
+        {
+            "mid": "41773423",
+            "mtime": "2024-04-02 12:04",
+            "mcontent": "window自带的远程桌面，连接后可以打印"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-04-02 12:23",
+            "mcontent": "单独搞个打印机器呗。要是usb连接，笔记本都行。还有，这事情要是想用脚本，那连接打印机的电脑上面必然得有一个模拟操作的程序。这种程序内部安全审核能过么。"
+        },
+        {
+            "mid": "2504017",
+            "mtime": "2024-04-02 13:06",
+            "mcontent": "2024年了还用windows共享打印机？"
+        },
+        {
+            "mid": "60261126",
+            "mtime": "2024-04-02 14:41",
+            "mcontent": "哪个牌子的打印机这么搓？"
+        },
+        {
+            "mid": "61937992",
+            "mtime": "2024-04-02 14:47",
+            "mcontent": "兄弟"
+        },
+        {
+            "mid": "37484915",
+            "mtime": "2024-04-11 10:20",
+            "mcontent": "搞个虚拟机装个winser新点儿的版本做个打印机服务器 教程网上多的很。以后所有打印机都接到打印服务器上就行了。"
+        }
+    ]
+}

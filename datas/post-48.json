@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43682099",
+    "title": "有大佬知道电脑在有操作的情况下自动锁屏怎么解决吗",
+    "post_time": "2025-03-30 14:43",
+    "uid": "61626961",
+    "content": "电脑在链接手柄打游戏的时候会自动锁屏(有线)，按网上教程修改了电源计划、屏幕保护程序、休眠时间都没有解决，按DeepSeek给的代码运行脚本，但一直也没运行成功",
+    "replies": [
+        {
+            "mid": "61626961",
+            "mtime": "2025-03-30 14:46",
+            "mcontent": "还查了系统日志，提示“安排软件保护服务在某某时间段重新启动成功，原因：rules engine”也不确定有没有看错地方"
+        },
+        {
+            "mid": "39468066",
+            "mtime": "2025-03-30 18:12",
+            "mcontent": "试试powertoys，微软自己做的windows小工具合集。[https:://learn.microsoft.com/zh-cn/windows/powertoys/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/zh-cn/windows/powertoys/ https://learn.microsoft.com/zh-cn/windows/powertoys/]"
+        },
+        {
+            "mid": "61626961",
+            "mtime": "2025-03-31 10:53",
+            "mcontent": "谢谢大佬"
+        }
+    ]
+}

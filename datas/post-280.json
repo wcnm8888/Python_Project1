@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42886333",
+    "title": "[求助] 各位大佬,debian12使用logger.info输出信息,断开ssh后再次连接,如何能让这个log信息重新显示",
+    "post_time": "2024-12-31 13:12",
+    "uid": "18248526",
+    "content": "copy的",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-12-31 15:05",
+            "mcontent": "tee或者重定向吧 your_cmd 2>&1 | tee your_log_file  可能你还得加个nohup"
+        },
+        {
+            "mid": "18248526",
+            "mtime": "2024-12-31 15:34",
+            "mcontent": ""
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-12-31 15:58",
+            "mcontent": "10秒一条太多？？？你应该对日志没有任何概念"
+        },
+        {
+            "mid": "18248526",
+            "mtime": "2024-12-31 16:03",
+            "mcontent": ""
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-12-31 16:22",
+            "mcontent": "有 比如用tmux复用terminal 但是用log存下来就是最正确的方案没有之一正常来讲你断开ssh退出terminal这个程序应当退出 除非程序本身处理了hungup信号"
+        },
+        {
+            "mid": "41719364",
+            "mtime": "2024-12-31 21:05",
+            "mcontent": "写个.service文件用systemctl管起来"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2025-01-01 10:45",
+            "mcontent": "我建议你可以整一个日志中心大的有elk小的单体的，我用的seq配置好后程序单独跑日志网站查看，日志中心有单独的过滤搜索机制也有数据过期策略"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39551765",
+    "title": "[求助][JAVA]JNA处理unsigned char*相关问题求解",
+    "post_time": "2024-03-13 09:46",
+    "uid": "42556622",
+    "content": "目前有个获取图像的方法int getImage(unsigned char *image,int *imageWidth,int *imageHeight)，需要从image字段获取返回的图像信息，目前使用byte[]或者各种byReference进行处理都会失败，经常会出现整个程序都被关掉的情况。麻烦各位大佬看下是什么问题",
+    "replies": [
+        {
+            "mid": "8777681",
+            "mtime": "2024-03-13 10:00",
+            "mcontent": "hs_err日志贴出来看"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41962259",
+    "title": "关于在python中用numpy改变csv表格内容",
+    "post_time": "2024-10-07 14:16",
+    "uid": "63497829",
+    "content": "大佬们救命，新手刚学几天啥也不会。。。如果我要增加两个新的column进去，具体代码应该怎么写呢，感觉这个好像很小众啊，我网上搜半天没搜到怎么弄#(汗)",
+    "replies": [
+        {
+            "mid": "3260753",
+            "mtime": "2024-10-07 15:16",
+            "mcontent": "numpy会很费劲 用pandas吧Code py:1:2:3:4:5:6:7:\ndef calc_bonus(sales, perf):\n  ...\ndf = pd.read_csv(your_filename)\ndf['bonus'] = df.apply(lambda x: calc_bonus(x.sales, x.performance), axis=1)\npd.to_csv(df, new_filename)\n类似这样， 太久不写可能有错，自己查查文档"
+        },
+        {
+            "mid": "63340581",
+            "mtime": "2024-10-08 00:42",
+            "mcontent": "先把数据弄成pandas的dataframe格式，处理完成后再转成numpy的array数组"
+        },
+        {
+            "mid": "64344359",
+            "mtime": "2024-10-09 14:40",
+            "mcontent": "可以问问GPT"
+        },
+        {
+            "mid": "6859151",
+            "mtime": "2024-10-10 21:39",
+            "mcontent": "csv,可以当做txt，一行中的逗号就是新的一列。所以可以纯粹用字符串拼接去写"
+        }
+    ]
+}

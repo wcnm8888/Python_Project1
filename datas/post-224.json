@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42862477",
+    "title": "[咨询]双非一本可以做unity开发吗",
+    "post_time": "2024-12-28 17:04",
+    "uid": "66467646",
+    "content": "楼主现在在某不知名双非一本的计科",
+    "replies": [
+        {
+            "mid": "992969",
+            "mtime": "2024-12-28 17:51",
+            "mcontent": "评价为书读的太少，但是想的太多"
+        },
+        {
+            "mid": "60084222",
+            "mtime": "2024-12-29 06:25",
+            "mcontent": "普通unity仔大专都可以做，只是现在的游戏行业我不好评价，中低层不好混，要做还是推荐引擎，技术美术方向，这些门槛就不低了"
+        },
+        {
+            "mid": "290046",
+            "mtime": "2024-12-31 15:16",
+            "mcontent": "大专都可以,你说呢"
+        },
+        {
+            "mid": "66322907",
+            "mtime": "2025-01-02 08:05",
+            "mcontent": "大二学啥都来得及 能问这种问题 肯定找得到工作"
+        },
+        {
+            "mid": "788319",
+            "mtime": "2025-01-02 08:57",
+            "mcontent": "别做unity了，考虑一下ue吧"
+        },
+        {
+            "mid": "66467646",
+            "mtime": "2025-01-02 14:36",
+            "mcontent": "谢谢大家(?ò ? ó?)"
+        },
+        {
+            "mid": "38698793",
+            "mtime": "2025-01-07 15:54",
+            "mcontent": "游戏业内  主流还是  unity  ue 少部分cocos 或者是一些自研引擎     没经验就去积累经验   多看看书 去淘宝找找资源 前面可以高点简单的 数独  2048这种 然后去B站油管上跟着学跟着做c# 的话  《深度理解c#》  《clr》大二挺早的  抓点紧弄点经验 来年假期去实习  来年假期去实习  来年假期去实习   实习很重要   毕业之后大厂也能进的"
+        },
+        {
+            "mid": "66467646",
+            "mtime": "2025-01-08 00:34",
+            "mcontent": "费心了！请问大概要怎样才能够达到实习的要求，现在大概会一点点基础的(实现文字游戏功能啥的还有用一些简单的组件(dotween，spine)之类的)，前不久看boss直聘大多数实习的没怎么写能力要求。也就是说目前要多做几个项目？(?ò ? ó?)"
+        },
+        {
+            "mid": "66467646",
+            "mtime": "2025-01-08 01:45",
+            "mcontent": "谢谢各位大哥，小弟无以为报，有两张网易云的体验WumiaoSuki送您一张会员礼品卡，快来看看TA的祝福吧! 快来领取吧 [https://music.163.com/prime/m/gift-receive?p=KlWHMH3cfrbKBtKYB6HUgOUU_48lQShH1IGZC7JVhAhDpeObU5863KltBVVMyoxFUlq8NhGB2CUNmplSSwvC-Ah0AWN8igPQ-EahXxlIqg0&d=jcnwx7zGVezBgOl-yevoSw https://music.163.com/prime/m/gift-receive?p=KlWHMH3cfrbKBtKYB6HUgOUU_48lQShH1IGZC7JVhAhDpeObU5863KltBVVMyoxFUlq8NhGB2CUNmplSSwvC-Ah0AWN8igPQ-EahXxlIqg0&d=jcnwx7zGVezBgOl-yevoSw]"
+        },
+        {
+            "mid": "65597734",
+            "mtime": "2025-01-08 07:59",
+            "mcontent": "国内的游戏行业感觉行情一般"
+        },
+        {
+            "mid": "38698793",
+            "mtime": "2025-01-08 12:09",
+            "mcontent": "\"现在大概会一点点基础的\" 我默认你清楚 unity 中的各种生命周期函数  那你可以去git 上看unity 官方demo  然后从0 复刻一份  这就是经验  或者油管找个完整的小项目教程 跟着做去实习 也只会喊你拼UI   多看看UI框架  NGUI UGUI 这种"
+        },
+        {
+            "mid": "38725595",
+            "mtime": "2025-01-15 16:50",
+            "mcontent": "看你ip，不会是江财吧"
+        },
+        {
+            "mid": "65296380",
+            "mtime": "2025-01-16 01:45",
+            "mcontent": "才大二，不着急先看看计算机系有没有引擎类的课如果有  不出意外 你会在不久的未来会修一门叫做物理引擎的课，具体就是c++实现一个简单的光追渲染引擎，实现一个简单的局部光照变化，需要你数学基础好以及学会阴影 反射 折射 缓冲 材质等知识点，顺带一提这个课在我校的挂科率是64[https:://pic002.cnblogs.com/img/miloyip/201003/2010032819542028.png 此网页不属于本网站，不保证其安全性  继续访问       取消 https://pic002.cnblogs.com/img/miloyip/201003/2010032819542028.png https://pic002.cnblogs.com/img/miloyip/201003/2010032819542028.png]题外话，如果没有的类似的课的话那为什么不考虑实现一个简单的渲染器呢，相信我自己搭过一个渲染器的话，学unity api会很快，毕竟unity也是高度抽象层，底层渲染原理还是那些，以及对日后项目优化帮助会比较大。然后等你毕业了 那帮只会依葫芦画瓢的选手怎么可能打得过你 给你个链接参考学习 [https:://avikdas.com/build-your-own-raytracer/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://avikdas.com/build-your-own-raytracer/ https://avikdas.com/build-your-own-raytracer/] [https:://github.com/codecrafters-io/build-your-own-x 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/codecrafters-io/build-your-own-x https://github.com/codecrafters-io/build-your-own-x]"
+        },
+        {
+            "mid": "66467646",
+            "mtime": "2025-01-16 19:53",
+            "mcontent": "你好！大佬，谢谢您的建议。我的学校并没有游戏引擎的相关课程(虚拟现实专业好像有)。看了一下b站相关的视频，发现没有系统讲述的(可能是我的打开方式不对)，我想问问这个方面算不算一个比较深入或者说专业的领域。"
+        },
+        {
+            "mid": "16977836",
+            "mtime": "2025-01-20 08:20",
+            "mcontent": "按楼上佬说的，实习拼ui比较多，学习阶段多留意一点ui tool kit(现在u3d在推的)/ugui(很多人已经习惯了的)这种ui方面的；走u3d的话shader那块是展望未来(这部分很难，大部分玩unity的shader其实都是搬来用，相当负杂)以后肯定要学的，但是出入不要太急；引擎本身的操作使用这一块建议直接跟着项目教程做(code monkey，brankeys这些人的教程做得挺好的)，代码部分unity的c#和现代c#有点区别"
+        },
+        {
+            "mid": "66467646",
+            "mtime": "2025-01-21 23:52",
+            "mcontent": "隔壁江理的"
+        },
+        {
+            "mid": "65296380",
+            "mtime": "2025-01-22 04:57",
+            "mcontent": "算，这当然算一个很具体的领域，图形是个很吃时间的学科。如果你要干这行按照我的理解就是你的水平必须过硬，毕竟计算机这一行任何领域都是可以自学的，前置学科只有英语，逻辑思维和数学，你可以在进大学之前就是个大神也可以是毕了业之后连初中生水平都没的选手，你可能会说这不是unity嘛，会写脚本会搭ui会搬轮子来用不就行了，但是你也说了你是双非一本，如果校招没找到活儿的话，你毕业就得和几年经验的牲口找工作了，你觉得那会你还有时间和经历钻研底层只是然后跑路跳槽吗，所以你需要一份拿得出手的东西的话，那自己写个引擎不断调优就行了，别只会搬轮子，你得让别人知道你还会造轮子。如果你现在自学，不断沉淀的话，可能未来的路线就是走学术或者引擎开发之类的偏底层的不容易被裁的岗具体回复看这个 [https:://www.zhihu.com/question/276886826 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.zhihu.com/question/276886826 https://www.zhihu.com/question/276886826]我给你找了入门的渲染器实现视频可以配搭我之前那条回复里面的链接[https:://www.youtube.com/watch?v=ih20l3pJoeU&list=PLrOv9FMX8xJE8NgepZR1etrsU63fDDGxO&index=22 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.youtube.com/watch?v=ih20l3pJoeU&list=PLrOv9FMX8xJE8NgepZR1etrsU63fDDGxO&index=22 https://www.youtube.com/watch?v=ih20l3pJoeU&list=PLrOv9FMX8xJE8NgepZR1etrsU63fDDGxO&index=22]"
+        },
+        {
+            "mid": "66524387",
+            "mtime": "2025-01-22 13:03",
+            "mcontent": "你可以查查今年开的项目有多少是ue的，有多少是unity的。 unity越来越少了。新项目都是ue了。战未来的话还是考虑ue吧。"
+        },
+        {
+            "mid": "63818604",
+            "mtime": "2025-01-24 14:06",
+            "mcontent": "看了腾讯的《造物理论》兴致冲冲大二转计科，后来游戏行业没去成，去做GPU了。"
+        }
+    ]
+}

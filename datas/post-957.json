@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40518141",
+    "title": "请教关于电脑不知名进程占用cpu很高的问题",
+    "post_time": "2024-06-12 22:48",
+    "uid": "65569709",
+    "content": "大佬们，我电脑这几个进程占cpu很高，有时候突然飙到100%，然后鼠标指针就会卡，游戏也很卡，请问应该如何解决？",
+    "replies": [
+        {
+            "mid": "63772608",
+            "mtime": "2024-06-13 16:30",
+            "mcontent": "百度了下，好像是迅雷"
+        },
+        {
+            "mid": "65569709",
+            "mtime": "2024-06-13 18:51",
+            "mcontent": "非常感谢大佬，问题已解决。DAX API是杜比音效有关进程，因为占比CPU 1%左右，我没去管。DSA Service是英特尔® 驱动程序和支持助理 (英特尔® DSA) 服务，我win+r输msconfig进服务右键将其设为手动。WMI Provider Host即Windows Management Instrumentation(Windows 管理规范)的简写，是 Windows 操作系统的一项内置功能，它为软件和管理脚本提供了一种标准化方法，可以用于请求有关 Windows 操作系统状态和其它数据信息。WMI Provider 则在有相关请求时提供、返回这些信息。我在任务管理器的详细信息里将其cpu优先级改为“低”。"
+        }
+    ]
+}

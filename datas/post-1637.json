@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38901548",
+    "title": "[Python]有没有懂win32com库的大佬，请教一个问题",
+    "post_time": "2024-01-04 20:49",
+    "uid": "65051791",
+    "content": "from win32com.client import constants as c",
+    "replies": [
+        {
+            "mid": "2858747",
+            "mtime": "2024-01-04 22:20",
+            "mcontent": "干活用pandasimport pandasimport ospath = r'D:\\Desktop\\0\\240104\\1'files = os.listdir(path)for f in files:    if f.endswith('.xlsx'):        fc = f.replace('.xlsx', '.csv')        pandas.read_excel('\\\\'.join((path, f))).to_csv('\\\\'.join((path, fc)), encoding='utf-8-sig', index=False)"
+        },
+        {
+            "mid": "65051791",
+            "mtime": "2024-01-04 22:39",
+            "mcontent": "我有这个需求就是因为现在用pandas读取excel到内存要花还1 2分钟，我想着既然能手动打开excel另存为csv，那微软应该也提供了这个操作的api，可是win32com的全是英文文档太难找了"
+        },
+        {
+            "mid": "63782286",
+            "mtime": "2024-01-04 22:51",
+            "mcontent": "为什么要用excel呢，直接保存csv不行吗"
+        },
+        {
+            "mid": "2858747",
+            "mtime": "2024-01-05 00:11",
+            "mcontent": "脚本跑不起来八成是你的环境和库没装好。没弄明白你的点。xlsx改成csv有啥好处？让上游改格式不行？让下游改格式不行？直接通讯不行？98x1141=111818单元格，368kB的表格，win32速度是pandas两倍。Win不同版本命令有很大区别，下面供参考。Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:\nfin = r\"D:\\Desktop\\0\\240104\\1\\a.xlsx\"\nfout = r\"D:\\Desktop\\0\\240104\\1\\a4.csv\"\nt0 = time.time()\nexcel = win32.gencache.EnsureDispatch('Excel.Application')\nwb = excel.Workbooks.Open(fin)\nwb.SaveAs(fout, 6)\nwb.Close(True)\nexcel.Quit()\nprint(time.time() - t0)\nwith open(fout, 'r', encoding='utf-8') as f:\n    data = f.read()\n with open(fout, 'w', encoding='utf-8-sig') as f:\n     f.write(data)\nprint(time.time() - t0)"
+        },
+        {
+            "mid": "3173380",
+            "mtime": "2024-01-05 12:33",
+            "mcontent": "感觉用vba就好Code c:1:2:3:4:5:6:7:8:9:10:11:\nSub 宏1()\n     For Each wb In Range(\"A1\").CurrentRegion\n        Workbooks.Open Filename:=wb\n         Name = ActiveWorkbook.Name\n        ActiveWorkbook.SaveAs Filename:=\"C:\\Users\\XXXXXX\\Desktop\\\" & Name & \".csv\", _\n            FileFormat:=xlCSVUTF8, CreateBackup:=False\n        ActiveWorkbook.Close\n    Next wb\nEnd Sub\n新建一个工作簿，把宏放进去，A列放需要转换文件的路径。路径可以通过文件夹的菜单”复制路径\"获取"
+        },
+        {
+            "mid": "62627428",
+            "mtime": "2024-01-05 13:12",
+            "mcontent": "不多直接excel另存为csv不就行了多了excel写vba另存为csv不就行了"
+        },
+        {
+            "mid": "65051791",
+            "mtime": "2024-01-05 13:40",
+            "mcontent": "[quote]+R by  [wangyi041228] (2024-01-05 00:11)脚本跑不起来八成是你的环境和库没装好。没弄明白你的点。xlsx改成csv有啥好处？让上游改格式不行？让下游改格式不行？直接通讯不行？98x1141=111818单元格，368kB的表格，win32速度是pandas两倍。Win不同版本命令有很大区别，下面供参考。Code c:1:2:3:4:5:6:7:8:\nfin = r\"D:\\Desktop\\0\\240104\\1\\a.xlsx\"\nfout = r\"D:\\Desktop\\0\\240104\\1\\a4.csv\"\nt0 = time.time()\nexcel = [/quote]\n\n感谢，这个win32com SaveAs太搞了，找不到文档\n[img]./mon_202401/05/-4bvoQsbae-hmjlKjT3cSj6-7f.png[/img][img]./mon_202401/05/-4bvoQ4bxe-7rtpKqT3cSsg-5h.png[/img][s:ac:喷]感谢，这个win32com SaveAs太搞了，找不到文档"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-01-06 11:33",
+            "mcontent": "excel默认编码格式是 UTF-16 LE 吧"
+        },
+        {
+            "mid": "37982135",
+            "mtime": "2024-01-07 12:37",
+            "mcontent": "[quote]+R by  [wangyi041228] (2024-01-05 00:11)脚本跑不起来八成是你的环境和库没装好。没弄明白你的点。xlsx改成csv有啥好处？让上游改格式不行？让下游改格式不行？直接通讯不行？98x1141=111818单元格，368kB的表格，win32速度是pandas两倍。Win不同版本命令有很大区别，下面供参考。Code c:1:2:3:4:5:6:7:\nfin = r\"D:\\Desktop\\0\\240104\\1\\a.xlsx\"\nfout = r\"D:\\Desktop\\0\\240104\\1\\a4.csv\"\nt0 = time.time()\nexcel = [/quote]\n\n学习了学习了"
+        }
+    ]
+}

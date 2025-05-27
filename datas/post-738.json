@@ -1,0 +1,64 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41145814",
+    "title": "新人求教，请问这个代码为什么最后输出是0啊。",
+    "post_time": "2024-08-06 16:36",
+    "uid": "42704774",
+    "content": "用%d输出是个其他的数字我已经完全理解了，但是为什么用%f输出，不论什么数字都是0啊，按我的理解不应该也是一个可能不是0的数字吗，但全都是0。",
+    "replies": [
+        {
+            "mid": "3363460",
+            "mtime": "2024-08-06 17:02",
+            "mcontent": "%f 那 int test 的类型得改成 float 啊"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2024-08-06 19:31",
+            "mcontent": "分别用gcc和mscv试了试，输出不一样，这种未定义行为具体表现根据编译实现不同而不同，要不你去翻源代码吧更新；这是拿msvc和gcc分别编译成32和64位，一共4个程序运行的结果，顺便添加了两行代码以%d和%x选项打印test这个变量，可以看到scanf对test变量(至少int长度范围内)的修改是一样的，唯独printf打印出来的浮点不一样。C语言不遵守规定写的话程序到底是什么表现全看编译器大爷的脸色，深究底层到底发生了什么不是我们一般人能做到的，老老实实背标准写法就行了。"
+        },
+        {
+            "mid": "41318649",
+            "mtime": "2024-08-06 23:01",
+            "mcontent": "类型不匹配导致赋值失败，test未初始化所以一直为0？不同环境或者编译器下值可能不同"
+        },
+        {
+            "mid": "41318649",
+            "mtime": "2024-08-06 23:07",
+            "mcontent": ""
+        },
+        {
+            "mid": "42581685",
+            "mtime": "2024-08-08 10:14",
+            "mcontent": "初始化成一个特定值，然后再跑一遍，看看是不是根本没赋进去。"
+        },
+        {
+            "mid": "62086949",
+            "mtime": "2024-08-08 17:15",
+            "mcontent": "可能因为printf是靠%后面的字符去匹配参数的，你传一个int，匹配的要float，估计就是没匹配上，用上初始化0的数了"
+        },
+        {
+            "mid": "42769915",
+            "mtime": "2024-08-08 18:46",
+            "mcontent": "float和int的长度是4字节, scanf实际按float处理你的输入到test变量, 里面确实是float编码的数据, 你的printf里面的%f在我的gcc这里要求的是double手册里面描述的也是double, 如果不是double会先转成double回到问题，你输入的值是不是很小，你输入大一点的结果应该就变了，他的整形值应该是你输入的值按浮点规范编码然后的结果, 就算你printf按%d输出，那么也不是你输入的值，而是你输入的值按浮点编码后的二进制解析成int的值另外新手都从来不阅读接口手册文档的吗"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-08-09 08:39",
+            "mcontent": "这还有人说初始化0的 有一个算一个拖回去重修c/c++"
+        },
+        {
+            "mid": "64077268",
+            "mtime": "2024-08-09 12:36",
+            "mcontent": "有没有可能，test这种没定义就自然是0"
+        },
+        {
+            "mid": "64077268",
+            "mtime": "2024-08-09 12:42",
+            "mcontent": "是数据类型不对吧"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-08-09 14:37",
+            "mcontent": "怎么明牌提示 不存在初始化0 这个事情了还有人跳出来说的。。cppref糊脸上行不行。。[https:://en.cppreference.com/book/uninitialized 此网页不属于本网站，不保证其安全性  继续访问       取消 https://en.cppreference.com/book/uninitialized https://en.cppreference.com/book/uninitialized]  另外你们猜猜如果第一行是int a = 1; 结果是什么这个问题是完全的UB，根本没必要解释为什么，但是7L应该解释了大多数实现的情况  If any argument after default argument promotions is not the type expected by the corresponding conversion specifier, or if there are fewer arguments than required by format, the behavior is undefined记住，所有UB都是compiler/platform specific的，绝大多数情况下不需要知道为什么而且这叫未初始化uninitialized 不叫未定义undefined 不然是编译错误"
+        }
+    ]
+}

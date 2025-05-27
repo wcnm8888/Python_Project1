@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41545963",
+    "title": "[求助] 蓝屏了，求大佬看一下原因，不会是最近说的cpu缩缸了吧？",
+    "post_time": "2024-09-04 18:04",
+    "uid": "39424877",
+    "content": "************* Preparing the environment for Debugger Extensions Gallery repositories **************",
+    "replies": [
+        {
+            "mid": "731907",
+            "mtime": "2024-09-04 20:57",
+            "mcontent": "SYSTEM_SERVICE_EXCEPTION (3b)PROCESS_NAME: chrome.exe系统服务异常chrome.exechrome好像不添加系统服务吧？chrome跟系统服务有关的就显卡驱动了。或者可能是杀毒软件搞的。"
+        },
+        {
+            "mid": "65120038",
+            "mtime": "2024-09-12 14:55",
+            "mcontent": "0xC0000005: STATUS_ACCESS_VIOLATION出现内存访问冲突。按微软官方的建议检查下呗：[https:://learn.microsoft.com/zh-cn/windows-hardware/drivers/debugger/bug-check-0x3b--system-service-exception 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/zh-cn/windows-hardware/drivers/debugger/bug-check-0x3b--system-service-exception https://learn.microsoft.com/zh-cn/windows-hardware/drivers/debugger/bug-check-0x3b--system-service-exception]"
+        }
+    ]
+}

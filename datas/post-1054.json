@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=38901587",
+    "title": "问一下大佬们 华为备份tar.enc文件怎么在电脑上打开啊？",
+    "post_time": "2024-01-04 20:55",
+    "uid": "60644016",
+    "content": "如题 华为手机备份到电脑的图片 格式都是tar.enc",
+    "replies": [
+        {
+            "mid": "65441387",
+            "mtime": "2024-05-21 09:40",
+            "mcontent": "请问打开了吗"
+        },
+        {
+            "mid": "60644016",
+            "mtime": "2024-05-21 09:45",
+            "mcontent": "没有 已经放弃了"
+        },
+        {
+            "mid": "65441387",
+            "mtime": "2024-05-21 10:16",
+            "mcontent": ""
+        },
+        {
+            "mid": "62396512",
+            "mtime": "2024-05-21 17:35",
+            "mcontent": ".enc 是加密文件后缀，.tar是打包格式等于是先把照片打包成一份，然后加密如果是用标准算法的话 根据这个网站 [[https:://file.org/extension/enc 此网页不属于本网站，不保证其安全性  继续访问       取消 https://file.org/extension/enc https://file.org/extension/enc]] 的说法可以试试 PowerArchiver 或者 Stuffit Expander"
+        }
+    ]
+}

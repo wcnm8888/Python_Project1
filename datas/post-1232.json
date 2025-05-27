@@ -1,0 +1,69 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39756564",
+    "title": "python有啥好的课吗",
+    "post_time": "2024-04-03 16:39",
+    "uid": "61146975",
+    "content": "LZ运维，想学点python方便干活，之前想弄个定时给给定的网站页面以及网站内的子页面截图并发到我邮箱的操作，但弄了半天都没实现(GPT)，想说先去系统学学python",
+    "replies": [
+        {
+            "mid": "2858747",
+            "mtime": "2024-04-03 16:54",
+            "mcontent": "菜鸟教程看1小时基础知识，扫一遍，不用全弄懂。自动化用selenium。想立马实现可以先不学，chrome开好网页，用pyautogui按键，ctrltab切标签，f5刷新。截屏用pyautogui，可改ctypes加速。邮件smtplib或类似的。"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-03 17:06",
+            "mcontent": "尴尬的是gpt也是让我用selenium，然后后面一大堆参数我都没搞懂是啥意思。。。然后您说的ctypes加速我也没懂是啥。。。所以我才想说我是不是应该先去看一下py的课。。。。"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-03 18:09",
+            "mcontent": "卡在哪一步了，selenium抓取网页截图还挺简单的"
+        },
+        {
+            "mid": "2858747",
+            "mtime": "2024-04-03 19:28",
+            "mcontent": "视频课又臭又长，看菜鸟教程(或python官方，廖雪峰)的文字版分分钟。要用selenium还要学很多前置知识，所以我推荐你先学pyautogui，只需要学截屏，按键。"
+        },
+        {
+            "mid": "64219520",
+            "mtime": "2024-04-06 17:02",
+            "mcontent": "Python[https:://www.alipan.com/s/r6aghLCzuEG 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/r6aghLCzuEG https://www.alipan.com/s/r6aghLCzuEG]提取码: lq65点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。邢不行—Python股票量化投资课程(完结)[https:://www.alipan.com/s/Wq42tjdzFcu 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/Wq42tjdzFcu https://www.alipan.com/s/Wq42tjdzFcu]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。[imooc-182]Python移动自动化测试...试-面试分析+知识理论+面试技巧[https:://www.alipan.com/s/sbCRVfqawdj 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/sbCRVfqawdj https://www.alipan.com/s/sbCRVfqawdj]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。[imooc-194]Python Flask高...程之从0到1开发《鱼书》精品项目[https:://www.alipan.com/s/BPVjDjFCxV1 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/BPVjDjFCxV1 https://www.alipan.com/s/BPVjDjFCxV1]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。[imooc-194]Python Flask高...程之从0到1开发《鱼书》精品项目[https:://www.alipan.com/s/uYZ1rgtQmGi 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.alipan.com/s/uYZ1rgtQmGi https://www.alipan.com/s/uYZ1rgtQmGi]点击链接保存，或者复制本段内容，打开'阿里云盘'APP ，无需下载极速在线查看，视频原画倍速播放。"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-07 09:38",
+            "mcontent": "谢了~！"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-07 09:39",
+            "mcontent": "我去看看。。。"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-07 09:40",
+            "mcontent": "有个什么driver啥的，然后还有下属一大堆参数没看懂意思。。。可能这些参数对我也没啥用，但我还是想要知道啥意思"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-04-09 08:36",
+            "mcontent": "之前在外企负责数字化时候用过selenium，driver那些参数必须清楚，后续浏览器内核更新你得维护的，认真啃英文doc吧"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-09 14:51",
+            "mcontent": "是啊。。。就是这部分有些细节类的不太懂，所以我才想说找个好的课程先看看。。。"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-04-09 15:23",
+            "mcontent": "认真啃文档啊，不是不给你教程，是selenium的教程视频那些我也搜过，很多函数都改写法或者废弃了，不如你自己看最新文档准确啊"
+        },
+        {
+            "mid": "61146975",
+            "mtime": "2024-04-09 17:14",
+            "mcontent": "在哪有呢？"
+        }
+    ]
+}

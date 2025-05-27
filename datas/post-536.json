@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41990559",
+    "title": "[讨论] 如何知道软件的设置信息存放位置？",
+    "post_time": "2024-10-09 22:11",
+    "uid": "23136349",
+    "content": "小软件貌似可以靠虚拟机，那大软件呢？",
+    "replies": [
+        {
+            "mid": "731907",
+            "mtime": "2024-10-10 12:38",
+            "mcontent": "SysinternalsSuite软件套餐里的Procmon.exe可以监控软件读取所有文件和注册表"
+        },
+        {
+            "mid": "23136349",
+            "mtime": "2024-10-10 13:02",
+            "mcontent": "感谢！"
+        }
+    ]
+}

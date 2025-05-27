@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40784748",
+    "title": "关于替换VS Code中Github Copilot API地址的疑问，求教！",
+    "post_time": "2024-07-06 12:21",
+    "uid": "615717",
+    "content": "各位大佬好，我现在想在网络层面将VS Code中指向Github Copilot的API地址换成我自己的模型。最后的结果是我在VS Code里自动补全的代码是用自己的模型完成的。",
+    "replies": [
+        {
+            "mid": "64175241",
+            "mtime": "2024-07-06 14:38",
+            "mcontent": "玩猜你在找 Continue"
+        },
+        {
+            "mid": "615717",
+            "mtime": "2024-07-06 15:20",
+            "mcontent": ""
+        }
+    ]
+}

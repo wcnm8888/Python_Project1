@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=43260919",
+    "title": "请教高手，乌班图系统如何装英伟达显卡驱动",
+    "post_time": "2025-02-12 17:30",
+    "uid": "61492325",
+    "content": "如题，我安装了 Ubuntu 22.04，准备用 4060ti16g 小跑个 ai，但这个显卡驱动始终装不上去，一装就黑屏，现在只能用核显",
+    "replies": [
+        {
+            "mid": "42685479",
+            "mtime": "2025-02-12 17:45",
+            "mcontent": "[https:://blog.csdn.net/m0_38101947/article/details/126499811 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.csdn.net/m0_38101947/article/details/126499811 https://blog.csdn.net/m0_38101947/article/details/126499811]跟着一步一步做，不会的及时问。"
+        },
+        {
+            "mid": "65109516",
+            "mtime": "2025-02-20 01:58",
+            "mcontent": "sudo ubuntu-drivers install nvidia:565"
+        },
+        {
+            "mid": "64375529",
+            "mtime": "2025-02-20 09:18",
+            "mcontent": "翻Wiki，乌班图的上游debian在官方仓库里放着经过检测的n卡驱动可以通过apt直接装；乌班图作为更亲近普通人的发行版应该也有"
+        },
+        {
+            "mid": "42441572",
+            "mtime": "2025-02-20 23:12",
+            "mcontent": "英伟达官网下载deb包"
+        }
+    ]
+}

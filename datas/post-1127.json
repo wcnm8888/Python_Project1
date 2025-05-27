@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40053487",
+    "title": "JAVA的mybaits和HikariCP配置总是报错",
+    "post_time": "2024-05-03 11:23",
+    "uid": "20675409",
+    "content": "这个配置是哪里有问题啊？",
+    "replies": [
+        {
+            "mid": "65295969",
+            "mtime": "2024-05-03 20:39",
+            "mcontent": "就是密码打错了吧"
+        },
+        {
+            "mid": "36866281",
+            "mtime": "2024-05-04 11:59",
+            "mcontent": "很明显是你配置不对啊[https:://mybatis.org/mybatis-3/configuration.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://mybatis.org/mybatis-3/configuration.html https://mybatis.org/mybatis-3/configuration.html]官网写了支持There are three built-in dataSource types (i.e. type=“[UNPOOLED|POOLED|JNDI]”):如果不是这个类型的话需要自己实现factoryimport org.apache.ibatis.datasource.unpooled.UnpooledDataSourceFactory;import com.mchange.v2.c3p0.ComboPooledDataSource;public class C3P0DataSourceFactory extends UnpooledDataSourceFactory {  public C3P0DataSourceFactory() {    this.dataSource = new ComboPooledDataSource();  }}自己参考一下吧[https:://stackoverflow.com/questions/67859160/configure-hikaricp-datasource-with-hikariconfig-in-mybatis-in-xml-mapper-configu 此网页不属于本网站，不保证其安全性  继续访问       取消 https://stackoverflow.com/questions/67859160/configure-hikaricp-datasource-with-hikariconfig-in-mybatis-in-xml-mapper-configu https://stackoverflow.com/questions/67859160/configure-hikaricp-datasource-with-hikariconfig-in-mybatis-in-xml-mapper-configu]"
+        }
+    ]
+}

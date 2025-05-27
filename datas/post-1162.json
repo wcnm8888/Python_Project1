@@ -1,0 +1,104 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39926000",
+    "title": "大佬们，请教如何自学Linux，现在跟老年人上微机课一样。",
+    "post_time": "2024-04-20 17:04",
+    "uid": "60148311",
+    "content": "rt，最近入坑开始学习Linux，配好了主机安装好双系统后才发现自己掉进一个大坑。",
+    "replies": [
+        {
+            "mid": "63366654",
+            "mtime": "2024-04-20 17:35",
+            "mcontent": "我觉得觉得初学者先用虚拟机，然后发行版用最主流的比较好，用虚拟机不用担心搞坏系统无法开机，用最主流的发行版即使出现问题也能很容易的找到教程，小众发行版就只能靠自己或者can考其他系统的解决方案尝试解决。国内最主流的发行版是Ubuntu和centos，如果你说英语很好，能轻松阅读英文文档，以及使用英文打字交流，manjaro也可以。学习Linux也需要有个方向，毫无方向的乱学一气不仅低效而且无用，Linux知识浩如烟海，我们只需要学习核心部分和需要用到的部分。学Linux运维就参考B站上的Linux教程学一下就行了。"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-20 18:32",
+            "mcontent": "你这一上来就是最高难度啊从你对vim都不咋了解的情况来看，建议你先用虚拟机装linux玩玩，达到熟练程度后再给自己的开发机装linux比较好，更何况现在windows有wsl ！！你连虚拟机都不要了，直接开启wsl就是原生linux终端体验都"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-20 19:08",
+            "mcontent": "我装都装了，再搞wsl也没用了。那玩意我也清楚，wsl1.0时还尝试装eve-ng ，就是不熟Linux没下文了。"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-20 19:08",
+            "mcontent": "额，那也是Linux啊，大佬咋学。"
+        },
+        {
+            "mid": "62288468",
+            "mtime": "2024-04-20 19:23",
+            "mcontent": "安装操作系统学基本命令学vi学shell编程"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-20 19:25",
+            "mcontent": "那请问有没有什么推荐的相关教程或学习方法呢？"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-04-20 19:39",
+            "mcontent": "找网课吧，b站一大堆Linux入门"
+        },
+        {
+            "mid": "61548168",
+            "mtime": "2024-04-20 21:57",
+            "mcontent": "参考阿里的学习路线 [https:://edu.aliyun.com/trainingcamp/?spm=a2cwt.28190922.0.0.79f47127aQu5VQ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://edu.aliyun.com/trainingcamp/?spm=a2cwt.28190922.0.0.79f47127aQu5VQ https://edu.aliyun.com/trainingcamp/?spm=a2cwt.28190922.0.0.79f47127aQu5VQ]"
+        },
+        {
+            "mid": "251661",
+            "mtime": "2024-04-20 21:58",
+            "mcontent": "你学linux 需要个方向，你要做什么？ 先把vmware搞好虚拟机装centos7.9  ubuntu 22.04 openeuler 22.03  这3个系统足够你实验了，这3个教程多，好搜教程。linux我也就学了个基础~~~现在好多命令都忘了。  不过有个影响直接去问chatgpt命令就好。。。各种服务会配，都是直接抄。openstackk8s 这些都学习了下。。。这俩可以给你分享点资料docker学习教程~这个学完可以学k8s。 你docker弄一个仓库镜像直接下到本地就好了~有些网站需要魔法。[https://www.bilibili.com/video/BV1og4y1q7M4/?spm_id_from=333.337.search-card.all.click&vd_source=fbec6e437e34974032dccd28c5f46e0f https://www.bilibili.com/video/BV1og4y1q7M4/?spm_id_from=333.337.search-card.all.click&vd_source=fbec6e437e34974032dccd28c5f46e0f]▸"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-20 22:15",
+            "mcontent": "llm本地部署，环境搭了，但还没部署成功。好的，谢谢。"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-20 22:16",
+            "mcontent": "谢谢，我慢慢看看。"
+        },
+        {
+            "mid": "5254815",
+            "mtime": "2024-04-21 02:12",
+            "mcontent": "就为搭个 llm 有什么必要学 linux，现在都是 docker 跑的"
+        },
+        {
+            "mid": "62073702",
+            "mtime": "2024-04-21 11:22",
+            "mcontent": "[https:://101.lug.ustc.edu.cn/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://101.lug.ustc.edu.cn/ https://101.lug.ustc.edu.cn/] 把这个看完，挺不错的，至少基本的能懂。"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-21 12:26",
+            "mcontent": "docker起不起来服务，之后微调还是得学些啊。"
+        },
+        {
+            "mid": "60148311",
+            "mtime": "2024-04-21 12:27",
+            "mcontent": "好的，谢谢。"
+        },
+        {
+            "mid": "60762430",
+            "mtime": "2024-04-21 19:31",
+            "mcontent": "老哥gpt用起来啊，自学的时候是很大助力"
+        },
+        {
+            "mid": "60519280",
+            "mtime": "2024-04-24 20:31",
+            "mcontent": "2024年了就别学vim这种政治工具了，自从原作者去世之后帮助乌干达已经成了玩笑了要简单有nano要新潮有helix要装逼有emacs"
+        },
+        {
+            "mid": "63314357",
+            "mtime": "2024-04-24 20:38",
+            "mcontent": "现在主流的开源llm，比如说gemini，mistral，chatglm之类在Windows下不也能部署嘛"
+        },
+        {
+            "mid": "2504017",
+            "mtime": "2024-04-24 21:12",
+            "mcontent": "操作系统本身是为上面运行的程序提供服务楼主先把各种日常用软件都安装上，碰到问题研究解决问题会加深印象学的更快"
+        }
+    ]
+}

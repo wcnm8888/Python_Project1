@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42567794",
+    "title": "问个重装系统后的问题",
+    "post_time": "2024-11-26 17:10",
+    "uid": "43153729",
+    "content": "重装系统后以前的软件虽然都在 但是无法在windows自带的搜索里嗖到，以前解决方法要么是把快捷方式放到桌面上要么是每次要用就得找到这个软件的路径一层一层的进去打开，想要能在程序里找到只能重新安装",
+    "replies": [
+        {
+            "mid": "42976521",
+            "mtime": "2024-11-26 19:48",
+            "mcontent": "这问题问PC软硬件区可能更早收获回答我估计是因为重装系统之后注册表啥的没了，所以程序关联不过去"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-11-26 20:34",
+            "mcontent": "装一个全局启动器比如listary双击ctrl就可以全局搜索"
+        },
+        {
+            "mid": "731907",
+            "mtime": "2024-11-26 21:33",
+            "mcontent": "windows搜索的范围就是 桌面、开始菜单、收藏夹。重装以后这些都清空了所以就搜不到了。你可以在这里添加要搜索的位置但是最方便的方法还是在桌面建一个文件夹，里面放上你经常用的程序的快捷方式。平时运行也方便，重装前复制这个文件夹到其他盘，重装后再复制回来就行。再高级一点建立文件链接那种，也麻烦。不如就新建文件夹最简单。其他还有一些第三方小软件，实现类似功能的。有微软PowerToys Run   [https:://learn.microsoft.com/zh-cn/windows/powertoys/run 此网页不属于本网站，不保证其安全性  继续访问       取消 https://learn.microsoft.com/zh-cn/windows/powertoys/run https://learn.microsoft.com/zh-cn/windows/powertoys/run]Fluent SearchFlow.Launcher"
+        }
+    ]
+}

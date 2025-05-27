@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40437962",
+    "title": "想要学习网络安全。",
+    "post_time": "2024-06-06 03:22",
+    "uid": "65781521",
+    "content": "请问各位it大佬，网络安全的一些学习流程和一些学习论坛和知识清单。在此感谢各位大佬了。",
+    "replies": [
+        {
+            "mid": "62073702",
+            "mtime": "2024-06-06 06:30",
+            "mcontent": "[https:://hit-fc-opencs.github.io/CS_Courses/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://hit-fc-opencs.github.io/CS_Courses/ https://hit-fc-opencs.github.io/CS_Courses/][https:://feei.cn/sig/?continueFlag=41b8dae38df09c1e60dcc2d4086c7f8d 此网页不属于本网站，不保证其安全性  继续访问       取消 https://feei.cn/sig/?continueFlag=41b8dae38df09c1e60dcc2d4086c7f8d https://feei.cn/sig/?continueFlag=41b8dae38df09c1e60dcc2d4086c7f8d][https:://github.com/NiuTrans/compiler-notes?continueFlag=fc690cd2060a00fd5910b48fec50b523 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/NiuTrans/compiler-notes?continueFlag=fc690cd2060a00fd5910b48fec50b523 https://github.com/NiuTrans/compiler-notes?continueFlag=fc690cd2060a00fd5910b48fec50b523][https://mp.weixin.qq.com/s/U61cxxzTeusdH90Qs0YdgQ https://mp.weixin.qq.com/s/U61cxxzTeusdH90Qs0YdgQ][https:://kviccn.github.io/series/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%80%E5%8F%91%E5%85%A5%E9%AD%82/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://kviccn.github.io/series/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%80%E5%8F%91%E5%85%A5%E9%AD%82/ https://kviccn.github.io/series/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%80%E5%8F%91%E5%85%A5%E9%AD%82/][https:://blog.knownsec.com/Knownsec_RD_Checklist/?continueFlag=624f7d778f02e5fab107c94f48bb283b 此网页不属于本网站，不保证其安全性  继续访问       取消 https://blog.knownsec.com/Knownsec_RD_Checklist/?continueFlag=624f7d778f02e5fab107c94f48bb283b https://blog.knownsec.com/Knownsec_RD_Checklist/?continueFlag=624f7d778f02e5fab107c94f48bb283b][https:://github.com/ProbiusOfficial/CTF-QuickStart 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/ProbiusOfficial/CTF-QuickStart https://github.com/ProbiusOfficial/CTF-QuickStart][https:://roadmap.sh/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://roadmap.sh/ https://roadmap.sh/]这里好多我看都没看过，就是囤囤鼠，有的是16年的，你注意下，大部分是最新的。"
+        },
+        {
+            "mid": "42252406",
+            "mtime": "2024-06-06 09:56",
+            "mcontent": "收藏等于吸收.gif"
+        },
+        {
+            "mid": "64589898",
+            "mtime": "2024-06-06 12:11",
+            "mcontent": "这些应该可以了，但是需要你有一定的网络基础。基础入门及汇总[https:://wiki.wgpsec.org/knowledge/base/safety.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.wgpsec.org/knowledge/base/safety.html https://wiki.wgpsec.org/knowledge/base/safety.html][https:://index.tesla-space.com/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://index.tesla-space.com/ https://index.tesla-space.com/][https:://websec.readthedocs.io/zh/latest/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://websec.readthedocs.io/zh/latest/ https://websec.readthedocs.io/zh/latest/][https:://book.hacktricks.xyz/v/cn/windows-hardening/checklist-windows-privilege-escalation 此网页不属于本网站，不保证其安全性  继续访问       取消 https://book.hacktricks.xyz/v/cn/windows-hardening/checklist-windows-privilege-escalation https://book.hacktricks.xyz/v/cn/windows-hardening/checklist-windows-privilege-escalation][https:://www.cnblogs.com/Pengj/p/17956606 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.cnblogs.com/Pengj/p/17956606 https://www.cnblogs.com/Pengj/p/17956606][https:://www.cnblogs.com/M0rta1s/p/11742389.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.cnblogs.com/M0rta1s/p/11742389.html https://www.cnblogs.com/M0rta1s/p/11742389.html][https:://github.com/Tencent/secguide 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/Tencent/secguide https://github.com/Tencent/secguide]笔记：[https:://teamssix.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://teamssix.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ https://teamssix.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/]工具包合集：[https:://github.com/theLSA/hack-er-tools/blob/master/README.md 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/theLSA/hack-er-tools/blob/master/README.md https://github.com/theLSA/hack-er-tools/blob/master/README.md][https:://github.com/z1un/tools.zjun.info 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/z1un/tools.zjun.info https://github.com/z1un/tools.zjun.info][https:://forum.ywhack.com/bountytips.php 此网页不属于本网站，不保证其安全性  继续访问       取消 https://forum.ywhack.com/bountytips.php https://forum.ywhack.com/bountytips.php]CTF平台buuctf[https:://adworld.xctf.org.cn/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://adworld.xctf.org.cn/ https://adworld.xctf.org.cn/]内存取证笔记：[https:://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E5%8F%96%E8%AF%81.md 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E5%8F%96%E8%AF%81.md https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E5%8F%96%E8%AF%81.md]"
+        },
+        {
+            "mid": "60969175",
+            "mtime": "2024-06-06 16:26",
+            "mcontent": "插眼"
+        },
+        {
+            "mid": "61321140",
+            "mtime": "2024-06-07 12:32",
+            "mcontent": "别来"
+        },
+        {
+            "mid": "65690604",
+            "mtime": "2024-06-07 22:54",
+            "mcontent": "插眼"
+        },
+        {
+            "mid": "65781521",
+            "mtime": "2024-06-08 02:39",
+            "mcontent": "感谢大佬，辛苦了，我会去看"
+        },
+        {
+            "mid": "65781521",
+            "mtime": "2024-06-08 03:21",
+            "mcontent": "都点开看了一下，其中有些能看懂，有些看不懂，github里面的有些能看懂，其他的就看不懂了，我会慢慢学的。"
+        },
+        {
+            "mid": "63972014",
+            "mtime": "2024-06-08 18:18",
+            "mcontent": "谢谢，正好需要...."
+        }
+    ]
+}

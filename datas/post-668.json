@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=41440341",
+    "title": "本板真的有程序员吗？为什么淘宝页面会有tmall的cookie？",
+    "post_time": "2024-08-27 15:03",
+    "uid": "42579679",
+    "content": "有个cookie啥的全清了的浏览器",
+    "replies": [
+        {
+            "mid": "1074063",
+            "mtime": "2024-08-27 16:41",
+            "mcontent": "postmessage吧"
+        },
+        {
+            "mid": "63128279",
+            "mtime": "2024-08-27 18:02",
+            "mcontent": "可能就是一楼说那样，通过窗口通信的，也可以控制台看看淘宝那边有没有连接websorket，可以通过websorket通信去主动更改"
+        }
+    ]
+}

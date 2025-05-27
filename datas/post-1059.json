@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40197076",
+    "title": "golang语言求助 真没任何思路了",
+    "post_time": "2024-05-17 10:33",
+    "uid": "61595522",
+    "content": "前情提要:我是前端 但是用golang写了一个微信的群聊机器人 然后出现了一个API对接的情况 先上代码",
+    "replies": [
+        {
+            "mid": "61595522",
+            "mtime": "2024-05-17 11:18",
+            "mcontent": "救命啊 有人救救嘛"
+        },
+        {
+            "mid": "62607318",
+            "mtime": "2024-05-18 14:55",
+            "mcontent": "这个链接打开之后302啊，你有去获取跳转之后的数据吗？编辑：当我没说，远程强行关闭了那半吊子的我就不懂了。"
+        },
+        {
+            "mid": "41787772",
+            "mtime": "2024-05-18 15:55",
+            "mcontent": "https改成http试试"
+        },
+        {
+            "mid": "42757160",
+            "mtime": "2024-05-19 08:39",
+            "mcontent": "你的代码的逻辑看起来是正确的，但有几点需要检查和改进的地方。根据你描述的问题，你可以从以下几个方面进行排查：请求超时：有可能请求花费了太长时间。你可以设置一个超时时间。重定向问题：虽然你已经处理了重定向，但可能在请求过程中发生了其他问题。User-Agent：虽然你设置了自定义的 User-Agent，但有可能需要其他的请求头。错误处理：你可以进一步细化错误处理，打印出更详细的错误信息。下面是改进后的代码：Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:37:38:39:40:41:42:43:44:45:46:47:48:49:50:51:52:53:54:55:56:57:58:59:60:61:62:63:64:65:66:67:68:69:\npackage main\n\nimport (\n    \"bytes\"\n    \"io\"\n    \"log\"\n    \"net/http\"\n    \"time\"\n\n    \"github.com/eatmoreapple/openwechat\"\n)\n\nfunc jkvHandler(msg *openwechat.Message) {\n    // 创建一个http客户端，并设置超时时间\n    client := &http.Client{\n        Timeout: 10 * time.Second,\n        CheckRedirect: func(req *http.Request, via []*http.Request) error {\n            if len(via) >= 10 {\n                return http.ErrUseLastResponse\n            }\n            for key, values := range via[0].Header {\n                for _, value := range values {\n                    req.Header.Add(key, value)\n                }\n            }\n            return nil\n        },\n    }\n\n    // 创建一个新的GET请求\n    req, err := http.NewRequest(\"GET\", \"https://api.yujn.cn/api/jksp.php?type=video\", nil)\n    if err != nil {\n        log.Printf(\"请求创建失败: %v\", err)\n        msg.ReplyText(\"JKV获取失败\")\n        return\n    }\n\n    // 设置User-Agent\n    req.Header.Set(\"User-Agent\", \"MyCustomUserAgent/1.0\")\n\n    // 发送请求\n    resp, err := client.Do(req)\n    if err != nil {\n        log.Printf(\"请求发送失败: %v\", err)\n        msg.ReplyText(\"JKV获取失败\")\n        return\n    }\n    defer resp.Body.Close()\n\n    // 读取响应体\n    body, err := io.ReadAll(resp.Body)\n    if err != nil {\n        log.Printf(\"响应体读取失败: %v\", err)\n        msg.ReplyText(\"JKV解析失败\")\n        return\n    }\n\n    // 将响应体转换为Reader\n    reader := bytes.NewReader(body)\n\n    // 发送视频到微信前台\n    err = msg.ReplyVideo(reader)\n    if err != nil {\n        log.Printf(\"视频回复失败: %v\", err)\n        msg.ReplyText(\"视频发送失败\")\n    }\n}\n其他建议日志记录：使用 log.Printf 来记录错误，这样可以帮助你在开发阶段更好地调试代码。进一步的错误信息：通过记录更详细的错误信息来了解失败的具体原因。例如，记录 http.Response 的状态码。网络调试工具：使用网络调试工具(如 Postman 或 curl)来测试 API，以确保 API 本身没有问题，并观察所有的请求头和响应。通过上述方法，你应该能更好地定位并解决问题。"
+        },
+        {
+            "mid": "63978329",
+            "mtime": "2024-05-19 15:15",
+            "mcontent": "确定人家服务器没有检验referer吗？"
+        },
+        {
+            "mid": "1984084",
+            "mtime": "2024-05-19 19:19",
+            "mcontent": "试了下可以下载，可以对比下代码Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:37:38:39:40:41:42:43:44:45:46:47:48:\nfunc httpTest() {\n\n    client := &http.Client{}\n    req, err := http.NewRequest(\"GET\", \"https://api.yujn.cn/api/jksp.php?type=video\", nil)\n    if err != nil {\n        fmt.Println(err)\n        return\n    }\n\n    req.Header.Add(\"accept\", \"*/*\")\n    req.Header.Add(\"accept-language\", \"zh-CN,zh;q=0.9,en;q=0.8\")\n    req.Header.Add(\"cache-control\", \"no-cache\")\n    req.Header.Add(\"pragma\", \"no-cache\")\n    req.Header.Add(\"priority\", \"i\")\n    req.Header.Add(\"range\", \"bytes=0-\")\n    req.Header.Add(\"sec-ch-ua\", `\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"`)\n    req.Header.Add(\"sec-ch-ua-mobile\", \"?0\")\n    req.Header.Add(\"sec-ch-ua-platform\", `\"macOS\"`)\n    req.Header.Add(\"sec-fetch-dest\", \"video\")\n    req.Header.Add(\"sec-fetch-mode\", \"no-cors\")\n    req.Header.Add(\"sec-fetch-site\", \"same-origin\")\n    req.Header.Add(\"user-agent\", \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\")\n\n    resp, err := client.Do(req)\n    if err != nil {\n        fmt.Println(err)\n        return\n    }\n    defer resp.Body.Close()\n\n    // Saving the body of the response into a file `video.mp4`.\n    out, err := os.Create(\"video.mp4\")\n    if err != nil {\n        fmt.Println(err)\n        return\n    }\n    defer out.Close()\n\n    _, err = io.Copy(out, resp.Body)\n    if err != nil {\n        fmt.Println(err)\n        return\n    }\n\n    fmt.Println(\"Video downloaded successfully.\")\n}"
+        },
+        {
+            "mid": "61595522",
+            "mtime": "2024-05-20 21:32",
+            "mcontent": "[quote]+R by  [BadCold] (2024-05-19 19:19)试了下可以下载，可以对比下代码Code c:1:2:3:4:5:6:7:8:9:10:11:12:13:14:\nfunc httpTest() {\n\n    client := &http.Client{}\n    req, err := http.NewRequest(\"GET\", \"https://api.yujn.cn/api/jksp.php?type=video\", nil)\n    if err != nil {\n        fmt.Println(err)\n        return\n    }\n\n    req.Header.Add(\"accept\", \"*/*\")\n    req.Heade[/quote]\n\n好的真的很感谢明天试试最近天天加班没办法写 群内机器人的抖音计划就耽搁了好的真的很感谢明天试试最近天天加班没办法写 群内机器人的抖音计划就耽搁了"
+        }
+    ]
+}

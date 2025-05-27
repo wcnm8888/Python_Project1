@@ -1,0 +1,54 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42166300",
+    "title": "最近在学习vue，，请问大家这样的树前端和后端要怎么实现啊",
+    "post_time": "2024-10-22 15:43",
+    "uid": "61647330",
+    "content": "最近在学习vue，树我用饿了么实现了，但是树节点的id我没想好应该怎么生成，另外不知道树的叶子节点是和树节点共用一个数据库嘛？感觉自己说的有点乱",
+    "replies": [
+        {
+            "mid": "62761906",
+            "mtime": "2024-10-23 00:29",
+            "mcontent": "都根据你具体业务来不同表数据也可以塞到一个树里，只要基础的某些数据相同或者封装组件就行"
+        },
+        {
+            "mid": "768219",
+            "mtime": "2024-10-23 10:43",
+            "mcontent": "树的各层，你可以合并到一个表里面，也可以分表。只要前端树的值下面这样的就行啊{          label: '一级 1',          children: [{            label: '二级 1-1',            children: [{              label: '三级 1-1-1'            }]          }]        }"
+        },
+        {
+            "mid": "64731144",
+            "mtime": "2024-11-14 11:37",
+            "mcontent": "这明显是一个菜单表嘛先看后台表结构ColumnDescriptionid主键IDname节点名称label_name标签名称path路径query查询条件icon图标parent_id父节点IDcreate_time创建时间update_time更新时间delete_time删除时间表结构出来了就可以通过递归查询出菜单结构了，给你个伪代码方法 buildTree(parentId):    定义变量 parent，初始为 null    // 查询数据库中的根节点或指定父节点的子节点    打开数据库连接    准备 SQL 查询语句 \"SELECT * FROM table WHERE parent_id = ?\"    设置查询参数 parentId    执行查询，获取结果集 rs    对于结果集中的每一行：        读取当前行的各个字段信息 (id, name, labelName, path, query, icon, pId, createTime, updateTime, deleteTime)                创建一个 Node 对象 node，使用读取的字段初始化                // 递归构建子节点        将 buildTree(id) 返回的结果添加到 node 的子节点列表 node.children 中                // 判断是否为根节点        如果 parentId 等于 0:            将 node 赋值给 parent        否则，如果 parent 不为 null:            将 node 添加到 parent 的子节点列表中 parent.children 中    关闭结果集和数据库连接    返回 parent这样你就能得到这样的一个结构[  {    id:1,    name:'父菜单',    ....    children:[      {        id:2,        name:'子菜单1',        ....      },      {        id:3,        name:'子菜单2',        ....      }    ]  }]然后前端用vue去渲染就行了，一般都有现成的组件可以用"
+        },
+        {
+            "mid": "60434189",
+            "mtime": "2024-11-21 11:39",
+            "mcontent": ""
+        },
+        {
+            "mid": "61647330",
+            "mtime": "2024-11-21 11:50",
+            "mcontent": "谢谢老哥，方便加个联系方式嘛，自己做全栈太累了，遇到问题想请教一下老师"
+        },
+        {
+            "mid": "66352181",
+            "mtime": "2024-11-23 15:27",
+            "mcontent": "elementUI有模板, 直接使用elementUI不久可以了吗"
+        },
+        {
+            "mid": "140565",
+            "mtime": "2024-12-03 19:59",
+            "mcontent": "数据表用parent_id，找父节点，适当补充类型状态即可。输出到前端用childnodes，给子节点，前端好用"
+        },
+        {
+            "mid": "61647330",
+            "mtime": "2024-12-04 10:58",
+            "mcontent": "请问这个树节点不好看怎么做啊，做不到示例图那样美观，我用的是饿了么的树组件"
+        },
+        {
+            "mid": "140565",
+            "mtime": "2024-12-04 15:35",
+            "mcontent": "找找开源的ui组件，估计会快点。"
+        }
+    ]
+}

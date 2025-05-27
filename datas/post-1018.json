@@ -1,0 +1,64 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40267927",
+    "title": "能将UNC路径转换为可点击链接的聊天软件",
+    "post_time": "2024-05-23 00:24",
+    "uid": "26521855",
+    "content": "由于工作需要，经常会在局域网的共享文件夹中新增文件，同事之间沟通是直接把UNC路径通过聊天软件发送。但是消息接收方并不能在聊天窗口中直接点击这个路径进行访问，需要把路径复制下到资源管理器中才能打开。想问下有没有一种聊天软件能直接将UNC路径转换为可点击链接,点击后可以直接打开资源管理器的.网络聊天和局域网聊天均可(飞秋我试过可以，但是界面太老了)",
+    "replies": [
+        {
+            "mid": "64328138",
+            "mtime": "2024-05-24 21:14",
+            "mcontent": "QQNT之前有插件商店的不过上个版本作者跑路了"
+        },
+        {
+            "mid": "13165213",
+            "mtime": "2024-05-26 00:57",
+            "mcontent": "文换飞书武换版本控制"
+        },
+        {
+            "mid": "60006356",
+            "mtime": "2024-05-26 02:11",
+            "mcontent": "要不快一点就 win+r 吧"
+        },
+        {
+            "mid": "26521855",
+            "mtime": "2024-05-26 21:51",
+            "mcontent": "我去研究研究，谢谢老哥"
+        },
+        {
+            "mid": "26521855",
+            "mtime": "2024-05-26 21:52",
+            "mcontent": "我看了下飞书不支持呀"
+        },
+        {
+            "mid": "26521855",
+            "mtime": "2024-05-26 21:52",
+            "mcontent": "实在不行只能这样了"
+        },
+        {
+            "mid": "13165213",
+            "mtime": "2024-05-27 05:00",
+            "mcontent": "主要意思是不该有文件还在网盘共享上，其次飞书的扩展性想要一定可以。甚至你还可以送用户一个批处理自动获取目录里最新的文件"
+        },
+        {
+            "mid": "61403527",
+            "mtime": "2024-05-27 08:10",
+            "mcontent": "开个ftp或者整个可以在浏览器管理文件的服务"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-05-29 13:46",
+            "mcontent": "[https:://github.com/xh321/LiteLoaderQQNT-Directly-Jump?tab=readme-ov-file 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/xh321/LiteLoaderQQNT-Directly-Jump?tab=readme-ov-file https://github.com/xh321/LiteLoaderQQNT-Directly-Jump?tab=readme-ov-file]比如这样的就很相似"
+        },
+        {
+            "mid": "26521855",
+            "mtime": "2024-05-29 14:03",
+            "mcontent": "感谢！"
+        },
+        {
+            "mid": "64328138",
+            "mtime": "2024-05-29 14:52",
+            "mcontent": "你这个想法我帮你考虑好了简单一点 轻量工具箱 这个插件支持自定义右键菜单 会写代码的话  加个 使用 文件管理器 打开URL的功能即可这里是参考代码位置:[https:://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools/blob/5f7da8a10e323a762fb185fd6778c1e29bdee5e9/src/render_modules/qContextMenu.js#L303 此网页不属于本网站，不保证其安全性  继续访问       取消 https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools/blob/5f7da8a10e323a762fb185fd6778c1e29bdee5e9/src/render_modules/qContextMenu.js#L303 https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools/blob/5f7da8a10e323a762fb185fd6778c1e29bdee5e9/src/render_modules/qContextMenu.js#L303]复杂的话 要项识别UNC路径可能 不太简单 ;不过你可能可以联系库作者 请他帮忙给你加功能"
+        }
+    ]
+}

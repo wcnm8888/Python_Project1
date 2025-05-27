@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42654047",
+    "title": "clion功能相关",
+    "post_time": "2024-12-05 18:14",
+    "uid": "62086949",
+    "content": "为什么我的补全没有c/cpp呢",
+    "replies": [
+        {
+            "mid": "382675",
+            "mtime": "2024-12-26 00:30",
+            "mcontent": "clion是c编译器 c的他应该插件带他怎么补python js这些比如 python用的py charm"
+        },
+        {
+            "mid": "62496030",
+            "mtime": "2024-12-26 02:05",
+            "mcontent": "有补全，虽然我给关了，可能是要联网吧"
+        },
+        {
+            "mid": "62086949",
+            "mtime": "2024-12-26 02:46",
+            "mcontent": "就很奇怪，我电脑上jetbrain的产品只有clion，但是代码补全里没有C"
+        }
+    ]
+}

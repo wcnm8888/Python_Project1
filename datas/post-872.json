@@ -1,0 +1,79 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40765505",
+    "title": "求助，linux问题 网上搜不到",
+    "post_time": "2024-07-04 19:34",
+    "uid": "62705054",
+    "content": "装archlinux遇到的 装的xfce4和lightdm",
+    "replies": [
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-04 21:56",
+            "mcontent": "难绷 这个是解决了 第二个又来了不知道怎么回事给arch也识别成windows了 这下linux进不去了前两个小时Windows 进不去现在linux进不去咋整啊"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-07-04 22:39",
+            "mcontent": "没事干装啥arch啊你要没啥经验就用systemd-boot吧,好像比grub要无脑很多,不过我也没用过,你这看样子是分区有点问题至于dm,我向来都是不装的,直接手动启动wm"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-05 00:11",
+            "mcontent": "闲的 主要是看Windows 不爽之前在老爷机上装过，本来以为这次能速战速决没想到那次装机经验给我害了遇到问题就去解决问题嘛，先看看有没有老哥有现成的解决方案没有明儿自己再去研究研究，初步想法是研究下grub扫描识别的办法，毕竟能进grub，一时半会看不出来就用u盘启动进本地系统再瞎几把改改"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-07-05 00:47",
+            "mcontent": "de推荐一下kde,windows人称小kdekde更新到6.0之后颜值又高了不少 ,不过我不用 双系统安装的时候可能会有点分区上的问题,先linux后win和先win后linux不太一样,wiki上有具体的教程,建议操作前先备份下数据免得误操作了完全按wiki上的走应该是不会有什么问题的,你可以先试试重新走一遍内核安装过程我印象里windows默认的esp只有100MB,装不下arch的内核,迂回方法好像还挺麻烦的,所以还是建议先装linux,分一个大点的esp,然后再装win"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-05 00:54",
+            "mcontent": "esp是啥现在已经用上kde了，电脑是2k的屏，xfce4缩放多少有点问题，直接卸了上了kde+配套的dm，好看确实是好看，但流畅度确实没xfce高谁让我当时选了个2k屏本身就14寸本来一下午不是dm有问题就是grum启动项里没Windows，最后弄完了一看成启动项里俩Windows 一个linux没有真的折磨想当年老爷机无线网卡驱动搞得我焦头烂额，现在启动项搞得我绷不住对了这回蓝牙驱动还没装上，再加上是ThinkPad还没试试小红点，感觉是地狱绘图啊但我现在连普通进系统都做不到"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-05 01:00",
+            "mcontent": "至于先后分区问题我还真不知道，我的情况是进去一看win分了5块 备份+efi引导+两块盘 还有个是啥忘了给arch分了1g的efi、6g的swap 130多g的/mnt分盘挂载应该是没问题就是弄grum op-prober还是什么玩意的时候弄了好几遍，老是在最后一步创grum.cfg的时候不是提醒我文件不存在就是说可能会忽视不扫描其他系统，最后一次用root权限文件生成对了也扫出来俩efi盘了我正准备大功告成，结果重启下看看就成这样了可能就是到处试方法改着改着有些东西没弄对"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-07-05 01:15",
+            "mcontent": "还是建议先看看官方的wiki,这篇安装指南说的很详细了[https:://wiki.archlinux.org/title/Installation_guide 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.archlinux.org/title/Installation_guide https://wiki.archlinux.org/title/Installation_guide]有中文版本,arch社区的中文支持还是不错的答案是太臃肿了得了windows的病所以我一般不用de而是用wm,轻量级,可定制性更强,不过需要一定的折腾,如果有兴趣了解一下的话可以试试Hyprland[https:://wiki.hyprland.org/ 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.hyprland.org/ https://wiki.hyprland.org/]目前软件生态啥的挺不错的了,最大的问题是腾讯会议没办法共享屏幕硬件方面的话,可以看看这个[https:://wiki.archlinux.org/title/Laptop/Lenovo 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.archlinux.org/title/Laptop/Lenovo https://wiki.archlinux.org/title/Laptop/Lenovo]小红点不清楚,不过蓝牙应该问题不大,之前内核刚升到6.9的时候蓝牙驱动倒是炸了一段时间,现在修复了,arch装两个包就行了"
+        },
+        {
+            "mid": "43089971",
+            "mtime": "2024-07-05 01:24",
+            "mcontent": "esp就是efi分区的意思,相关的内容wiki上也都有[https:://wiki.archlinux.org/title/EFI_system_partition 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.archlinux.org/title/EFI_system_partition https://wiki.archlinux.org/title/EFI_system_partition][https:://wiki.archlinux.org/title/Dual_boot_with_Windows 此网页不属于本网站，不保证其安全性  继续访问       取消 https://wiki.archlinux.org/title/Dual_boot_with_Windows https://wiki.archlinux.org/title/Dual_boot_with_Windows]善用wiki"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-05 01:34",
+            "mcontent": "谢谢老哥 包看wiki装的wiki+博客融合 这边看不懂去那边，主要是感觉wiki有些东西过于生硬而且用不了，可能是我太傻了白天我还发现我这台设备wiki上还有专门的页面介绍，蓝牙说是没大问题，今天装完本来Windows 下我都没找到调节背光键盘的方法linux直接就放在桌面上了出问题其实也很有可能是因为两边都看昨天装了两次第一次看的wiki和博客融合，第二次直接看的博客一口气重装到底结果还是出了问题谢谢老哥，今天白天再细细了解了解更轻量的wm，就是因为最近折腾老东西受不了臃肿的Windows才想来试试arch这种高度客制化的，越轻量越合适，目前的需求是只要能正确缩放就行，14寸2k没缩放看着是真的瞎眼 终极目的是给yogabook1代装上arch并且硬件都能正常运行已经在想着以后要学写驱动了 反正大不了就是从头再来，多重装几次就手熟了电脑上也没啥东西，win还是不动了改起来也挺费劲 第二次重装轻车熟路十几分钟完事了"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-06 01:19",
+            "mcontent": "堂堂完结DE还是先kde吧，以后需求更明确了再找别的，目前这个挺好的 至少比win11流畅 scrcpy真方便 就是帧数不够高 还有点卡我是拿数据线连的居然也会这样"
+        },
+        {
+            "mid": "3260753",
+            "mtime": "2024-07-06 12:24",
+            "mcontent": "manjaro不香吗"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-06 13:04",
+            "mcontent": "老爷机上装过一次了还成功了但是老爷机装arch算是没成功 连不上无线网过不去的坎"
+        },
+        {
+            "mid": "65364663",
+            "mtime": "2024-07-06 17:14",
+            "mcontent": "用arch的livecd chroot进你arch linux，直接挂载archlinux根分区到/mnt ,挂载esp到/mnt/boot，把识别错的引导去/mnt/boot/EFI直接rm 命令删掉，重建一编引导，具体怎么重建就参考你第一次安装arch,或者翻wiki"
+        },
+        {
+            "mid": "62705054",
+            "mtime": "2024-07-06 17:50",
+            "mcontent": "谢谢老哥 我直接取消挂载从格式化又来了一遍 已经解决了"
+        }
+    ]
+}

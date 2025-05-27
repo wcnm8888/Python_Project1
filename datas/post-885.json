@@ -1,0 +1,44 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=40738437",
+    "title": "大佬们这个代码有什么问题，下载到板上会一直显示0000",
+    "post_time": "2024-07-02 10:18",
+    "uid": "63184871",
+    "content": "module genshin3 (",
+    "replies": [
+        {
+            "mid": "62153763",
+            "mtime": "2024-07-02 10:41",
+            "mcontent": "module genshin3 (    input clk,    input reset,    input key1,    input key2,    input key3,    output [6:0] seg, // 七段显示器的段信号(不含小数点)    output dp, // 小数点信号    output [3:0] an // 位选择信号);// 实例化stopwatch模块stopwatch sw (    .clk(clk),    .reset(reset),    .key1(key1),    .key2(key2),    .key3(key3),    .seg(seg),    .dp(dp),    .an(an));endmodulemodule stopwatch(    input clk,    input reset,    input key1, // 清零键    input key2, // 暂停键    input key3, // 继续计时键    output reg [6:0] seg, // 七段显示器的段信号(不含小数点)    output reg dp, // 小数点信号    output reg [3:0] an // 位选择信号);reg [13:0] count; // 计数器，范围0-9999，表示0.0到99.9秒reg running; // 计时状态reg [3:0] bcd0, bcd1, bcd2, bcd3;reg [1:0] digit_select; // 当前选择显示的位reg [19:0] clk_div;wire slow_clk;// 按键消抖reg [1:0] key1_reg, key2_reg, key3_reg;wire key1_debounced, key2_debounced, key3_debounced;always @(posedge clk or posedge reset) begin    if (reset) begin        key1_reg <= 2'b00;        key2_reg <= 2'b00;        key3_reg <= 2'b00;    end else begin        key1_reg <= {key1_reg[0], key1};        key2_reg <= {key2_reg[0], key2};        key3_reg <= {key3_reg[0], key3};    endendassign key1_debounced = (key1_reg == 2'b11);assign key2_debounced = (key2_reg == 2'b11);assign key3_debounced = (key3_reg == 2'b11);// 时钟分频器always @(posedge clk or posedge reset) begin    if (reset) begin        clk_div <= 20'd0;    end else begin        clk_div <= clk_div + 1'b1;    endendassign slow_clk = clk_div[19]; // 假设原始时钟频率较高，分频得到的较慢时钟// 计时器always @(posedge slow_clk or posedge reset) begin    if (reset) begin        count <= 14'd0;        running <= 1'b0;    end else if (key1_debounced) begin        count <= 14'd0;        running <= 1'b0;    end else if (key2_debounced) begin        running <= 1'b0;    end else if (key3_debounced) begin        running <= 1'b1;    end else if (running) begin        if (count < 14'd9999) begin            count <= count + 1'b1;        end else begin            count <= 14'd0;        end    endend// 将计数值转换为BCDalways @* begin    bcd0 = count % 10;    bcd1 = (count / 10) % 10;    bcd2 = (count / 100) % 10;    bcd3 = (count / 1000) % 10;end// 位选择器always @(posedge clk or posedge reset) begin    if (reset) begin        digit_select <= 2'b00;    end else begin        digit_select <= digit_select + 1'b1;    endend// 多路复用器always @* begin    case (digit_select)        2'b00: begin            seg = bcd_to_7seg(bcd3);            dp = 1'b0; // 百位，无小数点            an = 4'b1110; // 选择第一位显示        end        2'b01: begin            seg = bcd_to_7seg(bcd2);            dp = 1'b1; // 十位，有小数点            an = 4'b1101; // 选择第二位显示        end        2'b10: begin            seg = bcd_to_7seg(bcd1);            dp = 1'b0; // 个位，无小数点            an = 4'b1011; // 选择第三位显示        end        2'b11: begin            seg = bcd_to_7seg(bcd0);            dp = 1'b0; // 小数点后一位，无小数点            an = 4'b0111; // 选择第四位显示        end    endcaseend// BCD到七段显示器转换函数function [6:0] bcd_to_7seg;    input [3:0] bcd;    case (bcd)        4'd0: bcd_to_7seg = 7'b0111111;        4'd1: bcd_to_7seg = 7'b0000110;        4'd2: bcd_to_7seg = 7'b1011011;        4'd3: bcd_to_7seg = 7'b1001111;        4'd4: bcd_to_7seg = 7'b1100110;        4'd5: bcd_to_7seg = 7'b1101101;        4'd6: bcd_to_7seg = 7'b1111101;        4'd7: bcd_to_7seg = 7'b0000111;        4'd8: bcd_to_7seg = 7'b1111111;        4'd9: bcd_to_7seg = 7'b1101111;        default: bcd_to_7seg = 7'b0000000;    endcaseendfunctionendmodule很久没焊板子了,照着以前的记忆改了下,不保证对"
+        },
+        {
+            "mid": "63184871",
+            "mtime": "2024-07-02 10:51",
+            "mcontent": "复位键活了但是还是不开始计时(悲)"
+        },
+        {
+            "mid": "63184871",
+            "mtime": "2024-07-02 11:29",
+            "mcontent": "顶一下()"
+        },
+        {
+            "mid": "63184871",
+            "mtime": "2024-07-02 12:57",
+            "mcontent": "这个代码还是会导致启动以后四位七段都显示同样的数字并且快速闪烁"
+        },
+        {
+            "mid": "62153763",
+            "mtime": "2024-07-02 14:44",
+            "mcontent": "如果继续快速闪烁就增加分频系数来降低频率试试,可能是频率过高的问题"
+        },
+        {
+            "mid": "63184871",
+            "mtime": "2024-07-02 14:45",
+            "mcontent": "现在修好了一部分可以像流水表一样轮流表示数字正常计时了，但是不能不同位同时显示不同的数字来计时、"
+        },
+        {
+            "mid": "63184871",
+            "mtime": "2024-07-02 20:42",
+            "mcontent": "搞好了，大力出奇迹用快速闪烁的分支代替全显示了(悲"
+        }
+    ]
+}

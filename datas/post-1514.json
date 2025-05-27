@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39284747",
+    "title": "萌新Python入门 venv相关",
+    "post_time": "2024-02-12 14:58",
+    "uid": "60622491",
+    "content": "尝试用venv模块创建文件夹 为啥会不成功呢？",
+    "replies": [
+        {
+            "mid": "38554127",
+            "mtime": "2024-02-12 18:54",
+            "mcontent": "这个是因为你用的windows的powershell作为终端使用的，默认情况下powershell是不支持运行本地或者远程的未签名脚本而python的venv脚本默认是没有签名的貌似，所以你需要在windows的设置中找到开发者选项去允许powershell运行本地未签名脚本另外，根据使用的终端类型不同，使用的启动脚本名称是不一样的，如果使用cmd命令行应该使用activate.bat，使用powershell应该使用Activate.ps1，使用bash应该使用activate，需要具体根据当前使用的终端类型区分一下"
+        },
+        {
+            "mid": "60622491",
+            "mtime": "2024-02-12 19:33",
+            "mcontent": "大致明白您的意思了感谢"
+        },
+        {
+            "mid": "43331470",
+            "mtime": "2024-02-15 16:02",
+            "mcontent": "prcharm不是已经帮你全部弄好了吗为什么要自己弄"
+        },
+        {
+            "mid": "19094692",
+            "mtime": "2024-02-16 00:35",
+            "mcontent": "建议没有特殊需求的话 直接用poetry吧 封装得比较方便"
+        }
+    ]
+}

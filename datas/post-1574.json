@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39110525",
+    "title": "KDE能不能让任务栏不自动合并",
+    "post_time": "2024-01-26 17:55",
+    "uid": "60644983",
+    "content": "小白刚用几天Linux，之前用Cinnamon是可以的，KDE找不到怎么设置",
+    "replies": [
+        {
+            "mid": "43089971",
+            "mtime": "2024-01-26 20:09",
+            "mcontent": "我平时不用kde,这东西随便摸两下就摸出来了如果单独设置让某个应用不合并的话，右键任务栏图标->more->allow this program to be grouped全部不合并，右键任务栏->configure icons-only task only manager..->behavior->Group->Do not group"
+        },
+        {
+            "mid": "60644983",
+            "mtime": "2024-01-26 21:19",
+            "mcontent": "谢谢了"
+        }
+    ]
+}

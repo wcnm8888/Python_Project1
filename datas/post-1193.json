@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39892238",
+    "title": "请教一下各位大佬，选java还是kotlin",
+    "post_time": "2024-04-17 08:52",
+    "uid": "62861079",
+    "content": "请教一下大佬们，我三本毕业，22届毕业生，到23年6月之前都是写java，后来新公司主要使用kotlin，按照java的思路写了快一年的kotlin。不知道之后是看java还是kotlin。希望各位大佬能指条明路。",
+    "replies": [
+        {
+            "mid": "992969",
+            "mtime": "2024-04-17 09:59",
+            "mcontent": "全部都要.png"
+        },
+        {
+            "mid": "64057759",
+            "mtime": "2024-04-17 12:30",
+            "mcontent": "选择全部都要+1，反正在kotlin调java的代码非常丝滑，而且你写了java代码在kotlin中粘贴可以自动转换的，通过idea。我是公司项目用java，自己开发的办公工具用kotlin，相辅相成"
+        }
+    ]
+}

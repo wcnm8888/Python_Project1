@@ -1,0 +1,24 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39471938",
+    "title": "新手关于border 的问题 感谢",
+    "post_time": "2024-03-04 00:43",
+    "uid": "39097605",
+    "content": "如图所示在学习禹神提供的项目商品汇网站",
+    "replies": [
+        {
+            "mid": "65595387",
+            "mtime": "2024-03-04 15:44",
+            "mcontent": "你可以理解为等 ui 走查再改"
+        },
+        {
+            "mid": "232144",
+            "mtime": "2024-03-04 17:02",
+            "mcontent": "box-sizing: border-box;"
+        },
+        {
+            "mid": "60187374",
+            "mtime": "2024-03-04 19:35",
+            "mcontent": "盒模型了解下"
+        }
+    ]
+}

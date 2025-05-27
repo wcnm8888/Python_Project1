@@ -1,0 +1,29 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=39685919",
+    "title": "有擅长k8s的大佬 救救孩子吧",
+    "post_time": "2024-03-27 12:52",
+    "uid": "64764956",
+    "content": "公司项目， 项目部署到tke上，服务clusterip 外面包了一个ingress，访问ingress的地址504。api网关和ingress配置我看了下应该没问题…",
+    "replies": [
+        {
+            "mid": "61237968",
+            "mtime": "2024-03-28 17:05",
+            "mcontent": "环境 配置 日志 啥也没给，怎么看呢"
+        },
+        {
+            "mid": "43012245",
+            "mtime": "2024-03-29 00:17",
+            "mcontent": "先看下请求有没有到ingress controller"
+        },
+        {
+            "mid": "2475450",
+            "mtime": "2024-03-30 16:23",
+            "mcontent": "504是你集群ingress服务没响应。"
+        },
+        {
+            "mid": "595942",
+            "mtime": "2024-04-01 18:35",
+            "mcontent": "应该顺这个思路，先机器内部查，pod内通不通，clusterIP访问通不通，其他用ingress的服务通不通，说不定是末端的应用服务挂了呢"
+        }
+    ]
+}

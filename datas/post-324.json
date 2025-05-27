@@ -1,0 +1,19 @@
+{
+    "link": "https://bbs.nga.cn/read.php?tid=42759091",
+    "title": "国内的著作权法，它对于GPL MIT BSD这些协议",
+    "post_time": "2024-12-17 08:58",
+    "uid": "60659207",
+    "content": "中国著作权法对于这些自由与开源协议是个啥态度，还是说在这个框架下这些东西根本没有法律效应？",
+    "replies": [
+        {
+            "mid": "66384983",
+            "mtime": "2024-12-17 09:08",
+            "mcontent": "可以看看先例 [https:://www.ciplawyer.cn/articles/154390.html 此网页不属于本网站，不保证其安全性  继续访问       取消 https://www.ciplawyer.cn/articles/154390.html https://www.ciplawyer.cn/articles/154390.html]"
+        },
+        {
+            "mid": "60659207",
+            "mtime": "2024-12-17 09:34",
+            "mcontent": "上裁判文书网上看了一下，实践上还是承认GPL、BSD等开源协议的，只是没想到有公司从2010年开始就在用GPL3.0碰瓷了。"
+        }
+    ]
+}
